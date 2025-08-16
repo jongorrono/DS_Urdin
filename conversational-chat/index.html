@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jongo - Conversational Bot Interface</title>
+    <link rel="stylesheet" href="css/chat-style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header">
+            <div class="search-container">
+                <div class="search-input-wrapper">
+                    <img src="img/logo.png" alt="Jongo Logo" class="logo-image">
+                    <button class="clear-btn" id="clearSearch">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Chat Section -->
+        <main class="main-content">
+            <!-- Chat Messages Area -->
+            <div class="chat-messages" id="chatMessages">
+                <!-- Messages will be dynamically added here -->
+            </div>
+
+            <div class="chat-container">
+                <div class="main-input-wrapper">
+                    <input type="text" class="main-input" id="mainInput" placeholder="Try asking: What's Jon's experience with SaaS?">
+                    <button class="send-btn" id="sendBtn">
+                        <i class="fas fa-comment"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Action Cards Section -->
+            <section class="action-cards">
+                <div class="card" data-action="case-study">
+                    <h3 class="card-title">Case Study</h3>
+                    <p class="card-description">Dive into one of my projects and see my process in action.</p>
+                </div>
+
+                <div class="card" data-action="company-fit">
+                    <h3 class="card-title">Company fit</h3>
+                    <p class="card-description">How my profile aligns with your company.</p>
+                </div>
+
+                <div class="card" data-action="about-jon">
+                    <h3 class="card-title">About Jon</h3>
+                    <p class="card-description">A quick snapshot of who I am and what I do.</p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
