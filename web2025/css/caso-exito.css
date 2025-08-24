@@ -1,0 +1,152 @@
+*
+{
+	margin:0px;
+	padding:0px;
+}
+body
+{
+  padding-right: 0px;
+  
+}
+
+
+/*---------------------------------- CABECERA-------------------*/
+
+
+.case_study
+{
+	background-color: var(--colorfondotarjeta);
+	padding: 96px 96px 24px 96px;
+	justify-content: center;
+	
+}
+.case_study h2
+{
+	margin:0 auto;
+	align-content: center;
+}
+.goals
+{
+	display:flex;
+	flex-direction: row;
+	text-align: left;
+	padding-top:48px;
+	width: 70%;
+	margin:0 auto;
+	
+}
+.goals h4
+{
+ 	font-size: 1em;
+	color:var(--colorgrisoscuro);
+	font-weight: 300;
+	line-height: 0.3em;
+}
+.goals h3
+{
+	margin-top:8px;
+	margin-bottom: 24px;
+	font-weight: 400;
+}
+.goals ul li
+{
+	list-style-type: none; 
+	line-height: 1.6em;
+}
+.goals ul li span
+{
+	color:var(--color_verde);
+	font-size:0.6em;
+}
+.goals .goals1
+{
+
+flex-grow: 6;
+
+}
+.goals .goals2
+{
+
+	flex-grow: 1;
+	padding-left:24px;
+}
+/*---------------------------------- Desarrollo Caso -------------------*/
+#desarrollo_caso
+{
+}
+.fondo_caso, .fondo_caso2, .fondo_caso3
+{
+	
+	height: 100vh;
+	object-fit: cover;
+	background-size: cover;
+}
+.fondo_caso
+{
+	background-image: url(../img/ux-tecteco.jpg);
+}
+.fondo_caso2
+{
+	background-image: url(../img/ux-adbibo.jpg);
+}
+.fondo_caso3
+{
+	background-image: url(../img/ui-karraskan.jpg);
+}
+#ux ul
+{
+	list-style: none;
+	text-align: left;
+	padding-bottom: 48px;
+}
+#ux ul li span {
+    color: var(--color_verde);
+    font-size: 1.6em;
+}
+#ux ul li
+{
+    font-size: 1.4em;
+
+}
+/*---------------------------------- Media query -------------------*/
+
+@media screen and (max-width: 1024px){
+.case_study {
+    padding: 96px 24px 24px 24px;
+
+}
+#cultura img, ux img
+	{
+		width: 80%;
+	}
+}
+
+@media screen and (max-width: 768px){
+.goals 
+	{
+		width: 100%;
+	}
+}
+@media screen and (max-width: 640px){
+.goals1 h3, .goals2 h3
+	{
+		font-size:1.4em; 
+	}
+}
+@media screen and (max-width: 420px){
+.goals
+	{
+		flex-direction: column; 
+	}
+.goals .goals2 {
+    padding-left: 0px;
+}
+#cultura img, #ux img {
+    width: 100%;
+}	
+	
+}
+
+
+
+

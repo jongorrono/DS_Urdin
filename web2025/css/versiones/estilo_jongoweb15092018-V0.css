@@ -1,0 +1,1316 @@
+*
+{
+	margin:0px;
+	padding:0px;
+}
+/*++++++++++++++++++++++++ CSS COOKIES ++++++++++++++++++++++++ */
+ 
+@keyframes desaparecer
+{
+0%    {bottom: 0px;}
+80%   {bottom: 0px;}
+100%    {bottom: -80px;
+		}
+}
+ 
+@-webkit-keyframes desaparecer /* Safari and Chrome */
+{
+0%    {bottom: 0px;}
+80%   {bottom: 0px;}
+100%    {bottom: -80px;
+}
+}
+ 
+@keyframes aparecer
+{
+0%    {bottom: -38px;}
+10%   {bottom: 0px;}
+90%   {bottom: 0px;}
+100%    {bottom: -38px;}
+}
+ 
+@-webkit-keyframes aparecer /* Safari and Chrome */
+{
+0%    {bottom: -38px;}
+10%   {bottom: 0px;}
+90%   {bottom: 0px;}
+100%    {bottom: -38px;}
+}
+#cookiesms1:target {
+    display: none;
+}
+.cookiesms {
+    width: 100%;
+    /*height: 50px;*/
+    margin: 0 auto;
+    padding-left: 2%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1.2em;
+    clear: both;
+    font-weight: strong;
+    color: #333;
+    bottom: 0px;
+    position: fixed;
+    left: 0px;
+    background-color: #d6d6d1;
+    opacity: 0.8;
+    filter: alpha(opacity=70);
+    transition: bottom 1s;
+    -webkit-transition: bottom 1s;
+    -moz-box-shadow: 3px -3px 1px rgba(50, 50, 50, 0.56);
+    z-index: 999999999;
+}
+ 
+.cookiesms:hover{
+bottom:0px;
+}
+.cookies2{
+background-color: #d6d6d1;
+display:inline;
+opacity:0.95;
+filter:alpha(opacity=95);
+position:absolute; 
+left:1%; 
+top:-30px;
+font-size:1em;
+padding-top:5px;
+height:30px;
+padding-left:25px;
+padding-right:25px;
+-webkit-border-top-right-radius: 15px;
+-webkit-border-top-left-radius: 15px;
+-moz-border-radius-topright: 15px;
+-moz-border-radius-topleft: 15px;
+border-top-right-radius: 15px;
+border-top-left-radius: 15px;
+-moz-box-shadow:    3px -3px 1px rgba(50, 50, 50, 0.56);
+}
+.boton_cookies
+{
+	border: 1px solid grey;
+    padding: 6px 20px 6px 20px;
+    margin-left: 15px;
+    background: transparent;
+}
+/* Fin COOKIES */
+ 
+
+/*#cookies
+{
+	border-color: 3px solid green; 
+	background-color: #f0f0f0;
+	padding: 20px 0px 20px 0px;
+	margin-top:20px;
+	font-size: 1.1em;
+	position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index:999999999;
+
+
+}
+#cookies button
+{
+	border-color:1px solid black;
+	color: black;
+    box-shadow: none;
+    font-size: 1.1em;
+    background-color: transparent; 
+    border: 1px solid black;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+
+}
+#cookies p
+{
+	padding-top:13px;
+}
+#cookies button:hover,#cookies button:active
+{
+	background-color: black;
+	color: white;
+	border-color: 0px solid black;
+}
+/*+++++++++++cabecera ++++++++++++++++++++++*/
+/*.jongo .cabecera
+{
+	height:80px;
+}*/
+.jongo
+{
+  margin:0px;
+  padding:0px;
+  width: 100%;
+  max-width: 100%;
+}
+.jongo .cabecera
+{
+	width: 100%; 
+	position: fixed; 
+  opacity: 0.8;
+  z-index:9999;
+  max-width: 100%;
+}
+.jongo .cabecera .logotipo
+{
+	padding-left:30px;
+	padding-top:5px;
+}
+.jongo .cabecera .logotipo a div
+{
+	background: url(../img/logo_jongo.png) no-repeat left center;
+	
+	height:60px; 
+	width:100%;
+}
+/*++++++++++++++++++++++++++++++++++++ MENU NAV +++++++++++++++++++++++++++++++++++*/
+.jongo .niremenua
+{	
+	padding:0px;
+	font-family: 'Roboto Slab', serif;
+font-size: 1.5em;
+font-weight: 310;
+text-align: right;
+}
+.niremenua nav
+{
+	background-color: transparent;
+	border-color: transparent;
+}
+.jongo .menunagusia
+{
+	display:inline-block;
+	padding-left:0px;
+	border-bottom:0px solid black; 
+}
+.jongo .menunagusia li
+{
+text-align: center;
+padding-left: 12px;
+padding-right: 12px;
+}
+.jongo .menunagusia li a
+{
+	background-color: transparent !important;
+}
+.jongo .menunagusia > li > a
+{
+	border: 0px solid #ddd;
+	color: #3a3a3a;
+	padding:0px 0px;
+}
+.jongo .menunagusia > li.active > a
+{
+	border: 0px solid #ddd;
+}
+.jongo .menunagusia > li.active > a:hover
+{
+	color:#397c96;
+	border: 0px solid #ddd;
+}
+.hamburguesa{
+    border-color: transparent !important;
+    background-color:transparent;
+    position:absolute !important;
+    right: 0px;
+    z-index: 999;
+    color:#262525;
+ }
+  .hamburguesa span
+ {
+ 	font-size:1.7em;
+ }
+  .hamburguesa:hover
+  {
+  	background-color:transparent !important;
+  	color:#9EC6D7;
+  }
+  .imagen_cabecera img
+  {
+  height:27%;
+  width:27%;
+  border-radius: 50%;
+  }
+/*+++++++++++++ VIDEO ++++++++++++++++++*/
+.texto_presentacion
+{
+	position: absolute;
+	z-index:999;
+	width: 50%;
+	left:26%;
+	top:23%;
+font-family: 'Oxygen', sans-serif;   font-weight: 100;
+    text-align: center;
+    font-size: 30px;
+}
+.texto_presentacion p
+{
+	font-size: 22px;
+}
+.flecha_abajo
+{
+	position:relative;
+	z-index:999;
+	bottom:-10% !important;
+	font-size: 2em;
+}
+.flecha_abajo a
+{
+	color: #444343;
+	z-index: 999;
+	opacity: 0.8;
+}
+.flecha_abajo a:hover
+{
+	color: white;
+}
+.flecha_arriba
+{
+	position:absolute;
+	z-index:999;
+	right:0%;
+	bottom:5%;
+	font-size: 5em;
+}
+.flecha_arriba a
+{
+	color: grey;
+}
+.flecha_arriba a:hover
+{
+	color: #444343;
+}
+.redessociales 
+{
+font-size:0.8em;
+text-align:center;
+padding:20px;
+}
+.redessociales ul
+{
+	list-style: none;
+
+}
+.redessociales ul li
+{
+	display: inline;
+	padding:10px;
+
+}
+.redessociales ul li a
+{
+	color:#444343;
+}
+.redessociales ul li a:hover
+{
+	color:white;
+}
+.redessocialespie
+{
+	font-size: 2em !important;
+	padding-top:40px;
+	
+}
+.redessocialespie ul li a
+{
+	color:white !important;
+}
+.redessocialespie ul li a:hover
+{
+	color: green !important;
+}
+.video
+{
+	background-color:black;
+	opacity:0.4;
+	max-width: 100%;
+    height: auto;
+
+}
+.video video
+{
+	 background: url(../img/jongo_video.jpg) !important;
+	 -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+   height: 100%;
+   width: 100% ;
+   
+   
+}
+/*++++++++++++++     SOBRE MI ++++++++++++++++++++*/
+#sobremi,#niriburuz
+{
+	padding-top:40px;
+ }
+
+.jongo .fondo_sobremi
+{
+	background: url('../img/sobremi_jongo.png') no-repeat;
+	width: 100%;
+	max-width: 100%;
+	height: 100%;
+	color:white;
+	background-attachment: fixed;
+	font-family: 'Roboto Slab', serif;
+    font-size: 18px;
+    font-weight: 100;
+    background-color:#1c1817;
+}
+.jongo .sobremi
+{
+	padding-top: 66px;
+    padding-bottom: 76px;
+ 	line-height: 2.4;
+  font-size:1.6em;
+  padding-left:40px;
+}
+.jongo .sobremi h2
+{
+	font-size:18px;
+}
+/*++++++++++++++   FIN  SOBRE MI ++++++++++++++++++++*/
+.contenedor_cartas
+{
+	clear:none !important;
+	display: inline-block !important;
+	border:3px solid blue;
+}
+@media screen and (max-width: 750px) { 
+  #columns { column-gap: 0px; }
+  #columns figure { width: 100%; }
+}
+/* ++++++++++++++++++++++++++++ PROYECTOS+++++++++++++++*/
+/* -------------- proiektua bakarra erakutsi +++++++++++++++++*/
+.proiektua
+{
+	padding-top:90px;
+	background-color: #efe8e8;
+	margin-bottom: 20px;
+	padding-bottom: 35px;
+}
+.proiektua p
+{
+	font-size:1.3em;
+}
+.proiektua h2
+{
+	padding-bottom: 20px;
+}
+.logostartup
+{
+	width: 20%;
+	position:absolute;
+	left:29%;
+	top:4%;
+
+}
+.bocetos_UI
+{
+	padding-top:30px;
+	max-width: 100%;
+}
+.bocetos_UI img
+{
+	padding-bottom: 30px;
+}
+.bocetostartup
+{
+	max-width: 100%;
+}
+.rrss
+{
+  
+}
+
+/*+++++++++++++++ FIN proiektua+++++++++++++++*/
+
+#proyectos,#proiektuak
+{
+	padding-top:40px;
+	text-align: center;
+  padding-right: 10px;
+  background-color:#F8F8F8;
+}
+.row2 {
+
+ -moz-column-width: 28em;
+ -webkit-column-width: 28em;
+ -moz-column-gap: 0em;
+ -webkit-column-gap:0em; 
+ padding-bottom: 20px; 
+}
+.elemento {
+ display: inline-block;
+ padding:  .20rem;
+ width:  100%; 
+ }
+.well1 {
+ position:relative;
+ display: block;
+  max-width: 100%;
+    height: auto;
+    background-color:white;
+     padding-right: 10px; 
+    padding-bottom: 20px; 
+    margin:10px;
+}
+.well1 a h2
+{
+  color: #444; 
+  font-size:1.5em;
+  
+}
+.well1 a:hover
+{
+   text-decoration: none;
+}
+.well1 a:hover h2 
+{
+  font-weight: bold; 
+ 
+}
+.well1 p 
+{
+  text-align: left; 
+  padding-left:20px;
+  font-size:1em;
+  color:#444;
+}
+.well1 .etiquetas
+{
+  font-weight: bold;
+
+}
+.cartas
+{
+    max-width: 100%;
+    height: auto;
+    z-index:4;
+}
+.proy_texto
+{
+	text-align: center;
+}
+.icono-plus:before
+{
+	font-size:35px;
+	display: block;
+}
+.well1 span
+{
+opacity: 0;
+position: absolute;
+margin: 0 auto;
+font-size: 22px;
+width: 100%;
+}
+.well1:hover  span
+{
+	opacity: 1;
+	position: absolute;
+	text-align: center;
+	margin: 0 auto;
+	top: 35%;
+	font-weight: 800;
+}
+.well1:hover img
+{
+	opacity: 0.2;
+}
+/*++++++++++++++++++++++++++++++ CONTACTO +++++++++++++++++*/
+.datos_contacto
+{
+	padding-top:50px;
+	font-size:1.1em !important;
+	/*font-size:1.2em !important;*/
+}
+.datos_contacto p
+{
+	font-size:1.1em !important;
+	color:black;
+	text-align: center;
+
+}
+.jongo #formulario
+{
+	background-color: #fff;
+	color:black;
+	padding-top: 88px;
+  padding-bottom: 100px;
+}
+.jongo #formulario h2
+{
+font-size: 2.7em;
+    text-align: center;
+}
+
+.jongo #formulario .formu
+{
+	font-size:1.3em;
+	width: 71%;
+}
+.jongo #formulario .formu_texto
+{
+	padding-right: 30px;
+	width: 120px;
+	display:block;
+}
+.jongo #formulario .formu_ancho
+{
+	width: 100%;
+}
+.jongo #formulario .formu_asunto
+{
+	margin-top:20px;
+	width: 100%;
+}
+.jongo #formulario .centrar_boton
+{
+	    margin: 15 auto;
+	    margin-top:32px;
+    text-align: center;
+    width: 100%;
+    
+    
+}
+.jongo #formulario .boton_enviar
+{
+
+	padding: 15px 30px 15px 30px;
+	background-color: white;
+    border: 1px solid black;
+    text-align: center;
+    display: block;
+    width: 100%;
+
+}
+}
+
+.jongo #formulario h2
+{
+ text-align: center;
+ font-size:2.3em;
+
+}
+.jongo .formu_campo
+{
+	border-bottom: 1px solid black;
+	border-top: 0px;
+	border-right:0px;
+	border-left: 0px;
+	margin-bottom: 20px;
+    background-color: transparent;
+    width: 100%;
+}
+.jongo .formu_campo:focus
+{
+	border:1px solid black;
+}
+.jongo .formu_asunto
+{
+	border:1px solid black;
+	background-color: transparent;
+}
+.redessocialespie .fa-linkedin, .redessocialespie .fa-instagram, .redessocialespie .fa-facebook, .redessocialespie .fa-twitter
+{
+	color:black !important;
+}
+.redessocialespie .fa-linkedin:hover, .redessocialespie .fa-instagram:hover, .redessocialespie .fa-facebook:hover, .redessocialespie .fa-twitter:hover
+{
+	color:grey !important;
+}
+}
+/*+++++++++++++++++++++++      PROYECTO INDIVIDUAL +++++++++++++++++++++*/
+.proyecto1_titulo
+{
+	padding-top:80px;
+	border-bottom: 1px solid #555454;
+}
+.proyecto1_titulo h2
+{
+	font-size: 1.4em;
+}
+.proyecto1_titulo p
+{
+	line-height: 1;
+}
+.proyecto1_contenido
+{
+	text-align: center;
+}
+.proyecto1_contenido img
+{
+	
+	max-width: 700px;
+	width: 100%;
+	margin:30px auto;
+}
+
+/*+++++++++++++++++++++Hamburguesa urdina**********************/
+
+.cabecera_horia
+{
+  height: 75px;
+  background-color: #448aff;
+  padding-top: 20px;
+  font-family: 'Dosis', sans-serif;
+
+}
+.lapiz
+{
+  text-align: center;
+  width: 100%;
+}
+.hanburgesa_botoie
+{
+padding-right: 3%;
+border:0px; 
+ margin-top: 0px; 
+ background-color: transparent !important;
+
+}
+.hanburgesa_botoie span
+{
+    width: 32px !important;
+    height: 4px !important;
+    background-color:white !important;
+}
+
+.hanburgesa_botoie:hover span
+{
+  background-color:#e2e0e0 !important;
+}
+  
+.menua_zabalik ul li
+{
+  text-align: center;
+}
+.menua_zabalik ul li .contacto a
+{
+  padding-bottom: 20px;
+}
+.menua_zabalik ul li a
+{
+  color: white;
+  background-color: #448aff;
+  font-size:1.5em;
+}
+.menua_zabalik ul li a:hover
+{
+  background-color: white;
+  color:#448aff;
+
+}
+.cabecera
+{
+  margin-bottom: 0px;
+  position: fixed;
+  width: 100%;
+  z-index: 999999999;
+  font-family: 'Dosis', sans-serif;
+}
+/*+++++++++++++ banner nagusia ++++++++++++++++*/
+.banner_nagusia
+{
+  background-image: url("../img/jongo_banner.png");
+  background-color: #f2f2f2;
+  background-repeat: no-repeat;
+  background-position: 80% 100%;
+  height: 768px;
+ 
+ 
+}
+.banner_nagusia404
+{
+  background-image: url("../img/rossana.png");
+  background-color: #f2f2f2;
+  background-repeat: no-repeat;
+  background-position: 80% 100%;
+  height: 768px;
+ 
+ 
+}
+}
+.banner_cabecera
+{
+  text-align: center;
+}
+header
+{
+  text-align: center;
+}
+.texto_banner404,.texto_banner404eus
+{
+  position:absolute;
+  top:23%;
+  left:13%;
+  font-size:5.7em;
+  color:#424242;
+  z-index:999;
+  text-align: left;
+  width: 100%;
+  font-family: 'Leckerli One', cursive;
+  line-height: 1em;
+}
+.texto_banner404eus
+{
+  top:60%;
+  color:#e28f36
+}
+.texto_banner404 span
+{
+  color:#ce3131;
+}
+.texto_banner
+{
+  position:absolute;
+  top:23%;
+  left:13%;
+  font-size:5.7em;
+  color:#424242;
+  z-index:999;
+  text-align: left;
+  width: 60%;
+  font-family: 'Quicksand', sans-serif;
+  line-height: 1.2em;
+  font-weight: 700;
+}
+
+.texto_banner span
+{
+  
+  font-size:0.6em;
+  font-weight: 300;
+}
+.texto_banner .fino
+{
+  font-weight: 300;
+  font-size: 0.6em;
+  line-height: 0.8em;
+}
+.texto_banner .subtitulo
+{
+  
+  font-size: 0.7em; 
+
+}
+.texto_banner .boton_banner
+{
+  
+  font-size:0.25em;
+  color:white;
+  background-color: #448aff;
+  padding: 16px 44px 16px 44px;
+  border-radius:36px;
+}
+.texto_banner .boton_banner:hover
+{
+  color:#448aff;
+  text-decoration: none; 
+  background-color: white;
+  border:2px solid #448aff;
+
+}
+.texto_banner .enlace
+{
+  font-size:14px;
+  padding-left:0.5em; 
+  line-height: 3em; 
+}
+
+/*++++++++++++++++ Servicios ++++++++++++++++++++++*/
+.servicios
+{
+  background-color: #fffbf3;padding-bottom: 40px;padding-top:40px;
+}
+.fondo_servicios
+{
+  background-color:#F6B823;
+}
+.fondo_servicios img
+{
+         margin: 1em 14%;
+         width: 65%;
+         padding: 10% 0% 10% 0%;
+
+}
+.servicios_texto
+{
+padding: 50px 35px 0px 0px;
+    font-size: 1.5em;
+    color: darkslategrey;
+        font-family: 'Dosis', sans-serif;
+}
+/*++++++++++++++++galeria ++++++++++++++++++*/
+.galeria1
+{
+  background-image: url(../img/ikusi_marrazkia.jpg);
+}
+.galeria2
+{
+  background-image: url(../img/ux_rumble.jpg);
+}
+.galeria3
+{
+  background-image: url(../img/ikusi_marrazki.jpg);
+}
+.galeria4
+{
+  background-image: url(../img/irudiak_bilbao.jpg);
+}
+.fondo_galeria
+{
+  height: 385px;
+  background-color: #8a6d3b;
+  background-blend-mode: overlay;
+  margin-bottom: 29px;
+}
+.fondo_galeria:hover
+{
+ 
+  background-color: transparent;
+}
+.galeria
+{
+  text-align: center;
+  color: #fffbf3;
+      font-family: 'Dosis', sans-serif;
+    font-weight: 700;
+ 
+  margin-bottom: 40px;
+
+}
+#galeria
+{
+  background-color:#e7be62;padding-top:40px;
+}
+/*++++++++++++++++ formulario y contacto+++++++++++*/
+footer button 
+{
+  border: 1px solid #bcbaba;
+    color: #555;
+    background-color: transparent !important;
+    padding: 10px 20px 10px 20px;
+   
+}
+
+#contacto, #kontaktua
+{
+   background-color: #fffbf3;
+   padding-top:50px;
+}
+.datos_contacto
+{
+  padding-top:50px;
+  font-size:1.1em !important;
+  font-family: 'Dosis', sans-serif;
+  
+  /*font-size:1.2em !important;*/
+}
+.datos_contacto p
+{
+  font-size:1.3em !important;
+  color:black;
+  text-align: center;
+
+}
+.redessociales 
+{
+font-size:0.8em;
+text-align:center;
+padding:20px;
+}
+.redessociales ul
+{
+  list-style: none;
+
+}
+.redessociales ul li
+{
+  display: inline;
+  padding:10px;
+
+}
+.redessociales ul li a
+{
+  color:#444343;
+}
+.redessociales ul li a:hover
+{
+  color:white;
+}
+.redessocialespie
+{
+  font-size: 2em !important;
+  padding-top:40px;
+  
+}
+.redessocialespie ul li a
+{
+  color:#3d3c3c !important;
+}
+.redessocialespie ul li a:hover
+{
+  color: black !important;
+}
+form input, form textarea
+{
+  background-color: transparent !important;
+}
+
+ 
+/*+++++++++++++++ menu hamburguesa ****************+*/
+.navbar-toggle {
+  overflow: hidden;
+}
+.navbar-toggle .icon-bar {
+  -webkit-transition: opacity, -webkit-transform;
+  transition: opacity, -webkit-transform;
+  transition: opacity, transform;
+  transition: opacity, transform, -webkit-transform;
+  -webkit-transition-duration: 200ms;
+          transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0, 0.7);
+          transition-timing-function: cubic-bezier(0.7, 0, 0, 0.7);
+}
+.navbar-toggle:not(.collapsed) .icon-bar:nth-child(1) {
+  -webkit-transform: translateY(6px) rotate(45deg);
+          transform: translateY(6px) rotate(45deg);
+}
+.navbar-toggle:not(.collapsed) .icon-bar:nth-child(2) {
+  opacity: 0;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+.navbar-toggle:not(.collapsed) .icon-bar:nth-child(3) {
+  -webkit-transform: translateY(-6px) rotate(-45deg);
+          transform: translateY(-6px) rotate(-45deg);
+}
+/*++++++++++cambiar breakpoint collapsed**********/
+@media (min-width: 768px) {
+    .navbar-header {
+        float: none; }
+    .navbar-toggle {
+        display: block; }
+    .navbar-fixed-top .navbar-collapse, 
+    .navbar-static-top .navbar-collapse, 
+    .navbar-fixed-bottom .navbar-collapse {
+        padding-right: 15px;
+        padding-left: 15px; }
+    .navbar-collapse.collapse {
+        display: none !important; }
+        .navbar-collapse.collapse.in { 
+        display: block!important; 
+        margin-top: 0px; }
+}
+
+/*+++++++++++++++ FIN menu hamburguesa ****************+*/
+/*++++++++++++++MEDIA QUERYS++++++++++++++++++++++++*/
+@media (max-width: 768px) { 
+
+  .texto_banner
+  {
+    top: 25%;
+  }
+}
+/*----------------- FIN hamburguesa urdina******************/
+
+/*++++++++++++++++++++        Media queris *+++++++++++++++++++++++*/
+@media screen and (max-width: 1440px){
+.row2 {
+
+ -moz-column-width: 23em;
+ -webkit-column-width:23em;
+ 
+}
+}
+@media screen and (min-width: 1200px){
+.imagen_cabecera img
+  {
+  height:22%;
+  width:22%;
+  }
+  .jongo .niremenua
+  {
+    padding-right: 5%;
+  }
+}
+@media screen and (min-width: 1400px){
+.imagen_cabecera img
+  {
+  height:18%;
+  width:18%;
+  }
+  .banner_nagusia
+  {
+  background-image: url("../img/jongo_banner.png");
+  background-color: #f2f2f2;
+  background-repeat: no-repeat;
+  background-position: 80% 100%;
+  height: 868px;
+ 
+}
+}
+
+@media screen and (max-width: 1280px){
+.texto_banner .subtitulo
+{
+  
+  font-size: 0.6em; 
+
+  
+}
+}
+
+@media screen and (max-width: 1200px){
+.jongo .texto_presentacion
+{
+    width: 50%;
+}
+  
+.logostartup
+{
+  left:40%;
+}
+.texto_banner
+{
+  left:10%;
+  top:15%;
+
+}
+}
+@media screen and (max-width: 1024px){
+.jongo .hamburguesa_zabalik
+{
+padding-right: 7% !important;
+}
+.imagen_cabecera img
+  {
+  height:25%;
+  width:25%;
+  }
+ .texto_banner
+{
+  left:6%;
+  font-size: 4.5em;
+}
+  
+
+
+@media screen and (max-width: 992px){
+.texto_banner
+{
+  font-size:4.1em;
+  line-height: 1em;
+  }
+}
+
+}
+@media screen and (min-width: 768px) and (max-width: 992px){
+
+  .jongo .menunagusia 
+  { 
+  font-size:0.9em;
+  }
+  .jongo .menunagusia li
+  {
+    padding:5px;
+  }
+}
+
+
+@media screen and (max-width: 768px){
+  #form1
+  {
+    margin-bottom: 40px;
+  }
+  .datos_contacto
+{
+  padding-top:0px;
+}
+.texto_banner
+{
+  font-size:3.5em;
+  }
+
+.jongo .imagen_cabecera img
+  {
+  height:34% !important;
+  width:34% !important;
+  }
+  .jongo #formulario .formu
+{
+  font-size:1.2em;
+  width: 100%;
+}
+.jongo #formulario h2
+{
+padding-bottom: 30px;
+}
+.jongo .texto_presentacion
+{
+    left: 28%;
+}
+ .jongo .sobremi
+ {
+  padding:8%;
+ }
+ .flecha_arriba
+ {
+  right: 5%;
+ }
+.jongo .cabecera .logotipo a div
+{
+  background: url(../img/logo_jongo_txikia.gif) no-repeat left center;
+  height:60px; 
+  width:100%;
+}
+
+.jongo .hamburguesa:hover
+{
+  background-color: transparent !important;
+  color:red;
+}
+/*.hamburguesa_zabalik
+  {
+    background-color: #9EC6D7;
+    padding-top: 80px;
+    margin-left: 7px;
+    padding-bottom:30px;
+  }*/
+.jongo .menunagusia li a
+{
+  padding:5px;
+}
+.jongo .menunagusia > li.active > a
+{
+  color:#1e1e1e;
+}
+
+.jongo .niremenua
+{
+  font-weight: 800;
+  font-size: 1.4em;
+}
+}
+@media screen and (max-width: 767px){
+  .jongo .hamburguesa_zabalik
+  {
+    background-color: #9EC6D7;
+    padding-top: 80px;
+    margin-left: 7px;
+    padding-bottom:30px;
+  }
+ .jongo .menunagusia > li.active > a:hover
+{
+  color:white;
+}
+}
+@media screen and (max-width: 696px){
+.texto_banner {
+    top: 10%;
+    font-size: 2.4em;
+    left: 9%;
+    line-height: 1em;
+}
+.banner_nagusia
+{
+  background-image: url("../img/jongo_banner2.png");
+  background-color: #f2f2f2;
+  background-repeat: no-repeat;
+  background-position: 80% 100%;
+  height: 400px;
+ 
+ 
+}
+
+  }
+@media screen and (max-width: 640px){
+.banner_nagusia
+{
+  background-image: url("../img/jongo_banner4.png") !important;
+  background-position: 90% 100% !important;
+  height: 294px;
+}
+}
+
+@media screen and (max-width: 420px){
+.banner_nagusia
+{
+  background-image: url("../img/jongo_banner3.png");
+  background-color: #f2f2f2;
+  background-repeat: no-repeat;
+  background-position: 80% 100%;
+  height: 510px;
+  top:0%;
+}
+.jongo .imagen_cabecera img
+  {
+  height:57% !important;
+  width:57% !important;
+  }
+  .texto_banner {
+    top: 15%;
+}
+.jongo .texto_presentacion
+{
+  width: 50%;
+  left: 26%;
+}
+.redessociales ul
+{
+  padding-left:0px;
+}
+.redessociales ul li
+{
+  padding:4px;
+}
+#proyectos h2, #proiektuak h2
+{
+    font-size: 1.6em;
+    border-bottom: 1px solid grey;
+    margin-left: 25px;
+    margin-right: 25px;
+    line-height: 2;
+}
+.jongo #formulario
+{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.texto_banner .enlace
+{
+  font-size:16px; 
+  width: 60%;
+  line-height: 1.4em;
+  padding-top:20px;
+}
+
+.texto_banner .boton_banner
+{
+
+  font-size:0.4em;
+}
+.texto_banner .fino
+{
+  margin-bottom: 20px; 
+}
+
+}
+@media screen and (max-width: 320px){
+.jongo .texto_presentacion
+{
+  left: 26%;
+}
+
+}
+
+
+
+

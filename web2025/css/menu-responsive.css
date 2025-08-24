@@ -1,0 +1,149 @@
+@import "bourbon";
+
+$clr0: #fff;
+$clr1: #09f;
+
+/* Base
+-------------------------- */
+
+body {
+  background: $clr0;
+  color: #454545;
+}
+
+a {
+  color: $clr1;
+  &:hover{
+      color: darken($clr1, 10%);
+   }
+}
+
+button {
+  -webkit-font-smoothing: antialiased;
+  background-color: $clr1;
+  border: none;
+  border-radius: 0.1875em;
+  color: white;
+  display: inline-block;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 1;
+  padding: .75em 1em;
+  text-decoration: none;
+  &:hover{
+      background-color: darken($clr1, 10%);
+      color: white;
+   }
+}
+
+
+/* Header
+-------------------------- */
+
+.nav-bar-jongo {
+	height: 80px;
+	position: relative;
+	background: var(--neutral-00); /* Changed to white background */
+}
+
+.logo {
+	float: left;
+   &__title {
+     margin: 0;
+   }
+	&__link {
+		display: inline-block;
+      text-decoration: none;
+		padding: 0 10px;
+		line-height: 80px;
+		height: 80px;
+		color: #fff;
+		word-wrap: no-wrap;
+	}
+}
+
+.menu-btn {
+	display: none;
+	position: absolute;
+	right: 10px;
+	top: 20px;
+}
+
+@media (max-width: 768px){
+	.logo {
+		float: none;
+	}
+	.menu-btn {
+		display: block;
+	}
+}
+
+/*  Menu
+-------------------------- */
+
+.menu {
+	float: right;
+	&__list {
+		overflow: hidden;
+      padding-left: 0;
+      margin: 0;
+      list-style: none;
+	}
+	&__item{
+		float: left;
+		text-align: center;
+		text-align: center;
+	}
+	&__link{
+		display: block;
+      color: var(--primary-100); /* Changed to primary-100 color */
+      text-decoration: none;
+		line-height:em(80, 16);
+		height: em(80, 16);
+		padding: 0 1.5em;
+		word-wrap: no-wrap;
+		transition: all .3s ease;
+		&:hover, &:focus {
+			background: var(--neutral-20); /* Changed to neutral-20 background */
+			color: var(--primary-100); /* Keep primary-100 color */
+			font-weight: var(--weight-medium); /* Added medium font-weight */
+		}
+	}
+}
+
+@media (max-width: 768px){
+	.menu {
+		float: none;
+		&__item{
+			display: block;
+			float: none;
+			@include transform(translateX(-100%));
+			transition: all .3s ease-out;
+			&--play {
+				display: block;
+				@include transform(translateX(0));
+			}
+		}
+		&__item + &__item {
+			border-top: 1px solid darken($clr1, 5%);
+		}
+      &__link {
+        background: $clr1;
+        &:hover {
+          background: darken($clr1, 10%);
+        }
+      }
+	}
+}
+
+/* Nav-bar-container
+-------------------------- */
+
+.nav-bar-container {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1000px;
+   .l-main & {
+    padding: 0 10px;
+  }
+}

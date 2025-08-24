@@ -1,0 +1,618 @@
+/*+++++++++++cabecera ++++++++++++++++++++++*/
+.jongo .cabecera
+{
+	height:80px;
+}
+.jongo .cabecera
+{
+	width: 103%; 
+	position: fixed; 
+	background-color: white;
+opacity: 0.8;
+z-index:9999;
+}
+.jongo .cabecera .logotipo
+{
+	padding-left:30px;
+	padding-top:5px;
+}
+.jongo .cabecera .logotipo a div
+{
+	background: url(../img/logo_jongo.png) no-repeat left center;
+	
+	height:60px; 
+	width:100%;
+}
+/*++++++++++++++++++++++++++++++++++++ MENU NAV +++++++++++++++++++++++++++++++++++*/
+.jongo .niremenua
+{	
+	padding:0px;
+	font-family: 'Roboto Slab', serif;
+font-size: 1.5em;
+font-weight: 310;
+text-align: right;
+}
+.niremenua nav
+{
+	background-color: transparent;
+	border-color: transparent;
+}
+.jongo .menunagusia
+{
+	display:inline-block;
+	padding-left:0px;
+	border-bottom:0px solid black; 
+}
+.jongo .menunagusia li
+{
+text-align: center;
+padding-left: 12px;
+padding-right: 12px;
+}
+.jongo .menunagusia li a
+{
+	background-color: transparent !important;
+}
+.jongo .menunagusia > li > a
+{
+	border: 0px solid #ddd;
+	color: #3a3a3a;
+	padding:0px 0px;
+}
+.jongo .menunagusia > li.active > a
+{
+	border: 0px solid #ddd;
+}
+.jongo .menunagusia > li.active > a:hover
+{
+	color:#397c96;
+	border: 0px solid #ddd;
+}
+.hamburguesa{
+    border-color: transparent !important;
+    background-color:transparent;
+    position:absolute !important;
+    right: 0px;
+    z-index: 999;
+    color:#262525;
+ }
+  .hamburguesa span
+ {
+ 	font-size:1.7em;
+ }
+  .hamburguesa:hover
+  {
+  	background-color:transparent !important;
+  	color:#9EC6D7;
+  }
+  .imagen_cabecera img
+  {
+  height:27%;
+  width:27%;
+  border-radius: 50%;
+  }
+/*+++++++++++++ VIDEO ++++++++++++++++++*/
+.texto_presentacion
+{
+	position: absolute;
+	z-index:999;
+	width: 50%;
+	left:26%;
+	top:23%;
+font-family: 'Oxygen', sans-serif;   font-weight: 100;
+    text-align: center;
+    font-size: 30px;
+}
+.texto_presentacion p
+{
+	font-size: 22px;
+}
+.flecha_abajo
+{
+	position:relative;
+	z-index:999;
+	bottom:-10% !important;
+	font-size: 2em;
+}
+.flecha_abajo a
+{
+	color: #444343;
+	z-index: 999;
+	opacity: 0.8;
+}
+.flecha_abajo a:hover
+{
+	color: white;
+}
+.flecha_arriba
+{
+	position:absolute;
+	z-index:999;
+	right:0%;
+	bottom:5%;
+	font-size: 5em;
+}
+.flecha_arriba a
+{
+	color: white;
+}
+.flecha_arriba a:hover
+{
+	color: #444343;
+}
+.redessociales 
+{
+font-size:0.8em;
+text-align:center;
+padding:20px;
+}
+.redessociales ul
+{
+	list-style: none;
+
+}
+.redessociales ul li
+{
+	display: inline;
+	padding:10px;
+
+}
+.redessociales ul li a
+{
+	color:#444343;
+}
+.redessociales ul li a:hover
+{
+	color:white;
+}
+.redessocialespie
+{
+	font-size: 2em !important;
+	padding-top:40px;
+	
+}
+.redessocialespie ul li a
+{
+	color:white !important;
+}
+.redessocialespie ul li a:hover
+{
+	color: green !important;
+}
+.video
+{
+	background-color:black;
+	opacity:0.4;
+	max-width: 100%;
+    height: auto;
+
+}
+.video video
+{
+	 background: url(../img/jongo_video.jpg) !important;
+	 -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+   height: 100%;
+   width: 100% ;
+   
+   
+}
+/*++++++++++++++     SOBRE MI ++++++++++++++++++++*/
+#sobremi,#niriburuz
+{
+	padding-top:75px;
+}
+
+.jongo .fondo_sobremi
+{
+	background: url('../img/sobremi_jongo.png') no-repeat;
+	width: 100%;
+	max-width: 100%;
+	height: 100%;
+	color:white;
+	background-attachment: fixed;
+	font-family: 'Roboto Slab', serif;
+    font-size: 18px;
+    font-weight: 100;
+    background-color:#1c1817;
+}
+.jongo .sobremi
+{
+	padding-top:40px;
+	line-height: 2;
+}
+.jongo .sobremi h2
+{
+	font-size:18px;
+}
+/*++++++++++++++   FIN  SOBRE MI ++++++++++++++++++++*/
+.contenedor_cartas
+{
+	clear:none !important;
+	display: inline-block !important;
+	border:3px solid blue;
+}
+@media screen and (max-width: 750px) { 
+  #columns { column-gap: 0px; }
+  #columns figure { width: 100%; }
+}
+/* ++++++++++++++++++++++++++++ PROYECTOS+++++++++++++++*/
+#proyectos,#proiektuak
+{
+	padding-top:40px;
+	text-align: center;
+}
+.row2 {
+
+ -moz-column-width: 23em;
+ -webkit-column-width: 23em;
+ -moz-column-gap: 0em;
+ -webkit-column-gap:0em; 
+}
+.elemento {
+ display: inline-block;
+ padding:  .20rem;
+ width:  100%; 
+ }
+.well1 {
+ position:relative;
+ display: block;
+  max-width: 100%;
+    height: auto;
+}
+.cartas
+{
+    max-width: 100%;
+    height: auto;
+    z-index:4;
+}
+.proy_texto
+{
+	text-align: center;
+}
+.icono-plus:before
+{
+	font-size:35px;
+	display: block;
+}
+.well1 span
+{
+opacity: 0;
+position: absolute;
+margin: 0 auto;
+font-size: 22px;
+width: 100%;
+}
+.well1:hover  span
+{
+	opacity: 1;
+	position: absolute;
+	text-align: center;
+	margin: 0 auto;
+	top: 35%;
+	font-weight: 800;
+}
+.well1:hover img
+{
+	opacity: 0.2;
+}
+/*++++++++++++++++++++++++++++++ CONTACTO +++++++++++++++++*/
+.datos_contacto
+{
+	padding-top:50px;
+	padding-bottom: 50px;
+	margin-top:50px;
+}
+.datos_contacto p
+{
+	font-size:1.4em;
+	color:black;
+	text-align: center;
+}
+.jongo #formulario
+{
+	background-color: #fff;
+	color:black;
+	padding-top:30px;
+}
+.jongo #formulario h2
+{
+font-size: 2.7em;
+    text-align: center;
+}
+
+.jongo #formulario .formu
+{
+	font-size:1.2em;
+	width: 71%;
+}
+.jongo #formulario .formu_texto
+{
+	padding-right: 30px;
+	width: 120px;
+	display:block;
+}
+.jongo #formulario .formu_ancho
+{
+	width: 100%;
+}
+.jongo #formulario .formu_asunto
+{
+	margin-top:20px;
+	width: 100%;
+}
+.jongo #formulario .centrar_boton
+{
+	    margin: 15 auto;
+	    margin-top:32px;
+    text-align: center;
+    width: 100%;
+    
+    
+}
+.jongo #formulario .boton_enviar
+{
+
+	padding: 15px 30px 15px 30px;
+	background-color: white;
+    border: 1px solid black;
+    text-align: center;
+    display: block;
+    width: 100%;
+
+}
+}
+
+.jongo #formulario h2
+{
+ text-align: center;
+ font-size:2.3em;
+
+}
+.jongo .formu_campo
+{
+	border-bottom: 1px solid black;
+	border-top: 0px;
+	border-right:0px;
+	border-left: 0px;
+	margin-bottom: 20px;
+    background-color: transparent;
+    width: 100%;
+}
+.jongo input:focus, .jongo textarea:focus 
+{
+	outline:0px;
+	
+}
+.jongo .formu_asunto
+{
+	border:1px solid black;
+	background-color: transparent;
+}
+.redessocialespie .fa-linkedin, .redessocialespie .fa-instagram, .redessocialespie .fa-facebook, .redessocialespie .fa-twitter
+{
+	color:black !important;
+}
+.redessocialespie .fa-linkedin:hover, .redessocialespie .fa-instagram:hover, .redessocialespie .fa-facebook:hover, .redessocialespie .fa-twitter:hover
+{
+	color:grey !important;
+}
+}
+/*+++++++++++++++++++++++      PROYECTO INDIVIDUAL +++++++++++++++++++++*/
+.proyecto1_titulo
+{
+	padding-top:80px;
+	border-bottom: 1px solid #555454;
+}
+.proyecto1_titulo h2
+{
+	font-size: 1.4em;
+}
+.proyecto1_titulo p
+{
+	line-height: 1;
+}
+.proyecto1_contenido
+{
+	text-align: center;
+}
+.proyecto1_contenido img
+{
+	
+	max-width: 700px;
+	width: 100%;
+	margin:30px auto;
+}
+/*++++++++++++++++++++        Media queris *+++++++++++++++++++++++*/
+
+@media screen and (min-width: 1200px){
+.imagen_cabecera img
+  {
+  height:22%;
+  width:22%;
+  }
+  .jongo .niremenua
+  {
+  	padding-right: 5%;
+  }
+}
+@media screen and (min-width: 1400px){
+.imagen_cabecera img
+  {
+  height:18%;
+  width:18%;
+  }
+}
+@media screen and (max-width: 1024px){
+.jongo .hamburguesa_zabalik
+{
+padding-right: 7% !important;
+}
+.imagen_cabecera img
+  {
+  height:25%;
+  width:25%;
+  }
+
+	}
+
+@media screen and (max-width: 1200px){
+.jongo .texto_presentacion
+{
+		width: 50%;
+}
+	}
+@media screen and (min-width: 768px) and (max-width: 992px){
+
+	.jongo .menunagusia 
+	{	
+	font-size:0.9em;
+	}
+	.jongo .menunagusia li
+	{
+		padding:5px;
+	}
+}
+
+
+@media screen and (max-width: 768px){
+.jongo .imagen_cabecera img
+  {
+  height:34% !important;
+  width:34% !important;
+  }
+  .jongo #formulario .formu
+{
+	font-size:1.2em;
+	width: 100%;
+}
+.jongo #formulario h2
+{
+padding-bottom: 30px;
+}
+.jongo .texto_presentacion
+{
+		left: 28%;
+}
+	.jongo .video
+{
+	width: 768px;
+	height: 600px;
+}
+.jongo .video video
+{
+	width: 1000px;
+	height: 720px;
+}
+ .jongo .sobremi
+ {
+ 	padding:8%;
+ }
+ .flecha_arriba
+ {
+ 	right: 5%;
+ }
+.jongo .cabecera .logotipo a div
+{
+	background: url(../img/logo_jongo_txikia.gif) no-repeat left center;
+	height:60px; 
+	width:100%;
+}
+
+.jongo .hamburguesa:hover
+{
+	background-color: transparent !important;
+	color:#212020;
+}
+/*.hamburguesa_zabalik
+  {
+   	background-color: #9EC6D7;
+   	padding-top: 80px;
+  	margin-left: 7px;
+  	padding-bottom:30px;
+  }*/
+.jongo .menunagusia li a
+{
+	padding:5px;
+}
+.jongo .menunagusia > li.active > a
+{
+	color:#1e1e1e;
+}
+
+.jongo .niremenua
+{
+	font-weight: 800;
+	font-size: 1.4em;
+}
+}
+@media screen and (max-width: 767px){
+	.jongo .hamburguesa_zabalik
+  {
+   	background-color: #9EC6D7;
+   	padding-top: 80px;
+  	margin-left: 7px;
+  	padding-bottom:30px;
+  }
+ .jongo .menunagusia > li.active > a:hover
+{
+	color:white;
+}
+}
+@media screen and (max-width: 565px){
+.jongo .imagen_cabecera img
+  {
+  height:45% !important;
+  width:45% !important;
+  }
+}
+
+@media screen and (max-width: 420px){
+.jongo .imagen_cabecera img
+  {
+  height:57% !important;
+  width:57% !important;
+  }
+
+.jongo .texto_presentacion
+{
+	width: 50%;
+	left: 26%;
+}
+.redessociales ul
+{
+	padding-left:0px;
+}
+.redessociales ul li
+{
+	padding:4px;
+}
+#proyectos h2, #proiektuak h2
+{
+    font-size: 1.6em;
+    border-bottom: 1px solid grey;
+    margin-left: 25px;
+    margin-right: 25px;
+    line-height: 2;
+}
+.jongo #formulario
+{
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+}
+@media screen and (max-width: 320px){
+.jongo .texto_presentacion
+{
+	left: 26%;
+}
+}
+
+
+
+
+
+

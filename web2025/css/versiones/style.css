@@ -1,0 +1,570 @@
+html
+{
+  overflow-x: hidden;
+}
+.boton_presupuesto:hover
+{
+  background-color:white;
+  color:#F6B823;
+}
+body
+{
+overflow-x:hidden !important;
+width:100%;
+}
+/*+++++++++++++ Galeria lightbox ++++++++++*/
+/* Preload images */
+body:after {
+  content: url(../img/close.png) url(../img/loading.gif) url(../img/prev.png) url(../img/next.png);
+  display: none;
+}
+
+body.lb-disable-scrolling {
+  overflow: hidden;
+}
+
+.lightboxOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background-color: black;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.8;
+  display: none;
+}
+
+.lightbox {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  z-index: 10000;
+  text-align: center;
+  line-height: 0;
+  font-weight: normal;
+}
+
+.lightbox .lb-image {
+  display: block;
+  height: auto;
+  max-width: inherit;
+  max-height: none;
+  border-radius: 3px;
+
+  /* Image border */
+  border: 4px solid white;
+}
+
+.lightbox a img {
+  border: none;
+}
+
+.lb-outerContainer {
+  position: relative;
+  *zoom: 1;
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+  border-radius: 4px;
+
+  /* Background color behind image.
+     This is visible during transitions. */
+  background-color: white;
+}
+
+.lb-outerContainer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.lb-loader {
+  position: absolute;
+  top: 43%;
+  left: 0;
+  height: 25%;
+  width: 100%;
+  text-align: center;
+  line-height: 0;
+}
+
+.lb-cancel {
+  display: block;
+  width: 32px;
+  height: 32px;
+  margin: 0 auto;
+  background: url(../img/loading.gif) no-repeat;
+}
+
+.lb-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+}
+
+.lb-container > .nav {
+  left: 0;
+}
+
+.lb-nav a {
+  outline: none;
+  background-image: url('data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==');
+}
+
+.lb-prev, .lb-next {
+  height: 100%;
+  cursor: pointer;
+  display: block;
+}
+
+.lb-nav a.lb-prev {
+  width: 34%;
+  left: 0;
+  float: left;
+  background: url(../img/prev.png) left 48% no-repeat;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -webkit-transition: opacity 0.6s;
+  -moz-transition: opacity 0.6s;
+  -o-transition: opacity 0.6s;
+  transition: opacity 0.6s;
+}
+
+.lb-nav a.lb-prev:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+
+.lb-nav a.lb-next {
+  width: 64%;
+  right: 0;
+  float: right;
+  background: url(../img/next.png) right 48% no-repeat;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -webkit-transition: opacity 0.6s;
+  -moz-transition: opacity 0.6s;
+  -o-transition: opacity 0.6s;
+  transition: opacity 0.6s;
+}
+
+.lb-nav a.lb-next:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+
+.lb-dataContainer {
+  margin: 0 auto;
+  padding-top: 5px;
+  *zoom: 1;
+  width: 100%;
+  -moz-border-radius-bottomleft: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  -moz-border-radius-bottomright: 4px;
+  -webkit-border-bottom-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.lb-dataContainer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.lb-data {
+  padding: 0 4px;
+  color: #ccc;
+}
+
+.lb-data .lb-details {
+  width: 85%;
+  float: left;
+  text-align: left;
+  line-height: 1.1em;
+}
+
+.lb-data .lb-caption {
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 1em;
+}
+
+.lb-data .lb-caption a {
+  color: #4ae;
+}
+
+.lb-data .lb-number {
+  display: block;
+  clear: left;
+  padding-bottom: 1em;
+  font-size: 12px;
+  color: #999999;
+}
+
+.lb-data .lb-close {
+  display: block;
+  float: right;
+  width: 30px;
+  height: 30px;
+  background: url(../img/close.png) top right no-repeat;
+  text-align: right;
+  outline: none;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
+  -webkit-transition: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.lb-data .lb-close:hover {
+  cursor: pointer;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+
+/*+++++++++++++ FIN Galeria lightbox ++++++++++*/
+#sobremi
+{
+  margin-right: 0px;
+}
+.cabecera_horia
+{
+  height: 75px;
+  background-color: #F6B823;
+  padding-top: 20px;
+  font-family: 'Dosis', sans-serif;
+
+}
+.lapiz
+{
+  text-align: center;
+  width: 100%;
+}
+.hanburgesa_botoie
+{
+ border:0px; 
+ margin-top: 0px; 
+ background-color: transparent !important;
+}
+.hanburgesa_botoie span
+{
+    width: 32px !important;
+    height: 4px !important;
+    background-color:white !important;
+}
+
+.hanburgesa_botoie:hover span
+{
+  background-color:#3d3d3d !important;
+}
+  
+.menua_zabalik ul li
+{
+  text-align: center;
+}
+.menua_zabalik ul li .contacto a
+{
+  padding-bottom: 20px;
+}
+.menua_zabalik ul li a
+{
+  color: white;
+  background-color: #F6B823;
+  font-size:1.5em;
+}
+.menua_zabalik ul li a:hover
+{
+  background-color: white;
+  color:#F6B823;
+
+}
+.cabecera
+{
+  margin-bottom: 0px;
+  position: fixed;
+  width: 100%;
+  z-index: 999999999;
+  font-family: 'Dosis', sans-serif;
+}
+/*+++++++++++++ banner nagusia ++++++++++++++++*/
+.banner_nagusia
+{
+  background-image: url("../img/marrazkia_bilbao.jpg");
+  height: 768px;
+ 
+ 
+}
+.opacidad
+{
+  color:white;
+  opacity: 0.4;
+}
+.banner_cabecera
+{
+  text-align: center;
+}
+header
+{
+  text-align: center;
+}
+.texto_banner
+{
+  position:absolute;
+  top:45%;
+  font-size:2.8em;
+  color:#AC7F09;
+  z-index:999;
+  font-family: 'Dosis', sans-serif;
+  font-weight: 700;
+  text-align: center;
+  width: 100%;
+}
+.texto_banner span
+{
+  
+  font-size:0.6em;
+  font-weight: 400;
+}
+.texto_banner button
+{
+  font-weight: 400;
+  color:white;
+  background-color:#F6B823;
+  border: 0px;
+  padding: 15px 35px;
+  font-size:0.6em;
+  margin-top: 40px;
+}
+/*++++++++++++++++ Servicios ++++++++++++++++++++++*/
+.servicios
+{
+  background-color: #fffbf3;padding-bottom: 40px;padding-top:40px;
+  padding-right: 0px;
+}
+.fondo_servicios
+{
+  background-color:#F6B823;
+}
+.fondo_servicios img
+{
+         margin: 1em 14%;
+         width: 65%;
+         padding: 10% 0% 10% 0%;
+
+}
+.servicios_texto
+{
+padding: 50px 35px 0px 0px;
+    font-size: 1.5em;
+    color: darkslategrey;
+        font-family: 'Dosis', sans-serif;
+}
+/*++++++++++++++++galeria ++++++++++++++++++*/
+.galeria1
+{
+  background-image: url(../img/ikusi_marrazkia.jpg);
+}
+.galeria2
+{
+  background-image: url(../img/ux_rumble.jpg);
+}
+.galeria3
+{
+  background-image: url(../img/ikusi_marrazki.jpg);
+}
+.galeria4
+{
+  background-image: url(../img/irudiak_bilbao.jpg);
+}
+.galeria5
+{
+  background-image: url(../img/alexrovira.png);
+}
+.galeria6
+{
+  background-image: url(../img/mariaalcalde.png);
+}
+.galeria7
+{
+  background-image: url(../img/davidbarrera.png);
+}
+.galeria8
+{
+  background-image: url(../img/leaplanchard.png);
+}
+.fondo_galeria
+{
+  height: 300px;
+  background-color: #8a6d3b;
+  background-blend-mode: overlay;
+  margin-bottom: 29px;
+}
+.fondo_galeria:hover
+{
+ 
+  background-color: transparent;
+}
+.galeria
+{
+  text-align: center;
+  color: #fffbf3;
+      font-family: 'Dosis', sans-serif;
+    font-weight: 700;
+ 
+  margin-bottom: 40px;
+
+}
+#galeria
+{
+  background-color:#e7be62;padding-top:40px;
+ 
+}
+#galeria .row
+{
+padding-right: 0px;
+
+}
+/*++++++++++++++++ formulario y contacto+++++++++++*/
+footer button 
+{
+  border: 1px solid #bcbaba;
+    color: #555;
+    background-color: transparent !important;
+    padding: 10px 20px 10px 20px;
+   
+}
+
+#contacto, #kontaktua
+{
+   background-color: #fffbf3;
+   padding-top:50px;
+}
+.datos_contacto
+{
+  padding-top:50px;
+  font-size:1.1em !important;
+  font-family: 'Dosis', sans-serif;
+  
+  /*font-size:1.2em !important;*/
+}
+.datos_contacto p
+{
+  font-size:1.3em !important;
+  color:black;
+  text-align: center;
+
+}
+.redessociales 
+{
+font-size:0.8em;
+text-align:center;
+padding:20px;
+}
+.redessociales ul
+{
+  list-style: none;
+
+}
+.redessociales ul li
+{
+  display: inline;
+  padding:10px;
+
+}
+.redessociales ul li a
+{
+  color:#444343;
+}
+.redessociales ul li a:hover
+{
+  color:white;
+}
+.redessocialespie
+{
+  font-size: 2em !important;
+  padding-top:40px;
+  
+}
+.redessocialespie ul li a
+{
+  color:#3d3c3c !important;
+}
+.redessocialespie ul li a:hover
+{
+  color: black !important;
+}
+form input, form textarea
+{
+  background-color: transparent !important;
+}
+
+ 
+/*+++++++++++++++ menu hamburguesa ****************+*/
+.navbar-toggle {
+  overflow: hidden;
+}
+.navbar-toggle .icon-bar {
+  -webkit-transition: opacity, -webkit-transform;
+  transition: opacity, -webkit-transform;
+  transition: opacity, transform;
+  transition: opacity, transform, -webkit-transform;
+  -webkit-transition-duration: 200ms;
+          transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0, 0.7);
+          transition-timing-function: cubic-bezier(0.7, 0, 0, 0.7);
+}
+.navbar-toggle:not(.collapsed) .icon-bar:nth-child(1) {
+  -webkit-transform: translateY(6px) rotate(45deg);
+          transform: translateY(6px) rotate(45deg);
+}
+.navbar-toggle:not(.collapsed) .icon-bar:nth-child(2) {
+  opacity: 0;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+.navbar-toggle:not(.collapsed) .icon-bar:nth-child(3) {
+  -webkit-transform: translateY(-6px) rotate(-45deg);
+          transform: translateY(-6px) rotate(-45deg);
+}
+/*++++++++++cambiar breakpoint collapsed**********/
+@media (min-width: 768px) {
+    .navbar-header {
+        float: none; }
+    .navbar-toggle {
+        display: block; }
+    .navbar-fixed-top .navbar-collapse, 
+    .navbar-static-top .navbar-collapse, 
+    .navbar-fixed-bottom .navbar-collapse {
+        padding-right: 15px;
+        padding-left: 15px; }
+    .navbar-collapse.collapse {
+        display: none !important; }
+        .navbar-collapse.collapse.in { 
+        display: block!important; 
+        margin-top: 0px; }
+}
+@media (max-width: 640px) {
+.fondo_galeria
+{
+  height: 200px;
+}
+}
+@media (max-width: 420px) {
+  .fondo_galeria
+{
+  height: 150px;
+}
+/*+++++++++++++++ FIN menu hamburguesa ****************+*/
+/*++++++++++++++MEDIA QUERYS++++++++++++++++++++++++*/
+@media (max-width: 768px) 
+{
+  .texto_banner
+  {
+    top: 25%;
+  }
+}
