@@ -1,0 +1,65 @@
+{
+  "welcome_messages": {
+    "main": "Hi! I'm Jon's AI assistant. Ask me about his experience, projects, or fit for your company — or explore the cards below.",
+    "company_fit_context": "Tell me about company fit",
+    "projects_context": "Explore Jon's featured projects and case studies",
+    "about_context": "Learn more about Jon's background and expertise",
+    "company_fit_prompt": "Looking for a match? Enter a role or keyword (e.g., Product Designer, Information Technology, Design Systems) to explore Jon's fit."
+  },
+  "action_cards": {
+    "case_study": {
+      "title": "Case Study",
+      "description": "Dive into one of my projects and see my process in action.",
+      "icon": "📋",
+      "action_type": "show_projects"
+    },
+    "company_fit": {
+      "title": "Company fit",
+      "description": "How my profile aligns with your company.",
+      "icon": "🤝",
+      "action_type": "company_fit_analysis"
+    },
+    "about_jon": {
+      "title": "About Jon",
+      "description": "A quick snapshot of who I am and what I do.",
+      "icon": "👨‍💼",
+      "action_type": "show_about"
+    }
+  },
+  "fallback_content": {
+    "about_jon": {
+      "title": "Senior Product Designer & UX Engineer",
+      "description": [
+        "I bridge the gap between technical complexity and human experience. With 10+ years in UX, I've delivered scalable digital products and strategies for ZARA, Gestamp, startups, and public institutions.",
+        "I believe in execution over buzzwords—better done than cheap talk. That's why I even built my own AI-powered chat assistant, proving how design and technology can work seamlessly together."
+      ],
+      "image": "img/about-me.jpg",
+      "image_alt": "Jon Gorroño",
+      "key_skills": ["UX Design", "Product Design", "Design Systems", "User Research", "Frontend Development"],
+      "experience_years": "10+",
+      "industries": ["SaaS", "Fintech", "E-commerce", "Healthcare", "Automotive", "Public Sector"]
+    }
+  },
+  "search_help": {
+    "title": "How to get the best answers",
+    "tips": [
+      "Ask specific questions about industries (e.g., 'SaaS experience', 'healthcare projects')",
+      "Mention specific skills (e.g., 'design systems', 'user research', 'agile')",
+      "Ask about company types (e.g., 'startup experience', 'enterprise work')",
+      "Request project details (e.g., 'Evcharge case study', 'ZARA project')"
+    ],
+    "examples": [
+      "What experience does Jon have in cybersecurity?",
+      "How does Jon work with agile teams?",
+      "Tell me about Jon's design system experience",
+      "What projects has Jon done in healthcare?"
+    ]
+  },
+  "error_messages": {
+    "no_results": "I couldn't find specific information about that. Try rephrasing your question or ask about Jon's experience in specific industries like SaaS, healthcare, or automotive.",
+    "search_failed": "Sorry, there was an error processing your request. Please try again or ask about a different topic.",
+    "project_not_found": "I don't have detailed information about that specific project, but I can tell you about similar projects in that industry.",
+    "general_fallback": "I can help you learn about Jon's experience in design systems, UX research, SaaS platforms, and enterprise projects. Try asking about specific areas like 'design systems experience', 'SaaS projects', or 'UX research methods'.",
+    "out_of_scope": "That's an interesting topic! I'm focused on sharing Jon Gorroño's professional experience and career as a Product Designer. Would you like to know more about his design approach, his projects, or his collaboration with teams?"
+  }
+}

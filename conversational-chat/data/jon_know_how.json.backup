@@ -1,0 +1,1431 @@
+[
+  {
+    "id": "q0",
+    "intent_key": "out_of_scope",
+    "canonical_question": "What if Jon is asked about something unrelated to his career or skills?",
+    "question_variants": [
+      "random question",
+      "off-topic question",
+      "unrelated experience",
+      "things Jon has never done",
+      "shiatsu",
+      "kuala lumpur",
+      "personal life",
+      "hobbies",
+      "places Jon hasn't been",
+      "certifications Jon doesn't have",
+      "unrelated skills",
+      "non-design topics"
+    ],
+    "answer_en": "This question is outside the scope of Jon's professional experience. JonBot is designed to answer questions about Jon's career, skills, and projects as a Senior Product Designer. I can help you learn about his design expertise, SaaS experience, enterprise projects, or specific skills like user research, design systems, and stakeholder alignment. What would you like to know about Jon's professional background?",
+    "answer_es": "Esta pregunta está fuera del alcance de la experiencia profesional de Jon. JonBot está diseñado para responder preguntas sobre la carrera, habilidades y proyectos de Jon como Senior Product Designer. Puedo ayudarte a conocer su experiencia en diseño, proyectos SaaS, proyectos empresariales o habilidades específicas como investigación de usuarios, sistemas de diseño y alineación de stakeholders. ¿Qué te gustaría saber sobre el background profesional de Jon?",
+    "related_projects": [],
+    "tags": ["Out of Scope", "Fallback", "Professional Focus"],
+    "industries": [],
+    "key_metrics": [],
+    "confidence_score": 1.0,
+    "status": "active",
+    "version": "1.0",
+    "created_at": "2025-08-29T15:40:00Z",
+    "updated_at": "2025-08-29T15:40:00Z",
+    "created_by": "jonbot_system",
+    "review_status": "pending_review"
+  },
+  {
+    "id": "q1",
+    "intent_key": "seniority_enterprise_scale",
+    "canonical_question": "Has Jon designed platforms or products at scale (for large companies or public institutions)?",
+    "question_variants": [
+      "What enterprise-scale projects has Jon worked on?",
+      "Has Jon designed for large corporations?",
+      "Tell me about Jon's work with big companies",
+      "Has Jon worked on platforms used by many people?"
+    ],
+    "answer_en": "Yes. Jon has designed enterprise platforms for Inditex/Zara and Gestamp (IBEX 35), as well as public sector platforms like the Bizkaia citizen portal and Veridata's e-government software. These projects required solutions that were scalable, secure, and used by large, diverse audiences. His experience includes designing for platforms that serve hundreds of thousands of users, managing complex stakeholder relationships, and ensuring compliance with enterprise security and accessibility standards.",
+    "answer_es": "Sí. Jon ha diseñado plataformas empresariales para Inditex/Zara y Gestamp (IBEX 35), así como plataformas del sector público como el portal ciudadano de Bizkaia y el software de e-gobierno de Veridata. Estos proyectos requirieron soluciones que fueran escalables, seguras y utilizadas por audiencias grandes y diversas. Su experiencia incluye diseñar para plataformas que sirven a cientos de miles de usuarios, gestionar relaciones complejas con stakeholders y asegurar el cumplimiento de estándares empresariales de seguridad y accesibilidad.",
+    "related_projects": ["zara-fashion", "gestamp-dashboard", "biscay-administration", "veridata-design-system"],
+    "tags": ["enterprise", "scale", "ibex35", "public-sector", "large-audience", "compliance"],
+    "industries": ["fashion-retail", "automotive", "public-sector", "government"],
+    "key_metrics": ["IBEX 35 companies", "Large user bases", "Government compliance", "Enterprise security"],
+    "confidence_score": 0.95,
+    "status": "active",
+    "version": "1.0",
+    "created_at": "2024-01-01T00:00:00Z",
+    "updated_at": "2024-01-01T00:00:00Z",
+    "created_by": "system",
+    "review_status": "approved"
+  },
+  {
+    "id": "q2",
+    "intent_key": "sector_saas",
+    "canonical_question": "What experience does Jon have in SaaS?",
+    "question_variants": [
+      "Does Jon have SaaS experience?",
+      "What SaaS projects has Jon worked on?",
+      "Tell me about Jon's SaaS background",
+      "Has Jon designed SaaS platforms?"
+    ],
+    "answer_en": "Jon has extensive experience in SaaS projects across multiple sectors. He's worked on O21 (e-health platform for orthodontists), Wefender (cybersecurity platform), Tacktics (construction project management), and other SaaS solutions. His expertise includes user research, product architecture, design systems, and user testing. Jon has delivered measurable results like +75% consultation efficiency for O21 and +45% user adoption for Wefender. He understands both B2B and B2C SaaS models, having worked with startups and enterprise clients.",
+    "answer_es": "Jon tiene amplia experiencia en proyectos SaaS en múltiples sectores. Ha trabajado en O21 (plataforma de e-salud para ortodoncistas), Wefender (plataforma de ciberseguridad), Tacktics (gestión de proyectos de construcción) y otras soluciones SaaS. Su experiencia incluye investigación de usuarios, arquitectura de productos, sistemas de diseño y pruebas de usuario. Jon ha entregado resultados medibles como +75% de eficiencia en consultas para O21 y +45% de adopción de usuarios para Wefender. Entiende tanto modelos SaaS B2B como B2C, habiendo trabajado con startups y clientes empresariales.",
+    "related_projects": ["o21-ehealth", "wefender-cybersecurity", "tacktics-construction"],
+    "tags": ["saas", "platforms", "b2b", "b2c", "startups", "enterprise"],
+    "industries": ["healthcare", "cybersecurity", "construction", "startup", "enterprise"],
+    "key_metrics": ["+75% consultation efficiency", "+45% user adoption", "+35% project efficiency"],
+    "confidence_score": 0.95,
+    "status": "active",
+    "version": "1.0",
+    "created_at": "2024-01-01T00:00:00Z",
+    "updated_at": "2024-01-01T00:00:00Z",
+    "created_by": "system",
+    "review_status": "approved"
+  },
+  {
+    "id": "q3",
+    "intent_key": "sector_fintech",
+    "canonical_question": "Has Jon worked in fintech?",
+    "question_variants": [
+      "Does Jon have fintech experience?",
+      "What fintech projects has Jon worked on?",
+      "Has Jon designed banking platforms?",
+      "Tell me about Jon's financial services work"
+    ],
+    "answer_en": "Yes, Jon has fintech experience working with La Caixa, one of Spain's largest banks. He redesigned their digital banking platform focusing on usability, accessibility, and modern design patterns. The project improved digital banking adoption by 25%, increased customer satisfaction from 3.2 to 4.1/5, and reduced support calls by 30%. Jon's fintech work demonstrates his ability to handle complex financial workflows while maintaining security standards and accessibility compliance.",
+    "answer_es": "Sí, Jon tiene experiencia en fintech trabajando con La Caixa, uno de los bancos más grandes de España. Rediseñó su plataforma de banca digital enfocándose en usabilidad, accesibilidad y patrones de diseño modernos. El proyecto mejoró la adopción de banca digital en un 25%, aumentó la satisfacción del cliente de 3.2 a 4.1/5, y redujo las llamadas de soporte en un 30%. El trabajo de Jon en fintech demuestra su capacidad para manejar flujos de trabajo financieros complejos mientras mantiene estándares de seguridad y cumplimiento de accesibilidad.",
+    "related_projects": ["la-caixa-fintech"],
+    "tags": ["fintech", "banking", "financial-services", "enterprise", "accessibility"],
+    "industries": ["banking", "financial-services", "enterprise"],
+    "key_metrics": ["+25% digital banking adoption", "3.2 to 4.1/5 satisfaction", "-30% support calls"],
+    "confidence_score": 0.92,
+    "status": "active",
+    "version": "1.0",
+    "created_at": "2024-01-01T00:00:00Z",
+    "updated_at": "2024-01-01T00:00:00Z",
+    "created_by": "system",
+    "review_status": "approved"
+  },
+  {
+    "id": "q4",
+    "intent_key": "relevant_projects",
+    "canonical_question": "What kind of projects has Jon worked on that are most relevant for a Senior Product Designer role?",
+    "question_variants": [
+      "Which projects best showcase Jon’s experience as a Senior Product Designer?",
+      "What types of projects has Jon led that are most relevant to this role?",
+      "Can you give examples of Jon’s most important projects?",
+      "What projects highlight Jon’s qualifications for a Senior Product Designer position?"
+    ],
+    "answer_en": "Jon has led end-to-end design projects for SaaS platforms, enterprise tools, mobility apps, and government portals. His most relevant projects include: designing a healthcare SaaS platform for orthodontists, leading UX strategy at Gestamp (IBEX 35) and Zara (Inditex), and redesigning digital services for universities and public administrations.",
+    "answer_es": "Jon ha liderado proyectos de diseño end-to-end para plataformas SaaS, herramientas corporativas, apps de movilidad y portales gubernamentales. Sus proyectos más relevantes incluyen: el diseño de una plataforma SaaS de salud para ortodoncistas, la dirección de la estrategia UX en Gestamp (IBEX 35) y Zara (Inditex), y la renovación de servicios digitales para universidades y administraciones públicas.",
+    "related_projects": ["O21 Healthcare SaaS", "Gestamp UX Strategy", "Zara Tools", "Universidad San Jorge", "Bizkaia Government Portal", "Veridata E-Government"],
+    "tags": ["SaaS", "Enterprise Tools", "Mobility", "Public Sector", "End-to-End Design"],
+    "industries": ["Healthcare", "Automotive", "Fashion Retail", "Education", "Government"],
+    "key_metrics": [
+      "+75% consultation efficiency (O21 Healthcare SaaS)",
+      "+42% C-level engagement (Gestamp)",
+      "+77% team adoption (Zara Tools)",
+      "+34% student enrollment (Universidad San Jorge)"
+    ],
+    "confidence_score": 0.95,
+    "status": "active",
+    "version": "1.0",
+    "created_at": "2025-08-29T12:00:00Z",
+    "updated_at": "2025-08-29T12:00:00Z",
+    "created_by": "jonbot_system",
+    "review_status": "pending_review"
+  },
+  {
+    "id": "q5",
+    "intent_key": "collaboration_with_engineering",
+    "canonical_question": "What experience does Jon have collaborating with engineers and product teams?",
+    "question_variants": [
+      "How does Jon work with developers and product managers?",
+      "What is Jon’s experience in cross-functional teams?",
+      "Has Jon collaborated closely with engineering teams?",
+      "How does Jon handle design-to-development handoff?"
+    ],
+    "answer_en": "Jon’s Computer Engineering background helps him collaborate fluidly with developers and PMs. He has worked in multidisciplinary squads at Zara and partnered closely with engineering at Etecnic and Gestamp. He delivers specs, prototypes, and design-system assets that simplify handoff and integration, aligning design decisions with technical constraints and sprint goals.",
+    "answer_es": "La formación de Jon en Ingeniería Informática le permite colaborar de forma fluida con desarrolladores y PMs. Ha trabajado en squads multidisciplinares en Zara y en colaboración estrecha con ingeniería en Etecnic y Gestamp. Entrega especificaciones, prototipos y activos de design system que simplifican el handoff e integración, alineando el diseño con las limitaciones técnicas y los objetivos de sprint.",
+    "related_projects": [
+      "Zara Tools",
+      "Gestamp C-level Platform",
+      "Etecnic EV Mobility App",
+      "O21 Healthcare SaaS"
+    ],
+    "tags": [
+      "Cross-Functional Collaboration",
+      "Design–Dev Handoff",
+      "Agile/Lean UX",
+      "Design Systems",
+      "Prototyping"
+    ],
+    "industries": [
+      "Fashion Retail",
+      "Automotive",
+      "Mobility",
+      "Healthcare",
+      "Enterprise"
+    ],
+    "key_metrics": [
+      "+77% internal team adoption (Zara Tools)",
+      "+42% C-level engagement (Gestamp)",
+      "+39% completed charges & +43% activation rate (Etecnic app)",
+      "+35% user adherence (O21 Healthcare SaaS)"
+    ],
+    "confidence_score": 0.95,
+    "status": "active",
+    "version": "1.0",
+    "created_at": "2025-08-29T12:45:00Z",
+    "updated_at": "2025-08-29T12:45:00Z",
+    "created_by": "jonbot_system",
+    "review_status": "approved"
+  },
+  {
+    "id": "q6",
+    "intent_key": "design_systems_experience",
+    "canonical_question": "Does Jon have experience building or managing design systems?",
+    "question_variants": [
+      "Has Jon worked with design systems?",
+      "What experience does Jon have in creating design systems?",
+      "Did Jon manage scalable design systems?",
+      "Has Jon built or customized design systems for clients?"
+    ],
+    "answer_en": "Yes. Jon created a customised design system at Veridata for government services, and developed a scalable system for Etecnic’s mobility app. These initiatives improved consistency, speed of delivery, and long-term scalability. He has also applied and extended Material Design guidelines across multiple projects, ensuring coherent user experiences and efficient developer handoff.",
+    "answer_es": "Sí. Jon creó un sistema de diseño personalizado en Veridata para servicios gubernamentales y desarrolló un sistema escalable para la app de movilidad de Etecnic. Estas iniciativas mejoraron la consistencia, la velocidad de entrega y la escalabilidad a largo plazo. Además, ha aplicado y extendido las guías de Material Design en múltiples proyectos, asegurando experiencias coherentes y un handoff eficiente con desarrollo.",
+    "related_projects": [
+      "Veridata E-Government Platform",
+      "Etecnic EV Mobility App",
+      "Bizkaia Citizen Portal",
+      "O21 Healthcare SaaS"
+    ],
+    "tags": [
+      "Design Systems",
+      "Scalability",
+      "Consistency",
+      "Material Design",
+      "UI/UX"
+    ],
+    "industries": [
+      "Government",
+      "Mobility",
+      "Healthcare",
+      "Public Sector",
+      "Enterprise"
+    ],
+    "key_metrics": [
+      "Improved efficiency and accessibility in e-government workflows (Veridata)",
+      "+59% increase in positive App Store reviews (Etecnic app)",
+      "Consistent implementation across development cycles"
+    ],
+    "confidence_score": 0.94,
+    "status": "active",
+    "version": "1.0",
+    "created_at": "2025-08-29T13:00:00Z",
+    "updated_at": "2025-08-29T13:00:00Z",
+    "created_by": "jonbot_system",
+    "review_status": "approved"
+  },
+  {
+    "id": "q7",
+    "intent_key": "complex_products_usability_scalability",
+    "canonical_question": "Has Jon worked on complex digital products where usability and scalability were critical?",
+    "question_variants": [
+      "Has Jon designed complex digital products?",
+      "What experience does Jon have with usability and scalability challenges?",
+      "Can Jon handle high-complexity platforms?",
+      "Has Jon worked on products with large-scale usability requirements?"
+    ],
+    "answer_en": "Yes. Jon has worked on several complex digital products where usability and scalability were critical. Examples include: Zara Tools (an internal platform for engineering teams, adoption increased by 77%), the Etecnic electric mobility app (large user base requiring reliability and usability at scale), and Gestamp C-level dashboards (high-stakes corporate environment where clarity and efficiency were essential).",
+    "answer_es": "Sí. Jon ha trabajado en varios productos digitales complejos donde la usabilidad y la escalabilidad fueron críticas. Ejemplos: Zara Tools (plataforma interna para equipos de ingeniería, con un 77% de aumento en adopción), la app de movilidad eléctrica de Etecnic (con una gran base de usuarios que exigía fiabilidad y usabilidad a escala) y los paneles de control para directivos de Gestamp (entorno corporativo de alto nivel donde la claridad y la eficiencia eran esenciales).",
+    "related_projects": [
+      "Zara Tools",
+      "Etecnic EV Mobility App",
+      "Gestamp C-level Dashboards",
+      "O21 Healthcare SaaS"
+    ],
+    "tags": [
+      "Complex Products",
+      "Scalability",
+      "Usability",
+      "Enterprise Tools",
+      "Mobility"
+    ],
+    "industries": [
+      "Fashion Retail",
+      "Automotive",
+      "Mobility",
+      "Enterprise",
+      "Healthcare"
+    ],
+    "key_metrics": [
+      "+77% adoption (Zara Tools)",
+      "+39% completed charges & +43% activation rate (Etecnic app)",
+      "+42% C-level engagement (Gestamp)"
+    ],
+    "confidence_score": 0.95,
+    "status": "active",
+    "version": "1.0",
+    "created_at": "2025-08-29T13:15:00Z",
+    "updated_at": "2025-08-29T13:15:00Z",
+    "created_by": "jonbot_system",
+    "review_status": "pending_review"
+  },
+  {
+    "id": "q8",
+    "intent_key": "strongest_design_skills",
+    "canonical_question": "What are Jon’s strongest design skills?",
+    "question_variants": [
+      "Which design skills make Jon stand out?",
+      "What are Jon’s top strengths as a designer?",
+      "What design capabilities does Jon excel at?",
+      "Which core skills define Jon as a Senior Product Designer?"
+    ],
+    "answer_en": "Jon’s strongest skill is combining his technical engineering background with methodical UX strategy, allowing him to design scalable, user-centered digital products that bridge business goals and implementation.",
+    "answer_es": "La mayor fortaleza de Jon es combinar su formación técnica en ingeniería con una estrategia UX metódica, lo que le permite diseñar productos digitales escalables y centrados en el usuario que conectan los objetivos de negocio con la implementación.",
+    "related_projects": [
+      "O21 Healthcare SaaS",
+      "Gestamp C-level Dashboards",
+      "Etecnic EV Mobility App",
+      "Zara Tools"
+    ],
+    "tags": [
+      "UX Strategy",
+      "Technical Background",
+      "Scalable Design",
+      "User-Centered Design",
+      "Business Alignment"
+    ],
+    "industries": [
+      "Healthcare",
+      "Automotive",
+      "Mobility",
+      "Fashion Retail",
+      "Government"
+    ],
+    "key_metrics": [
+      "+75% consultation efficiency (O21 Healthcare SaaS)",
+      "+42% C-level engagement (Gestamp)",
+      "+39% completed charges & +43% activation rate (Etecnic app)",
+      "+77% adoption (Zara Tools)"
+    ],
+    "confidence_score": 0.96,
+    "status": "active",
+    "version": "1.0",
+    "created_at": "2025-08-29T13:30:00Z",
+    "updated_at": "2025-08-29T13:30:00Z",
+    "created_by": "jonbot_system",
+    "review_status": "pending_review"
+  },
+  {
+    "id": "q9",
+    "intent_key": "data_driven_design_experience",
+    "canonical_question": "Does Jon have experience in data-driven design?",
+    "question_variants": [
+      "Has Jon applied data to guide his design work?",
+      "What is Jon’s experience with data-driven UX?",
+      "Does Jon use analytics in his design process?",
+      "Can you give examples of Jon working with data and KPIs?"
+    ],
+    "answer_en": "Yes. At Hispavista, he used analytics and behavioral data to iteratively redesign a job portal. At Universidad San Jorge, he aligned design improvements with measurable KPIs, increasing enrollment by 34%. Data-informed iteration is a consistent part of his design process.",
+    "answer_es": "Sí. En Hispavista utilizó analíticas y datos de comportamiento para rediseñar iterativamente un portal de empleo. En la Universidad San Jorge, alineó las mejoras de diseño con KPIs medibles, aumentando la matrícula en un 34%. La iteración basada en datos es una parte constante de su proceso de diseño.",
+    "related_projects": [
+      "Hispavista Job Portal",
+      "Universidad San Jorge Digital Platform",
+      "Bizkaia Citizen Portal",
+      "O21 Healthcare SaaS"
+    ],
+    "tags": [
+      "Data-Driven Design",
+      "Analytics",
+      "Behavioral Data",
+      "KPI Alignment",
+      "Iterative Design"
+    ],
+    "industries": [
+      "Education",
+      "Tech",
+      "Public Sector",
+      "Healthcare"
+    ],
+    "key_metrics": [
+      "+34% student enrollment (Universidad San Jorge)",
+      "Continuous optimization through analytics (Hispavista)"
+    ],
+    "confidence_score": 0.94,
+    "status": "active",
+    "version": "1.0",
+    "created_at": "2025-08-29T13:45:00Z",
+    "updated_at": "2025-08-29T13:45:00Z",
+    "created_by": "jonbot_system",
+    "review_status": "pending_review"
+  },
+  {
+    "id": "q9_1",
+    "intent_key": "behavioral_design_experience",
+    "canonical_question": "Does Jon have experience in behavioral design?",
+    "question_variants": [
+      "Has Jon studied behavioral design?",
+      "What behavioral design methods has Jon used?",
+      "Does Jon apply behavioral frameworks in his UX work?",
+      "Can you give examples of Jon using behavioral design?"
+    ],
+    "answer_en": "Yes. Jon completed formal training in Behavioral Design (Behavioural School) and applies these principles in his UX work. For example, he used the COM-B model in journey mapping for an orthodontics SaaS, improving user adherence by +35%.",
+    "answer_es": "Sí. Jon completó formación en Behavioral Design (Behavioural School) y aplica estos principios en su trabajo UX. Por ejemplo, utilizó el modelo COM-B en la elaboración de journey maps para un SaaS de ortodoncia, mejorando la adherencia de los usuarios en un +35%.",
+    "related_projects": [
+      "O21 Healthcare SaaS",
+      "Hispavista Job Portal",
+      "Universidad San Jorge Digital Platform"
+    ],
+    "tags": [
+      "Behavioral Design",
+      "COM-B Model",
+      "Journey Mapping",
+      "Behavioral Frameworks",
+      "User Adherence"
+    ],
+    "industries": [
+      "Healthcare",
+      "Education",
+      "Tech"
+    ],
+    "key_metrics": [
+      "+35% user adherence (O21 Healthcare SaaS)",
+      "Improved enrollment by +34% (Universidad San Jorge through behavioral-informed design)"
+    ],
+    "confidence_score": 0.93,
+    "status": "active",
+    "version": "1.0",
+    "created_at": "2025-08-29T14:10:00Z",
+    "updated_at": "2025-08-29T14:10:00Z",
+    "created_by": "jonbot_system",
+    "review_status": "pending_review"
+  },
+  {
+    "id": "q10",
+    "intent_key": "industries_experience",
+    "canonical_question": "What industries or sectors has Jon designed for?",
+    "question_variants": [
+      "Which sectors has Jon worked in?",
+      "What industries has Jon gained experience in as a designer?",
+      "Can you list the sectors Jon has designed for?",
+      "Has Jon worked across multiple industries?"
+    ],
+    "answer_en": "Jon has designed for a wide range of industries. In Corporate/Enterprise, he worked with Inditex/Zara and Gestamp (IBEX 35). In the Public Sector, he designed for the Bizkaia citizen portal and Veridata’s e-government software. In Startups, he contributed to Tacktics (construction SaaS), Etecnic (mobility app), Appsamblea (e-voting SaaS), Digitup (consulting startups and enterprises), and an orthodontics SaaS platform in the e-Health sector.",
+    "answer_es": "Jon ha diseñado para una amplia variedad de sectores. En el ámbito Corporativo/Enterprise, trabajó con Inditex/Zara y Gestamp (IBEX 35). En el Sector Público, diseñó para el portal ciudadano de Bizkaia y el software de e-government de Veridata. En Startups, participó en Tacktics (SaaS de construcción), Etecnic (app de movilidad), Appsamblea (SaaS de voto electrónico), Digitup (clientes de consultoría y startups) y una plataforma SaaS de ortodoncia en el sector e-Health.",
+    "related_projects": [
+      "Zara Tools",
+      "Gestamp C-level Dashboards",
+      "Bizkaia Citizen Portal",
+      "Veridata E-Government",
+      "Tacktics Construction SaaS",
+      "Etecnic EV Mobility App",
+      "Appsamblea e-Vote SaaS",
+      "Digitup Client Projects",
+      "O21 Healthcare SaaS"
+    ],
+    "tags": [
+      "Enterprise",
+      "Public Sector",
+      "Startups",
+      "SaaS",
+      "Mobility",
+      "Healthcare",
+      "Construction",
+      "E-Government"
+    ],
+    "industries": [
+      "Fashion Retail",
+      "Automotive",
+      "Government",
+      "Construction",
+      "Mobility",
+      "Healthcare",
+      "Education",
+      "Technology"
+    ],
+    "key_metrics": [
+      "+77% adoption (Zara Tools)",
+      "+42% C-level engagement (Gestamp)",
+      "Improved usability and accessibility (Bizkaia portal)",
+      "+39% completed charges & +43% activation rate (Etecnic app)",
+      "+34% student enrollment (Universidad San Jorge)"
+    ],
+    "confidence_score": 0.96,
+    "status": "active",
+    "version": "1.0",
+    "created_at": "2025-08-29T14:20:00Z",
+    "updated_at": "2025-08-29T14:20:00Z",
+    "created_by": "jonbot_system",
+    "review_status": "pending_review"
+  },
+  {
+    "id": "q11",
+    "intent_key": "project_leadership_experience",
+    "canonical_question": "Has Jon led projects or guided teams, or is his experience mainly as an individual contributor?",
+    "question_variants": [
+      "Has Jon led design projects?",
+      "What is Jon’s experience guiding teams?",
+      "Does Jon act as a project lead or mainly as an individual contributor?",
+      "Has Jon coordinated cross-functional teams in his projects?"
+    ],
+    "answer_en": "Jon has led projects end-to-end, taking ownership of UX strategy, design direction, and stakeholder alignment. He has guided cross-functional teams — including developers, marketing specialists, and content creators — through design systems, UX strategy, and workshop facilitation, acting as a senior lead in design processes even without a formal people-manager title.",
+    "answer_es": "Jon ha liderado proyectos de principio a fin, asumiendo la responsabilidad de la estrategia UX, la dirección de diseño y la alineación con stakeholders. Ha guiado equipos multifuncionales —incluyendo desarrolladores, especialistas en marketing y creadores de contenido— en sistemas de diseño, estrategia UX y facilitación de workshops, actuando como un líder sénior en procesos de diseño aunque sin un título formal de gestor de personas.",
+    "related_projects": [
+      "Gestamp C-level Dashboards",
+      "Zara Tools",
+      "Etecnic EV Mobility App",
+      "O21 Healthcare SaaS",
+      "Digitup Client Projects"
+    ],
+    "tags": [
+      "Project Leadership",
+      "Cross-Functional Teams",
+      "UX Strategy",
+      "Workshop Facilitation",
+      "Design Systems"
+    ],
+    "industries": [
+      "Automotive",
+      "Fashion Retail",
+      "Mobility",
+      "Healthcare",
+      "Government",
+      "Startups"
+    ],
+    "key_metrics": [
+      "+42% C-level engagement (Gestamp)",
+      "+77% adoption (Zara Tools)",
+      "+39% completed charges & +43% activation rate (Etecnic app)",
+      "+35% user adherence (O21 Healthcare SaaS)"
+    ],
+    "confidence_score": 0.95,
+    "status": "active",
+    "version": "1.0",
+    "created_at": "2025-08-29T14:35:00Z",
+    "updated_at": "2025-08-29T14:35:00Z",
+    "created_by": "jonbot_system",
+    "review_status": "pending_review"
+  },
+  {
+    "id": "q12",
+    "intent_key": "consulting_fit",
+    "canonical_question": "Why could Jon be a good fit for a consulting environment like Accenture?",
+    "question_variants": [
+      "Would Jon be a good fit for consulting firms like Accenture?",
+      "What makes Jon suitable for a consulting environment?",
+      "How does Jon’s experience align with consulting roles?",
+      "Why should a consulting company consider Jon?"
+    ],
+    "answer_en": "Jon is a strong fit for consulting environments like Accenture. He has a proven track record with top-tier clients such as Zara, Gestamp, universities, and public sector organizations. His rare combination of design expertise and technical fluency, rooted in his IT background, allows him to navigate complex projects that balance business goals, user needs, and engineering constraints. He is also highly effective in agile, multidisciplinary environments where collaboration is key.",
+    "answer_es": "Jon es un candidato sólido para entornos de consultoría como Accenture. Tiene un historial probado con clientes de primer nivel como Zara, Gestamp, universidades y el sector público. Su rara combinación de experiencia en diseño y fluidez técnica, basada en su formación en IT, le permite gestionar proyectos complejos equilibrando objetivos de negocio, necesidades de usuario y limitaciones técnicas. Además, se desenvuelve con eficacia en entornos ágiles y multidisciplinares donde la colaboración es fundamental.",
+    "related_projects": [
+      "Zara Tools",
+      "Gestamp C-level Dashboards",
+      "Universidad San Jorge Digital Platform",
+      "Bizkaia Citizen Portal",
+      "Veridata E-Government",
+      "O21 Healthcare SaaS"
+    ],
+    "tags": [
+      "Consulting Fit",
+      "Complex Projects",
+      "Agile Collaboration",
+      "Business Alignment",
+      "Technical Fluency"
+    ],
+    "industries": [
+      "Fashion Retail",
+      "Automotive",
+      "Education",
+      "Government",
+      "Healthcare",
+      "Enterprise"
+    ],
+    "key_metrics": [
+      "+77% adoption (Zara Tools)",
+      "+42% C-level engagement (Gestamp)",
+      "+34% student enrollment (Universidad San Jorge)",
+      "Improved usability and accessibility (Bizkaia portal)",
+      "+75% consultation efficiency (O21 Healthcare SaaS)"
+    ],
+    "confidence_score": 0.95,
+    "status": "active",
+    "version": "1.0",
+    "created_at": "2025-08-29T14:50:00Z",
+    "updated_at": "2025-08-29T14:50:00Z",
+    "created_by": "jonbot_system",
+    "review_status": "pending_review"
+  },
+  {
+    "id": "q13",
+    "intent_key": "international_experience",
+    "canonical_question": "Does Jon have experience working on international projects?",
+    "question_variants": [
+      "Has Jon worked on projects with international reach?",
+      "What is Jon’s experience in global or international teams?",
+      "Has Jon collaborated with clients outside Spain?",
+      "Can Jon adapt to international consulting projects?"
+    ],
+    "answer_en": "Yes. Jon has experience in international projects through his work with Inditex/Zara, a global retail leader, where he designed internal tools used across multiple countries. He also collaborated with multinational teams at Gestamp (IBEX 35, automotive sector) and worked on SaaS solutions with clients that required scaling beyond local markets. His fluency in English and ability to navigate multicultural, cross-border contexts make him effective in global environments.",
+    "answer_es": "Sí. Jon tiene experiencia en proyectos internacionales gracias a su trabajo con Inditex/Zara, un líder global del retail, donde diseñó herramientas internas utilizadas en varios países. También colaboró con equipos multinacionales en Gestamp (IBEX 35, sector automoción) y trabajó en soluciones SaaS con clientes que necesitaban escalar más allá de los mercados locales. Su fluidez en inglés y su capacidad para desenvolverse en contextos multiculturales y transfronterizos lo hacen eficaz en entornos globales.",
+    "related_projects": [
+      "Zara Tools",
+      "Gestamp C-level Dashboards",
+      "O21 Healthcare SaaS",
+      "Digitup Client Projects"
+    ],
+    "tags": [
+      "International Projects",
+      "Multinational Teams",
+      "Global Collaboration",
+      "Cross-Cultural Design"
+    ],
+    "industries": [
+      "Fashion Retail",
+      "Automotive",
+      "Healthcare",
+      "SaaS",
+      "Enterprise"
+    ],
+    "key_metrics": [
+      "+77% adoption (Zara Tools across global engineering teams)",
+      "+42% C-level engagement (Gestamp, multinational automotive)",
+      "+35% user adherence (O21 Healthcare SaaS, international orthodontist users)"
+    ],
+    "confidence_score": 0.92,
+    "status": "active",
+    "version": "1.0",
+    "created_at": "2025-08-29T15:05:00Z",
+    "updated_at": "2025-08-29T15:05:00Z",
+    "created_by": "jonbot_system",
+    "review_status": "pending_review"
+  },
+  {
+    "id": "q14",
+    "intent_key": "understanding_user_needs",
+    "canonical_question": "How does Jon approach understanding user needs in new projects?",
+    "question_variants": [
+      "What is Jon's process for understanding users?",
+      "How does Jon research user needs?",
+      "How does Jon learn about users at the start of projects?",
+      "What methods does Jon use to identify user goals?"
+    ],
+    "answer_en": "Jon combines user research, stakeholder workshops, and data analysis. He adapts his methods to context: in public sector projects, he facilitated citizen journey workshops; in SaaS startups, he ran lean user testing cycles; and in enterprise projects, he relied on analytics and stakeholder interviews to align business and user goals.",
+    "answer_es": "Jon combina investigación de usuarios, workshops con stakeholders y análisis de datos. Adapta sus métodos al contexto: en proyectos del sector público facilitó workshops de citizen journey; en startups SaaS realizó ciclos de lean user testing; y en proyectos corporativos se apoyó en analíticas y entrevistas con stakeholders para alinear negocio y usuarios.",
+    "related_projects": [
+      "Bizkaia Citizen Portal",
+      "O21 Healthcare SaaS",
+      "Gestamp C-level Dashboards",
+      "Universidad San Jorge Digital Platform"
+    ],
+    "tags": ["User Research", "Workshops", "Data Analysis", "Journey Mapping"],
+    "industries": ["Government", "Healthcare", "Enterprise", "Education", "Startups"],
+    "key_metrics": [
+      "+35% user adherence (O21 Healthcare SaaS)",
+      "+34% enrollment (Universidad San Jorge)"
+    ],
+    "confidence_score": 0.93,
+    "status": "active",
+    "version": "1.0",
+    "created_at": "2025-08-29T15:20:00Z",
+    "updated_at": "2025-08-29T15:20:00Z",
+    "created_by": "jonbot_system",
+    "review_status": "pending_review"
+  },
+  {
+    "id": "q15",
+    "intent_key": "agile_lean_experience",
+    "canonical_question": "What is Jon's experience with agile or lean environments?",
+    "question_variants": [
+      "Has Jon worked in agile teams?",
+      "Is Jon experienced with lean UX?",
+      "What agile methodologies has Jon used?",
+      "How does Jon deliver design in agile sprints?"
+    ],
+    "answer_en": "Jon has worked in agile squads at Zara and Gestamp, contributing design deliverables in two-week sprints. He's comfortable with iterative delivery, backlog refinement, and rapid prototyping, ensuring design aligns with evolving requirements.",
+    "answer_es": "Jon ha trabajado en squads ágiles en Zara y Gestamp, entregando resultados de diseño en sprints de dos semanas. Está acostumbrado a la entrega iterativa, la refinación de backlog y el prototipado rápido, garantizando que el diseño se adapte a requisitos en evolución.",
+    "related_projects": ["Zara Tools", "Gestamp C-level Dashboards", "Etecnic EV Mobility App"],
+    "tags": ["Agile", "Lean UX", "Sprints", "Iterative Delivery", "Prototyping"],
+    "industries": ["Fashion Retail", "Automotive", "Mobility", "Enterprise"],
+    "key_metrics": [
+      "+77% adoption (Zara Tools)",
+      "+42% C-level engagement (Gestamp)"
+    ],
+    "confidence_score": 0.94,
+    "status": "active",
+    "version": "1.0",
+    "created_at": "2025-08-29T15:22:00Z",
+    "updated_at": "2025-08-29T15:22:00Z",
+    "created_by": "jonbot_system",
+    "review_status": "pending_review"
+  },
+  {
+    "id": "q16",
+    "intent_key": "stakeholder_alignment",
+    "canonical_question": "How does Jon handle stakeholder alignment in complex projects?",
+    "question_variants": [
+      "How does Jon align stakeholders?",
+      "What is Jon's approach to managing stakeholders?",
+      "How does Jon ensure business and user goals align?",
+      "Has Jon worked directly with executives on product design?"
+    ],
+    "answer_en": "Jon facilitates design workshops to bring business, engineering, and user perspectives together. For example, in Gestamp dashboards, he worked directly with C-level executives to prioritize KPIs, ensuring the product met executive needs while remaining usable for daily operators.",
+    "answer_es": "Jon facilita workshops de diseño para unir las perspectivas de negocio, ingeniería y usuarios. Por ejemplo, en los dashboards de Gestamp trabajó directamente con ejecutivos C-level para priorizar KPIs, asegurando que el producto cumpliera con sus necesidades sin perder usabilidad para los operadores diarios.",
+    "related_projects": ["Gestamp C-level Dashboards", "Bizkaia Citizen Portal", "Universidad San Jorge Digital Platform"],
+    "tags": ["Stakeholder Alignment", "Workshops", "Executive Collaboration", "KPI Prioritization"],
+    "industries": ["Automotive", "Government", "Education", "Enterprise"],
+    "key_metrics": [
+      "+42% C-level engagement (Gestamp)",
+      "Improved usability and accessibility (Bizkaia portal)"
+    ],
+    "confidence_score": 0.94,
+    "status": "active",
+    "version": "1.0",
+    "created_at": "2025-08-29T15:24:00Z",
+    "updated_at": "2025-08-29T15:24:00Z",
+    "created_by": "jonbot_system",
+    "review_status": "pending_review"
+  },
+  {
+    "id": "q17",
+    "intent_key": "accessibility_inclusive_design",
+    "canonical_question": "Does Jon have experience with accessibility or inclusive design?",
+    "question_variants": [
+      "Has Jon designed for accessibility?",
+      "What experience does Jon have in inclusive design?",
+      "Has Jon worked with WCAG standards?",
+      "How does Jon ensure accessibility in his designs?"
+    ],
+    "answer_en": "Yes. In government and education projects (Bizkaia portal, Universidad San Jorge), Jon ensured compliance with WCAG standards and designed for accessibility at scale, including responsive design and usability testing with diverse user groups.",
+    "answer_es": "Sí. En proyectos de gobierno y educación (portal de Bizkaia, Universidad San Jorge), Jon aseguró el cumplimiento de estándares WCAG y diseñó con accesibilidad a escala, incluyendo diseño responsive y pruebas de usabilidad con grupos de usuarios diversos.",
+    "related_projects": ["Bizkaia Citizen Portal", "Universidad San Jorge Digital Platform", "Veridata E-Government"],
+    "tags": ["Accessibility", "Inclusive Design", "WCAG", "Usability Testing"],
+    "industries": ["Government", "Education", "Public Sector"],
+    "key_metrics": [
+      "WCAG compliance (Bizkaia portal, Veridata)",
+      "+34% enrollment (Universidad San Jorge)"
+    ],
+    "confidence_score": 0.92,
+    "status": "active",
+    "version": "1.0",
+    "created_at": "2025-08-29T15:26:00Z",
+    "updated_at": "2025-08-29T15:26:00Z",
+    "created_by": "jonbot_system",
+    "review_status": "pending_review"
+  },
+  {
+    "id": "q18",
+    "intent_key": "design_implementation_quality",
+    "canonical_question": "How does Jon ensure his designs are implemented correctly by engineers?",
+    "question_variants": [
+      "How does Jon bridge design and development?",
+      "What does Jon do to make sure designs are implemented right?",
+      "How does Jon support engineers during implementation?",
+      "Does Jon participate in QA or dev syncs?"
+    ],
+    "answer_en": "Thanks to his engineering background, Jon creates detailed design specs, design tokens, and component libraries. He also participates in QA reviews and design-dev syncs, ensuring fidelity between design and implementation.",
+    "answer_es": "Gracias a su formación en ingeniería, Jon crea especificaciones de diseño detalladas, design tokens y librerías de componentes. También participa en revisiones de QA y reuniones de diseño-desarrollo, garantizando la fidelidad entre diseño e implementación.",
+    "related_projects": ["Etecnic EV Mobility App", "Veridata E-Government", "O21 Healthcare SaaS", "Zara Tools"],
+    "tags": ["Design-Dev Handoff", "QA", "Design Specs", "Design Tokens", "Component Libraries"],
+    "industries": ["Mobility", "Government", "Healthcare", "Fashion Retail"],
+    "key_metrics": [
+      "+59% positive reviews (Etecnic app, consistent implementation)",
+      "Consistent design system adoption (Veridata)"
+    ],
+    "confidence_score": 0.93,
+    "status": "active",
+    "version": "1.0",
+    "created_at": "2025-08-29T15:28:00Z",
+    "updated_at": "2025-08-29T15:28:00Z",
+    "created_by": "jonbot_system",
+    "review_status": "pending_review"
+  },
+  {
+    "id": "q19",
+    "intent_key": "soft_skills",
+    "canonical_question": "What are Jon's soft skills?",
+    "question_variants": [
+      "Which are Jon's soft skills?",
+      "What soft skills does Jon have?",
+      "What are Jon's interpersonal skills?",
+      "How does Jon communicate and collaborate?",
+      "What are Jon's people skills?",
+      "How does Jon work with teams and stakeholders?"
+    ],
+    "answer_en": "Jon excels in several key soft skills essential for senior product design roles. His **communication skills** include facilitating design workshops, presenting to C-level executives, and translating complex technical concepts into clear business language. His **collaboration abilities** are demonstrated through cross-functional teamwork at Zara and Gestamp, where he worked with engineers, product managers, and executives. Jon's **stakeholder management** skills include aligning business goals with user needs through workshops and direct executive collaboration. His **leadership** is shown through mentoring junior designers and leading design initiatives. Additionally, Jon's **problem-solving approach** combines analytical thinking with creative design solutions, while his **adaptability** is proven through successful work across multiple industries and project types.",
+    "answer_es": "Jon sobresale en varias habilidades blandas clave esenciales para roles senior de diseño de productos. Sus **habilidades de comunicación** incluyen facilitar talleres de diseño, presentar a ejecutivos C-level y traducir conceptos técnicos complejos a un lenguaje empresarial claro. Sus **habilidades de colaboración** se demuestran a través del trabajo en equipo multifuncional en Zara y Gestamp, donde trabajó con ingenieros, gerentes de producto y ejecutivos. Las **habilidades de gestión de stakeholders** de Jon incluyen alinear objetivos de negocio con necesidades de usuario a través de talleres y colaboración directa con ejecutivos. Su **liderazgo** se muestra a través de la mentoría a diseñadores junior y la dirección de iniciativas de diseño. Además, el **enfoque de resolución de problemas** de Jon combina el pensamiento analítico con soluciones de diseño creativas, mientras que su **adaptabilidad** se demuestra a través del trabajo exitoso en múltiples industrias y tipos de proyectos.",
+    "related_projects": [
+      "Gestamp C-level Dashboards",
+      "Zara Tools",
+      "Bizkaia Citizen Portal",
+      "O21 Healthcare SaaS"
+    ],
+    "tags": [
+      "Communication",
+      "Collaboration",
+      "Stakeholder Management",
+      "Leadership",
+      "Problem Solving",
+      "Adaptability",
+      "Workshop Facilitation",
+      "Executive Presentation"
+    ],
+    "industries": [
+      "Automotive",
+      "Fashion Retail",
+      "Government",
+      "Healthcare",
+      "Enterprise"
+    ],
+    "key_metrics": [
+      "+42% C-level engagement (Gestamp)",
+      "+77% team adoption (Zara Tools)",
+      "Successful stakeholder alignment across 5+ industries"
+    ],
+    "confidence_score": 0.95,
+    "status": "active",
+    "version": "1.0",
+    "created_at": "2025-08-29T15:40:00Z",
+    "updated_at": "2025-08-29T15:40:00Z",
+    "created_by": "jonbot_system",
+    "review_status": "pending_review"
+  },
+  {
+    "id": "q20",
+    "intent_key": "ux_research_experience",
+    "canonical_question": "What experience does Jon have in UX research?",
+    "question_variants": [
+      "What UX research methods does Jon use?",
+      "How does Jon conduct user research?",
+      "What is Jon's approach to UX research?",
+      "Has Jon done user interviews and usability testing?",
+      "What research methodologies does Jon apply?",
+      "How does Jon gather user insights?"
+    ],
+    "answer_en": "Jon has extensive experience in UX research across multiple projects and industries. He's conducted user interviews, usability testing, competitive analysis, and field research. For example, at Evcharge he interviewed 5 e-vehicle owners and tested prototypes with 5 V-electric users. At the University of San Jorge, he conducted research to understand different user roles (students, professors, researchers, alumni). Jon's research approach includes both qualitative and quantitative methods, from user interviews and field studies to analytics and A/B testing. He understands how to translate research insights into actionable design decisions that improve user experience.",
+    "answer_es": "Jon tiene amplia experiencia en investigación UX en múltiples proyectos e industrias. Ha realizado entrevistas con usuarios, pruebas de usabilidad, análisis competitivo e investigación de campo. Por ejemplo, en Evcharge entrevistó a 5 propietarios de vehículos eléctricos y probó prototipos con 5 usuarios V-electric. En la Universidad de San Jorge, realizó investigaciones para entender diferentes roles de usuario (estudiantes, profesores, investigadores, exalumnos). El enfoque de investigación de Jon incluye métodos tanto cualitativos como cuantitativos, desde entrevistas con usuarios y estudios de campo hasta análisis y pruebas A/B. Entiende cómo traducir las ideas de la investigación en decisiones de diseño accionables que mejoran la experiencia del usuario.",
+    "related_projects": [
+      "Evcharge Electric Mobility",
+      "Universidad San Jorge Digital Platform",
+      "O21 Healthcare SaaS",
+      "Zara Tools"
+    ],
+    "tags": [
+      "UX Research",
+      "User Interviews",
+      "Usability Testing",
+      "Field Research",
+      "Competitive Analysis",
+      "Qualitative Methods",
+      "Quantitative Methods",
+      "A/B Testing",
+      "User Insights",
+      "Research Translation"
+    ],
+    "industries": [
+      "Electric Mobility",
+      "Education",
+      "Healthcare",
+      "Fashion Retail",
+      "SaaS"
+    ],
+    "key_metrics": [
+      "5 e-vehicle owner interviews (Evcharge)",
+      "5 V-electric user prototype tests (Evcharge)",
+      "Multiple user role research (Universidad San Jorge)",
+      "Research-driven design decisions across industries"
+    ],
+    "confidence_score": 0.95,
+    "status": "active",
+    "version": "1.0",
+    "created_at": "2025-08-29T15:45:00Z",
+    "updated_at": "2025-08-29T15:45:00Z",
+    "created_by": "jonbot_system",
+    "review_status": "pending_review"
+  },
+  {
+    "id": "q21",
+    "intent_key": "sector_ecommerce",
+    "canonical_question": "Does Jon have experience in e-commerce?",
+    "question_variants": [
+      "What e-commerce experience does Jon have?",
+      "Has Jon worked on online shopping platforms?",
+      "What experience does Jon have with e-commerce?",
+      "Does Jon know about online retail platforms?"
+    ],
+    "answer_en": "Yes, Jon has significant e-commerce experience, particularly in fashion retail. He worked on mobile shopping experiences for Inditex brands, including Pull&Bear where he redesigned navigation and checkout flows. The project achieved +27% increase in completed purchases and improved mobile conversion rates. Jon understands mobile-first design, user journey optimization, and conversion rate optimization for e-commerce platforms. His experience spans both B2C retail and B2B e-commerce solutions.",
+    "answer_es": "Sí, Jon tiene experiencia significativa en e-commerce, particularmente en retail de moda. Trabajó en experiencias de compra móvil para marcas de Inditex, incluyendo Pull&Bear donde rediseñó la navegación y flujos de checkout. El proyecto logró un +27% de aumento en compras completadas y mejoró las tasas de conversión móvil. Jon entiende el diseño mobile-first, la optimización de user journey y la optimización de tasas de conversión para plataformas de e-commerce. Su experiencia abarca tanto soluciones B2C retail como B2B e-commerce.",
+    "related_projects": [
+      "Pull&Bear Inditex",
+      "Oysho Inditex",
+      "Zara Fashion"
+    ],
+    "tags": [
+      "E-commerce",
+      "Mobile Commerce",
+      "Conversion Optimization",
+      "User Journey Design",
+      "Fashion Retail",
+      "B2C",
+      "B2B"
+    ],
+    "industries": [
+      "Fashion Retail",
+      "E-commerce",
+      "Mobile Commerce",
+      "Enterprise"
+    ],
+    "key_metrics": [
+      "+27% completed purchases",
+      "+40% mobile sales",
+      "+50% user engagement"
+    ],
+    "confidence_score": 0.94,
+    "status": "active",
+    "version": "1.0",
+    "created_at": "2025-08-29T16:00:00Z",
+    "updated_at": "2025-08-29T16:00:00Z",
+    "created_by": "jonbot_system",
+    "review_status": "pending_review"
+  },
+  {
+    "id": "q22",
+    "intent_key": "sector_education",
+    "canonical_question": "Which of Jon's projects fit with digital education?",
+    "question_variants": [
+      "What education projects has Jon worked on?",
+      "Does Jon have experience in digital learning?",
+      "What experience does Jon have with educational platforms?",
+      "Has Jon worked on university websites?"
+    ],
+    "answer_en": "Jon worked as a UX Designer for the University of San Jorge, improving their digital experience and user interface for educational platforms. He conducted user research to understand different user roles (students, professors, researchers, alumni), built the university's information architecture, and designed testable prototypes. The project improved enrollment rates by 37% and increased overall website usage by 32%. Jon's education experience demonstrates his ability to design for diverse user groups and complex academic workflows.",
+    "answer_es": "Jon trabajó como UX Designer para la Universidad de San Jorge, mejorando su experiencia digital e interfaz de usuario para plataformas educativas. Realizó investigación de usuarios para entender diferentes roles de usuario (estudiantes, profesores, investigadores, exalumnos), construyó la arquitectura de información de la universidad y diseñó prototipos testables. El proyecto mejoró las tasas de matrícula en un 37% y aumentó el uso general del sitio web en un 32%. La experiencia de Jon en educación demuestra su capacidad para diseñar para grupos de usuarios diversos y flujos de trabajo académicos complejos.",
+    "related_projects": [
+      "Universidad San Jorge Digital Platform"
+    ],
+    "tags": [
+      "Digital Education",
+      "Higher Education",
+      "Academic Platforms",
+      "User Research",
+      "Information Architecture",
+      "Prototyping",
+      "Diverse User Groups"
+    ],
+    "industries": [
+      "Education",
+      "Higher Education",
+      "Digital Learning",
+      "Public Sector"
+    ],
+    "key_metrics": [
+      "+37% enrollment rate",
+      "+32% website usage"
+    ],
+    "confidence_score": 0.93,
+    "status": "active",
+    "version": "1.0",
+    "created_at": "2025-08-29T16:02:00Z",
+    "updated_at": "2025-08-29T16:02:00Z",
+    "created_by": "jonbot_system",
+    "review_status": "pending_review"
+  },
+  {
+    "id": "q23",
+    "intent_key": "sector_fashion_retail",
+    "canonical_question": "What experience does Jon have in fashion and retail?",
+    "question_variants": [
+      "Has Jon worked in fashion retail?",
+      "What fashion industry experience does Jon have?",
+      "Does Jon know about retail design?",
+      "What experience does Jon have with fashion brands?"
+    ],
+    "answer_en": "Jon has solid experience in fashion and retail, particularly with Inditex brands like ZARA and Pull&Bear. At ZARA, he led the redesign of internal tools for the engineering community, improving adoption and daily use among developers. For Pull&Bear, he redesigned the mobile shopping experience, achieving +40% mobile sales and +50% user engagement. Jon understands both consumer-facing retail experiences and internal enterprise tools, having worked on design systems and collaboration platforms for large fashion corporations.",
+    "answer_es": "Jon tiene experiencia sólida en moda y retail, particularmente con marcas de Inditex como ZARA y Pull&Bear. En ZARA, lideró el rediseño de herramientas internas para la comunidad de ingeniería, mejorando la adopción y uso diario entre desarrolladores. Para Pull&Bear, rediseñó la experiencia de compra móvil, logrando +40% de ventas móviles y +50% de engagement de usuarios. Jon entiende tanto las experiencias de retail orientadas al consumidor como las herramientas empresariales internas, habiendo trabajado en sistemas de diseño y plataformas de colaboración para grandes corporaciones de moda.",
+    "related_projects": [
+      "Zara Fashion",
+      "Pull&Bear Inditex",
+      "Oysho Inditex"
+    ],
+    "tags": [
+      "Fashion Retail",
+      "Enterprise Tools",
+      "Mobile Commerce",
+      "Design Systems",
+      "Collaboration Platforms",
+      "Internal Tools",
+      "Consumer Experience"
+    ],
+    "industries": [
+      "Fashion Retail",
+      "Enterprise",
+      "Mobile Commerce",
+      "Design Systems"
+    ],
+    "key_metrics": [
+      "+40% mobile sales",
+      "+50% user engagement",
+      "Improved team adoption"
+    ],
+    "confidence_score": 0.95,
+    "status": "active",
+    "version": "1.0",
+    "created_at": "2025-08-29T16:04:00Z",
+    "updated_at": "2025-08-29T16:04:00Z",
+    "created_by": "jonbot_system",
+    "review_status": "pending_review"
+  },
+  {
+    "id": "q24",
+    "intent_key": "sector_mobility_automotive",
+    "canonical_question": "Has Jon worked in mobility or automotive?",
+    "question_variants": [
+      "What automotive experience does Jon have?",
+      "Has Jon worked on mobility platforms?",
+      "Does Jon have experience with electric vehicles?",
+      "What experience does Jon have in automotive manufacturing?"
+    ],
+    "answer_en": "Yes, Jon has experience in both mobility and automotive sectors. He worked on Evcharge (electric mobility platform) where he improved the digital experience for 400K users, achieving +39% charge completion rate and +43% activation rate. At Gestamp, he designed manufacturing process management platforms for automotive production, improving process efficiency by 28% and reducing training time by 40%. Jon understands both consumer mobility apps and industrial automotive processes, having worked with field workers and factory environments.",
+    "answer_es": "Sí, Jon tiene experiencia en ambos sectores de movilidad y automoción. Trabajó en Evcharge (plataforma de movilidad eléctrica) donde mejoró la experiencia digital para 400K usuarios, logrando +39% de tasa de finalización de carga y +43% de tasa de activación. En Gestamp, diseñó plataformas de gestión de procesos de fabricación para producción automotriz, mejorando la eficiencia del proceso en un 28% y reduciendo el tiempo de entrenamiento en un 40%. Jon entiende tanto las apps de movilidad de consumo como los procesos automotrices industriales, habiendo trabajado con trabajadores de campo y entornos de fábrica.",
+    "related_projects": [
+      "Evcharge Electric Mobility",
+      "Gestamp Automotive"
+    ],
+    "tags": [
+      "Electric Mobility",
+      "Automotive Manufacturing",
+      "Industrial Processes",
+      "Field Workers",
+      "Factory Environments",
+      "Process Efficiency",
+      "Training Optimization"
+    ],
+    "industries": [
+      "Electric Mobility",
+      "Automotive",
+      "Manufacturing",
+      "Industrial"
+    ],
+    "key_metrics": [
+      "+39% charge completion",
+      "+43% activation rate",
+      "+28% process efficiency",
+      "-40% training time"
+    ],
+    "confidence_score": 0.94,
+    "status": "active",
+    "version": "1.0",
+    "created_at": "2025-08-29T16:06:00Z",
+    "updated_at": "2025-08-29T16:06:00Z",
+    "created_by": "jonbot_system",
+    "review_status": "pending_review"
+  },
+
+  {
+    "id": "q25",
+    "intent_key": "seniority_design_systems",
+    "canonical_question": "Does Jon have experience building or managing design systems?",
+    "question_variants": [
+      "What design systems experience does Jon have?",
+      "Has Jon managed design systems?",
+      "Does Jon know about design tokens and component libraries?",
+      "What experience does Jon have with design systems?"
+    ],
+    "answer_en": "Yes, Jon has extensive experience with design systems. At ZARA, he led the redesign of internal tools and design systems for the engineering community, improving adoption and collaboration efficiency. For Veridata, he created and managed a comprehensive design system for government digital services, including component libraries, design tokens, and documentation. The system reduced development time by 40% and achieved 90% adoption across 15+ government services. Jon understands both enterprise design systems and startup design processes, having implemented scalable design solutions across various industries.",
+    "answer_es": "Sí, Jon tiene amplia experiencia con sistemas de diseño. En ZARA, lideró el rediseño de herramientas internas y sistemas de diseño para la comunidad de ingeniería, mejorando la adopción y eficiencia de colaboración. Para Veridata, creó y gestionó un sistema de diseño integral para servicios digitales gubernamentales, incluyendo librerías de componentes, design tokens y documentación. El sistema redujo el tiempo de desarrollo en un 40% y logró 90% de adopción en 15+ servicios gubernamentales. Jon entiende tanto sistemas de diseño empresariales como procesos de diseño de startups, habiendo implementado soluciones de diseño escalables en varias industrias.",
+    "related_projects": [
+      "Zara Fashion",
+      "Veridata Design System"
+    ],
+    "tags": [
+      "Design Systems",
+      "Component Libraries",
+      "Design Tokens",
+      "Documentation",
+      "Enterprise Design",
+      "Startup Design",
+      "Scalable Solutions"
+    ],
+    "industries": [
+      "Enterprise",
+      "Government",
+      "Fashion Retail",
+      "Design Systems"
+    ],
+    "key_metrics": [
+      "-40% development time",
+      "90% design system adoption",
+      "15+ government services"
+    ],
+    "confidence_score": 0.96,
+    "status": "active",
+    "version": "1.0",
+    "created_at": "2025-08-29T16:10:00Z",
+    "updated_at": "2025-08-29T16:10:00Z",
+    "created_by": "jonbot_system",
+    "review_status": "pending_review"
+  },
+  {
+    "id": "q26",
+    "intent_key": "seniority_international",
+    "canonical_question": "Why could Jon be a good fit for a consulting environment like Accenture?",
+    "question_variants": [
+      "Is Jon good for consulting roles?",
+      "Why would Jon fit at Accenture?",
+      "What makes Jon suitable for consulting?",
+      "Does Jon have consulting experience?"
+    ],
+    "answer_en": "Jon is well-suited for consulting environments due to his diverse experience across multiple sectors and company types. He's worked with international companies like ZARA and Gestamp (both IBEX35 companies), gaining experience in global projects and cross-cultural design. His portfolio spans SaaS, Fintech, E-commerce, Public Sector, Health-Tech, and Construction Technology. Jon has managed design systems for government departments, worked with startups and large corporations, and demonstrated the ability to quickly adapt to different team processes and deliver measurable results. His experience in multidisciplinary teams and agile methodologies makes him adaptable to various business contexts.",
+    "answer_es": "Jon está bien preparado para entornos de consultoría debido a su experiencia diversa en múltiples sectores y tipos de empresas. Ha trabajado con empresas internacionales como ZARA y Gestamp (ambas empresas IBEX35), ganando experiencia en proyectos globales y diseño transcultural. Su portafolio abarca SaaS, Fintech, E-commerce, Sector Público, Health-Tech y Tecnología de Construcción. Jon ha gestionado sistemas de diseño para departamentos gubernamentales, trabajado con startups y grandes corporaciones, y demostrado la capacidad de adaptarse rápidamente a diferentes procesos de equipo y entregar resultados medibles. Su experiencia en equipos multidisciplinarios y metodologías ágiles lo hace adaptable a varios contextos empresariales.",
+    "related_projects": [
+      "Zara Fashion",
+      "Gestamp Automotive",
+      "O21 Healthcare SaaS",
+      "Tacktics Construction"
+    ],
+    "tags": [
+      "Consulting",
+      "International Experience",
+      "Cross-cultural Design",
+      "Global Projects",
+      "Multiple Sectors",
+      "Adaptability",
+      "Multidisciplinary Teams"
+    ],
+    "industries": [
+      "Consulting",
+      "Enterprise",
+      "Startup",
+      "Government",
+      "Healthcare",
+      "Fintech"
+    ],
+    "key_metrics": [
+      "10+ years experience",
+      "Multiple sectors",
+      "International companies",
+      "Agile methodologies"
+    ],
+    "confidence_score": 0.95,
+    "status": "active",
+    "version": "1.0",
+    "created_at": "2025-08-29T16:12:00Z",
+    "updated_at": "2025-08-29T16:12:00Z",
+    "created_by": "jonbot_system",
+    "review_status": "pending_review"
+  },
+  {
+    "id": "q27",
+    "intent_key": "seniority_product_designer",
+    "canonical_question": "Is Jon a good fit for a Senior Product Designer role?",
+    "question_variants": [
+      "Is Jon qualified for Senior Product Designer?",
+      "What makes Jon a good Senior Product Designer?",
+      "Does Jon have senior-level experience?",
+      "Is Jon ready for senior design roles?"
+    ],
+    "answer_en": "Yes, Jon is well-suited for Senior Product Designer roles. He has worked as a Senior Product Designer for the last 3+ years and has the experience and skills required for senior positions. Jon has led complete product design processes from research to delivery, managed multidisciplinary teams, and delivered measurable business impact. His experience includes user research, information architecture, prototyping, user testing, and stakeholder management. Jon has worked on complex products across multiple industries, demonstrating his ability to handle senior-level responsibilities and deliver strategic design solutions.",
+    "answer_es": "Sí, Jon está bien preparado para roles de Senior Product Designer. Ha trabajado como Senior Product Designer durante los últimos 3+ años y tiene la experiencia y habilidades requeridas para posiciones senior. Jon ha liderado procesos completos de diseño de productos desde la investigación hasta la entrega, gestionado equipos multidisciplinarios y entregado impacto empresarial medible. Su experiencia incluye investigación de usuarios, arquitectura de información, prototipado, pruebas de usuario y gestión de stakeholders. Jon ha trabajado en productos complejos en múltiples industrias, demostrando su capacidad para manejar responsabilidades de nivel senior y entregar soluciones de diseño estratégicas.",
+    "related_projects": [
+      "O21 Healthcare SaaS",
+      "Gestamp Automotive",
+      "Zara Fashion"
+    ],
+    "tags": [
+      "Senior Product Designer",
+      "Product Design Process",
+      "Team Management",
+      "Business Impact",
+      "Strategic Design",
+      "Complex Products",
+      "Multiple Industries"
+    ],
+    "industries": [
+      "Healthcare",
+      "Automotive",
+      "Fashion Retail",
+      "Enterprise"
+    ],
+    "key_metrics": [
+      "3+ years Senior Product Designer",
+      "Led complete design processes",
+      "Managed multidisciplinary teams"
+    ],
+    "confidence_score": 0.96,
+    "status": "active",
+    "version": "1.0",
+    "created_at": "2025-08-29T16:14:00Z",
+    "updated_at": "2025-08-29T16:14:00Z",
+    "created_by": "jonbot_system",
+    "review_status": "pending_review"
+  },
+  {
+    "id": "q28",
+    "intent_key": "seniority_strategic_ux",
+    "canonical_question": "Does Jon have experience in strategic UX?",
+    "question_variants": [
+      "What strategic UX experience does Jon have?",
+      "Has Jon done strategic UX work?",
+      "Does Jon understand UX strategy?",
+      "What experience does Jon have with strategic UX?"
+    ],
+    "answer_en": "Yes, Jon has developed strategic UX approaches across multiple projects. He focuses on strategic thinking that adds value to companies, as demonstrated in his work on O21 where he led product architecture and strategic design decisions. Jon understands the importance of aligning UX strategy with business goals, having worked on projects that improved consultation efficiency by 75% and increased user adoption by 45%. His strategic approach includes user research, information architecture, and design systems that scale across organizations. Jon's experience in both startups and enterprise environments gives him strategic perspective on how UX decisions impact business outcomes.",
+    "answer_es": "Sí, Jon ha desarrollado enfoques de UX estratégicos en múltiples proyectos. Se enfoca en el pensamiento estratégico que agrega valor a las empresas, como se demuestra en su trabajo en O21 donde lideró la arquitectura del producto y las decisiones de diseño estratégico. Jon entiende la importancia de alinear la estrategia de UX con los objetivos empresariales, habiendo trabajado en proyectos que mejoraron la eficiencia de consulta en un 75% y aumentaron la adopción de usuarios en un 45%. Su enfoque estratégico incluye investigación de usuarios, arquitectura de información y sistemas de diseño que escalan en las organizaciones. La experiencia de Jon en entornos tanto de startups como empresariales le da perspectiva estratégica sobre cómo las decisiones de UX impactan los resultados empresariales.",
+    "related_projects": [
+      "O21 Healthcare SaaS",
+      "Zara Fashion",
+      "Veridata Design System"
+    ],
+    "tags": [
+      "Strategic UX",
+      "Business Alignment",
+      "Product Architecture",
+      "Strategic Design",
+      "Scalable Solutions",
+      "Business Impact",
+      "Startup Experience",
+      "Enterprise Experience"
+    ],
+    "industries": [
+      "Healthcare",
+      "Enterprise",
+      "Government",
+      "Startup"
+    ],
+    "key_metrics": [
+      "+75% consultation efficiency",
+      "+45% user adoption",
+      "Strategic product architecture"
+    ],
+    "confidence_score": 0.95,
+    "status": "active",
+    "version": "1.0",
+    "created_at": "2025-08-29T16:16:00Z",
+    "updated_at": "2025-08-29T16:16:00Z",
+    "created_by": "jonbot_system",
+    "review_status": "pending_review"
+  },
+  {
+    "id": "q29",
+    "intent_key": "skills_agile",
+    "canonical_question": "Does Jon have experience with agile methodologies?",
+    "question_variants": [
+      "What agile experience does Jon have?",
+      "Has Jon worked with agile teams?",
+      "Does Jon know about agile methodologies?",
+      "What experience does Jon have with agile?"
+    ],
+    "answer_en": "Yes, Jon has extensive experience with agile methodologies, particularly in his work at ZARA where he worked in agile squads delivering value every two weeks. He's experienced in rapid prototyping, iterative design processes, and collaborative development cycles. Jon understands how to work within agile frameworks, including sprint planning, user story development, and continuous delivery. His agile experience demonstrates his ability to work efficiently in fast-paced environments while maintaining design quality and user-centered focus. Jon's agile approach includes quick guerrilla research, interactive prototyping, and regular stakeholder feedback loops.",
+    "answer_es": "Sí, Jon tiene amplia experiencia con metodologías ágiles, particularmente en su trabajo en ZARA donde trabajó en squads ágiles entregando valor cada dos semanas. Tiene experiencia en prototipado rápido, procesos de diseño iterativos y ciclos de desarrollo colaborativos. Jon entiende cómo trabajar dentro de marcos ágiles, incluyendo planificación de sprints, desarrollo de user stories y entrega continua. Su experiencia ágil demuestra su capacidad para trabajar eficientemente en entornos de ritmo rápido mientras mantiene la calidad del diseño y el enfoque centrado en el usuario. El enfoque ágil de Jon incluye investigación rápida de guerrilla, prototipado interactivo y bucles regulares de feedback de stakeholders.",
+    "related_projects": [
+      "Zara Fashion",
+      "O21 Healthcare SaaS",
+      "Tacktics Construction"
+    ],
+    "tags": [
+      "Agile Methodologies",
+      "Agile Squads",
+      "Sprint Planning",
+      "User Stories",
+      "Continuous Delivery",
+      "Rapid Prototyping",
+      "Iterative Design",
+      "Stakeholder Feedback"
+    ],
+    "industries": [
+      "Fashion Retail",
+      "Healthcare",
+      "Construction",
+      "Enterprise"
+    ],
+    "key_metrics": [
+      "Bi-weekly delivery cycles",
+      "Agile squads",
+      "Rapid prototyping",
+      "Iterative design"
+    ],
+    "confidence_score": 0.94,
+    "status": "active",
+    "version": "1.0",
+    "created_at": "2025-08-29T16:18:00Z",
+    "updated_at": "2025-08-29T16:18:00Z",
+    "created_by": "jonbot_system",
+    "review_status": "pending_review"
+  },
+  {
+    "id": "q30",
+    "intent_key": "skills_data_driven",
+    "canonical_question": "Does Jon have experience in data-driven projects?",
+    "question_variants": [
+      "What data-driven experience does Jon have?",
+      "Has Jon worked with analytics and metrics?",
+      "Does Jon use data in his design work?",
+      "What experience does Jon have with data-driven design?"
+    ],
+    "answer_en": "Yes, Jon has experience in data-driven design projects where he uses metrics and analytics to inform design decisions. He's worked on projects that track user behavior, conversion rates, and engagement metrics. For example, at Pull&Bear he improved mobile conversion rates by 35% and at O21 he increased consultation efficiency by 75%. Jon understands how to use data to identify user pain points, measure design impact, and iterate on solutions. His data-driven approach includes user research, A/B testing, and analytics to ensure design decisions are backed by evidence rather than assumptions.",
+    "answer_es": "Sí, Jon tiene experiencia en proyectos de diseño basados en datos donde utiliza métricas y analíticas para informar decisiones de diseño. Ha trabajado en proyectos que rastrean el comportamiento del usuario, tasas de conversión y métricas de engagement. Por ejemplo, en Pull&Bear mejoró las tasas de conversión móvil en un 35% y en O21 aumentó la eficiencia de consulta en un 75%. Jon entiende cómo usar los datos para identificar puntos de dolor del usuario, medir el impacto del diseño e iterar en soluciones. Su enfoque basado en datos incluye investigación de usuarios, pruebas A/B y analíticas para asegurar que las decisiones de diseño estén respaldadas por evidencia en lugar de suposiciones.",
+    "related_projects": [
+      "Pull&Bear Inditex",
+      "O21 Healthcare SaaS",
+      "Evcharge"
+    ],
+    "tags": [
+      "Data-Driven Design",
+      "Analytics",
+      "Metrics",
+      "User Behavior",
+      "Conversion Rates",
+      "A/B Testing",
+      "Evidence-Based Design"
+    ],
+    "industries": [
+      "Fashion Retail",
+      "Healthcare",
+      "Electric Mobility",
+      "E-commerce"
+    ],
+    "key_metrics": [
+      "+35% mobile conversion",
+      "+75% consultation efficiency",
+      "+39% charge completion"
+    ],
+    "confidence_score": 0.93,
+    "status": "active",
+    "version": "1.0",
+    "created_at": "2025-08-29T16:20:00Z",
+    "updated_at": "2025-08-29T16:20:00Z",
+    "created_by": "jonbot_system",
+    "review_status": "pending_review"
+  },
+  {
+    "id": "q31",
+    "intent_key": "skills_design_tools",
+    "canonical_question": "What design tools does Jon use?",
+    "question_variants": [
+      "What tools does Jon use for design?",
+      "Does Jon know Figma?",
+      "What design software does Jon use?",
+      "What tools does Jon use for UX design?"
+    ],
+    "answer_en": "Jon primarily uses Figma for design work, along with other tools depending on project requirements. His toolset includes Figma for UI/UX design and prototyping, various user research methodologies, prototyping tools, and analytics platforms. Jon is proficient in creating wireframes, prototypes, and design systems using modern design tools. He also has experience with accessibility tools and testing platforms to ensure inclusive design. Jon's tool proficiency allows him to work efficiently across different design phases, from research and ideation to final implementation and testing.",
+    "answer_es": "Jon utiliza principalmente Figma para el trabajo de diseño, junto con otras herramientas dependiendo de los requisitos del proyecto. Su conjunto de herramientas incluye Figma para diseño UI/UX y prototipado, varias metodologías de investigación de usuarios, herramientas de prototipado y plataformas de analíticas. Jon es competente en crear wireframes, prototipos y sistemas de diseño usando herramientas de diseño modernas. También tiene experiencia con herramientas de accesibilidad y plataformas de testing para asegurar diseño inclusivo. La competencia en herramientas de Jon le permite trabajar eficientemente en diferentes fases de diseño, desde investigación e ideación hasta implementación final y testing.",
+    "related_projects": [
+      "Evcharge",
+      "O21 Healthcare SaaS",
+      "Zara Fashion"
+    ],
+    "tags": [
+      "Figma",
+      "UI/UX Design",
+      "Prototyping",
+      "Wireframes",
+      "Design Systems",
+      "Accessibility Tools",
+      "Testing Platforms"
+    ],
+    "industries": [
+      "Design",
+      "UX",
+      "UI",
+      "Prototyping"
+    ],
+    "key_metrics": [
+      "Figma expertise",
+      "Prototyping",
+      "User research",
+      "Accessibility tools"
+    ],
+    "confidence_score": 0.94,
+    "status": "active",
+    "version": "1.0",
+    "created_at": "2025-08-29T16:22:00Z",
+    "updated_at": "2025-08-29T16:22:00Z",
+    "created_by": "jonbot_system",
+    "review_status": "pending_review"
+  },
+  {
+    "id": "q32",
+    "intent_key": "skills_frontend",
+    "canonical_question": "Does Jon have frontend development skills?",
+    "question_variants": [
+      "Can Jon code frontend?",
+      "What frontend skills does Jon have?",
+      "Does Jon know HTML/CSS/JavaScript?",
+      "What development skills does Jon have?"
+    ],
+    "answer_en": "Yes, Jon has frontend development skills, particularly demonstrated in his work for Biscay Public Administration where he developed the front-end of government websites using HTML, CSS, and JavaScript. He focuses on accessibility standards and creating inclusive digital experiences. Jon's frontend skills complement his design work, allowing him to understand technical constraints and create designs that are both beautiful and implementable. His experience includes responsive design, accessibility compliance, and working with development teams to ensure design fidelity. Jon's technical background helps bridge the gap between design and development teams.",
+    "answer_es": "Sí, Jon tiene habilidades de desarrollo frontend, particularmente demostradas en su trabajo para la Administración Pública de Bizkaia donde desarrolló el front-end de sitios web gubernamentales usando HTML, CSS y JavaScript. Se enfoca en estándares de accesibilidad y crear experiencias digitales inclusivas. Las habilidades frontend de Jon complementan su trabajo de diseño, permitiéndole entender restricciones técnicas y crear diseños que son tanto hermosos como implementables. Su experiencia incluye diseño responsive, cumplimiento de accesibilidad y trabajar con equipos de desarrollo para asegurar fidelidad del diseño. El background técnico de Jon ayuda a cerrar la brecha entre equipos de diseño y desarrollo.",
+    "related_projects": [
+      "Biscay Public Administration"
+    ],
+    "tags": [
+      "Frontend Development",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Accessibility",
+      "Responsive Design",
+      "Government Standards"
+    ],
+    "industries": [
+      "Government",
+      "Public Sector",
+      "Frontend Development",
+      "Accessibility"
+    ],
+    "key_metrics": [
+      "HTML/CSS/JavaScript",
+      "Accessibility compliance",
+      "Responsive design",
+      "Government standards"
+    ],
+    "confidence_score": 0.92,
+    "status": "active",
+    "version": "1.0",
+    "created_at": "2025-08-29T16:24:00Z",
+    "updated_at": "2025-08-29T16:24:00Z",
+    "created_by": "jonbot_system",
+    "review_status": "pending_review"
+  },
+  {
+    "id": "q33",
+    "intent_key": "ai_management_experience",
+    "canonical_question": "Does Jon manage AI?",
+    "question_variants": [
+      "Has Jon led AI initiatives?",
+      "What is Jon's experience with AI tools and workflows?",
+      "Does Jon oversee AI features in products?",
+      "How comfortable is Jon with AI/ML concepts?",
+      "Does Jon manage AI-driven projects?"
+    ],
+    "answer_en": "Jon manages AI-enabled product work rather than pure research teams. He has designed and shipped features that integrate LLMs and automation into product workflows, and he built this jonbot using AI tools (RAG-style retrieval, structured prompts, and a MockAPI backend). His background in Computer Engineering helps him understand the technology, scope feasibility with engineers, and make trade-offs. Above all, Jon is a very curious person who continuously experiments with AI to improve user experience and team efficiency.",
+    "answer_es": "Jon gestiona trabajo de producto habilitado por IA más que equipos de investigación pura. Ha diseñado y lanzado funcionalidades que integran LLMs y automatización en los flujos de producto, y construyó este jonbot con herramientas de IA (recuperación tipo RAG, prompts estructurados y un backend en MockAPI). Su formación en Ingeniería Informática le ayuda a entender la tecnología, evaluar la viabilidad con ingeniería y tomar decisiones. Además, Jon es una persona muy curiosa que experimenta continuamente con IA para mejorar la experiencia de usuario y la eficiencia del equipo.",
+    "related_projects": [
+      "AI CHAT BOT (jonbot)",
+      "API Call Conversational (MockAPI)",
+      "JonGo Studio – AI-assisted design workflows"
+    ],
+    "tags": [
+      "AI Product Management",
+      "LLM Integration",
+      "Prompt Engineering",
+      "RAG",
+      "Prototyping",
+      "Design Systems"
+    ],
+    "industries": [
+      "SaaS",
+      "Consulting",
+      "Enterprise"
+    ],
+    "key_metrics": [
+      "Faster prototyping cycles using AI-assisted tooling",
+      "Improved design–dev handoff clarity via structured prompts"
+    ],
+    "confidence_score": 0.85,
+    "status": "active",
+    "version": "1.0",
+    "created_at": "2025-08-29T00:00:00Z",
+    "updated_at": "2025-08-29T00:00:00Z",
+    "created_by": "jonbot_system",
+    "review_status": "pending_review"
+  }
+]

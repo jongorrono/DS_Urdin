@@ -1,0 +1,207 @@
+{
+  "fit_scores": {
+    "design_roles": {
+      "senior_product_designer": {
+        "title": "Senior Product Designer",
+        "score": 96,
+        "category": "design_leadership"
+      },
+      "ux_designer": {
+        "title": "UX Designer",
+        "score": 95,
+        "category": "core_design"
+      },
+      "ux_ui_designer": {
+        "title": "UX/UI Designer",
+        "score": 92,
+        "category": "core_design"
+      },
+      "ux_researcher": {
+        "title": "UX Researcher",
+        "score": 85,
+        "category": "research"
+      },
+      "ui_designer": {
+        "title": "UI Designer",
+        "score": 83,
+        "category": "visual_design"
+      },
+      "behavioral_designer": {
+        "title": "Behavioral Designer",
+        "score": 81,
+        "category": "specialized_design"
+      },
+      "design_strategist": {
+        "title": "Design Strategist",
+        "score": 92,
+        "category": "design_leadership"
+      },
+      "interaction_designer": {
+        "title": "Interaction Designer",
+        "score": 88,
+        "category": "core_design"
+      },
+      "service_designer": {
+        "title": "Service Designer",
+        "score": 75,
+        "category": "specialized_design"
+      },
+      "visual_designer": {
+        "title": "Visual Designer",
+        "score": 70,
+        "category": "visual_design"
+      },
+      "information_architect": {
+        "title": "Information Architect",
+        "score": 78,
+        "category": "specialized_design"
+      },
+      "accessibility_specialist": {
+        "title": "Accessibility Specialist",
+        "score": 65,
+        "category": "specialized_design"
+      },
+      "design_systems_lead": {
+        "title": "Design Systems Lead",
+        "score": 86,
+        "category": "design_leadership"
+      },
+      "frontend_designer": {
+        "title": "Front-end Designer / UX Engineer",
+        "score": 83,
+        "category": "technical_design"
+      },
+      "content_designer": {
+        "title": "Content Designer",
+        "score": 45,
+        "category": "content_design"
+      },
+      "graphic_designer": {
+        "title": "Graphic Designer",
+        "score": 50,
+        "category": "visual_design"
+      }
+    },
+    "product_management": {
+      "product_manager": {
+        "title": "Product Manager",
+        "score": 75,
+        "category": "product_management"
+      }
+    },
+    "technical_roles": {
+      "data_scientist": {
+        "title": "Data Scientist",
+        "score": 25,
+        "category": "data_science"
+      },
+      "software_engineer": {
+        "title": "Software Engineer",
+        "score": 30,
+        "category": "development"
+      },
+      "devops_engineer": {
+        "title": "DevOps Engineer",
+        "score": 10,
+        "category": "infrastructure"
+      }
+    },
+    "agile_roles": {
+      "scrum_master": {
+        "title": "Scrum Master",
+        "score": 40,
+        "category": "agile_management"
+      }
+    },
+    "marketing_roles": {
+      "digital_marketing_specialist": {
+        "title": "Digital Marketing Specialist",
+        "score": 35,
+        "category": "marketing"
+      }
+    },
+    "business_roles": {
+      "hr_tech_specialist": {
+        "title": "HR Tech Specialist",
+        "score": 20,
+        "category": "hr_technology"
+      },
+      "sales_manager": {
+        "title": "Sales Manager",
+        "score": 15,
+        "category": "sales"
+      }
+    },
+    "security_roles": {
+      "cybersecurity_analyst": {
+        "title": "Cybersecurity Analyst",
+        "score": 10,
+        "category": "security"
+      }
+    }
+  },
+  "categories": {
+    "design_leadership": {
+      "description": "Senior design roles with leadership responsibilities",
+      "keywords": ["leadership", "strategy", "senior", "lead", "management"]
+    },
+    "core_design": {
+      "description": "Core UX/UI design roles",
+      "keywords": ["ux", "ui", "design", "user experience", "interface"]
+    },
+    "research": {
+      "description": "Research-focused design roles",
+      "keywords": ["research", "user research", "ux research", "qualitative", "quantitative"]
+    },
+    "visual_design": {
+      "description": "Visual and graphic design roles",
+      "keywords": ["visual", "graphic", "branding", "illustration", "typography"]
+    },
+    "specialized_design": {
+      "description": "Specialized design disciplines",
+      "keywords": ["behavioral", "service", "information architecture", "accessibility"]
+    },
+    "technical_design": {
+      "description": "Design roles with technical implementation",
+      "keywords": ["frontend", "ux engineer", "code", "development", "technical"]
+    },
+    "content_design": {
+      "description": "Content and copy-focused design",
+      "keywords": ["content", "copy", "writing", "copywriting", "content strategy"]
+    }
+  },
+  "score_ranges": {
+    "excellent": {
+      "min": 80,
+      "max": 100,
+      "color": "#2d5a27",
+      "icon": "🏆",
+      "title": "Excellent fit!",
+      "description": "Jon's profile aligns almost perfectly."
+    },
+    "good": {
+      "min": 60,
+      "max": 79,
+      "color": "#4caf50",
+      "icon": "🚀",
+      "title": "Good fit!",
+      "description": "Jon covers many of the key needs."
+    },
+    "partial": {
+      "min": 40,
+      "max": 59,
+      "color": "#8bc34a",
+      "icon": "⚡",
+      "title": "Partial fit!",
+      "description": "A few overlaps, but not a strong fit."
+    },
+    "low": {
+      "min": 0,
+      "max": 39,
+      "color": "#ff6b6b",
+      "icon": "🎲",
+      "title": "Low fit!",
+      "description": "Jon's skills don't match this role."
+    }
+  }
+}

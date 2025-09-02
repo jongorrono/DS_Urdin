@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Conversational bot by Jon</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+  <script src="./js/config.js"></script>
+  <script src="./js/script.js" defer></script>
+  <link rel="stylesheet" href="css/chat-style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header">
+            <div class="search-container">
+                <div class="search-input-wrapper">
+                    <img src="img/logo.png" alt="Jongo Logo" class="logo-image">
+                    <button class="clear-btn" id="clearSearch">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Chat Section -->
+        <main class="main-content">
+            <!-- Chat Messages Area -->
+            <div class="chat-messages" id="chatMessages">
+                <!-- Messages will be dynamically added here -->
+            </div>
+
+            <div class="chat-container">
+                <div class="main-input-wrapper">
+                    <input type="text" class="main-input" id="mainInput" placeholder="Try asking: What's Jon's experience with SaaS?">
+                    <button class="send-btn" id="sendBtn">
+                        💬
+                    </button>
+                </div>
+            </div>
+
+            <!-- Action Cards Section -->
+            <section class="action-cards">
+                <div class="card" data-action="case-study">
+                    <h3 class="card-title" id="case-study-title">Loading...</h3>
+                    <p class="card-description" id="case-study-description">Loading...</p>
+                </div>
+
+                <div class="card" data-action="company-fit">
+                    <h3 class="card-title" id="company-fit-title">Loading...</h3>
+                    <p class="card-description" id="company-fit-description">Loading...</p>
+                </div>
+
+                <div class="card" data-action="about-jon">
+                    <h3 class="card-title" id="about-jon-title">Loading...</h3>
+                    <p class="card-description" id="about-jon-description">Loading...</p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+</body>
+</html>
