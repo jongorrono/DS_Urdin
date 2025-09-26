@@ -1,0 +1,284 @@
+:root{
+    /* ++++++++++++++++ Color property tokens +++++++++++++++*/
+   --neutral-100:#02050E;
+   --neutral-95:#0E131B;
+   --neutral-90: #1C1F27;
+   --neutral-80: #20242D;
+   --neutral-75: #2B303A;
+   --neutral-70: #3B404E;
+   --neutral-60: #6E7584;
+   --neutral-50: #838B9A;
+   --neutral-40: #9AA1B1;
+   --neutral-30: #B1B8C8;
+   --neutral-25: #C9D0DE;
+   --neutral-20: #E2E8F5;
+   --neutral-15: #EAEFFA;
+   --neutral-10: #F4F6FD;
+   --neutral-5: #F8FAFF;
+   --neutral-00: #FFFFFF;
+   --primary-110:#03064E;
+   --primary-100:#0007AE;
+   --primary-95:#1118C0;
+   --primary-90:#1F2BD5;
+   --primary-80:#0C4CDC;
+   --primary-70:#1C64F2;
+   --primary-60:#3F83F8;
+   --primary-50:#3F83F8;
+   --primary-40:#76A9FA;
+   --primary-30:#A4CAFE;
+   --primary-20:#C3DDFD;
+   --primary-15:#E1EFFE;
+   --primary-10:#EBF5FF;
+   --warning:#F59E0B;
+   --success:#10B981;
+   --error:#EF4444;
+
+
+/* ++++++++++++++++ Spacing and Font size property tokens +++++++++++++++*/
+   --base-0: 0px;
+   --base-4: 4px; 
+   --base-8:8px;
+   --base-12:12px;
+   --base-14:14px;
+   --base-16:16px;
+   --base-18:18px; 
+   --base-20:20px;
+   --base-22:22px;
+   --base-24:24px;
+   --base-28:28px;
+   --base-32:32px; 
+   --base-40:36px; 
+   --base-48:48px; 
+   --base-56:56px;
+   --base-64:64px;
+   --base-72:72px;
+   --base-80:80px;
+   --base-88:88px;
+   --base-96:96px;
+   --base-128:128px;
+   --base-136:136px;
+   --base-148:148px;
+   --base-156:156px;
+   --base-164:164px;
+   --base-172:172px;
+   --base-180:180px;
+   --base-188:188px;
+   --base-196:196px;
+   --base-204:204px;
+   --base-212:212px;
+   --base-9999:9999px;
+   /* ++++++++++++++++ Font-family property tokens +++++++++++++++*/
+   --type-body: "IBM Plex Mono", monospace;
+   --type-header:"rubik", sans-serif;
+   --type-logo:'IBM Plex Sans Condensed', sans-serif;
+   --kreos:"Montserrat", sans-serif;
+  
+   /* ++++++++++++++++ Font-weight property tokens +++++++++++++++*/
+   --weight-extralight:200;
+   --weight-light:300;
+   --weight-regular:400;
+   --weight-medium:500;
+   --weight-semibold:600;
+   --weight-bold:700;
+   --weight-extrabold:800;
+   --weight-black:900;
+   /* ++++++++++++++++ Line-height property tokens +++++++++++++++*/
+   --line-none:100%;
+   --line-tight:120%;
+   --line-regular:140%;
+   --line-medium:150%;
+   --line-loose:160%;
+   --line-extended:180%;
+   --line-height-L:1.4em;
+   --line-heigth-title-L:1.3em;
+   /* ++++++++++++++++ box shadow property tokens +++++++++++++++*/
+   --shadow-xs: 0px 1px 2px rgba(0, 0, 0, 0.05);
+   --shadow-sm: 0px 2px 4px rgba(0, 0, 0, 0.06);
+   --shadow-md: 0px 4px 8px rgba(0, 0, 0, 0.08);
+   --shadow-lg: 0px 8px 16px rgba(0, 0, 0, 0.1);
+   --shadow-xl: 0px 16px 32px rgba(0, 0, 0, 0.12);
+   --shadow-2xl: 0px 24px 48px rgba(0, 0, 0, 0.15);
+   --shadow-inner: inset 0px 2px 4px rgba(0, 0, 0, 0.06);
+   --shadow-none: none;
+    /* Legacy shadow (keeping for compatibility) */
+    --shadow-M: 0px 16px 40px rgba(137, 162, 206, 0.2);
+   /* ++++++++++++++++ Border Radius Tokens +++++++++++++++*/
+   --radius-none: 0px;
+   --radius-sm: var(--base-4);
+   --radius-md: var(--base-8);
+   --radius-lg: var(--base-12);
+   --radius-xl: var(--base-16);
+   --radius-2xl: var(--base-24);
+   --radius-3xl: var(--base-32);
+   --radius-4xl: var(--base-48);
+   --radius-5xl: var(--base-64);
+   --radius-full: var(--base-9999);
+   
+   
+   /* ++++++++++++++++ Semantic Color Tokens +++++++++++++++*/
+   
+   /* Brand Colors */
+   --color-brand-primary: var(--primary-100);
+   --color-brand-primary-hover: var(--primary-110);
+   --color-brand-primary-light: var(--primary-20);
+   --color-brand-primary-background: var(--primary-10);
+   
+   /* Text Colors */
+   --color-text-primary: var(--neutral-90);
+   --color-text-primary-disabled: var(--neutral-50);
+   --color-text-secondary: var(--neutral-70);
+   --color-text-secondary-disabled: var(--neutral-50);
+   --color-text-tertiary: var(--primary-90);
+   --color-text-inverse: var(--neutral-00);
+   --color-text-brand: var(--primary-100);
+   
+   /* Background Colors */
+   --color-background-primary: var(--neutral-00);
+   --color-background-secondary: var(--neutral-10);
+   --color-background-tertiary: var(--neutral-20);
+   --color-background-brand: var(--primary-100);
+   --color-background-overlay: var(--neutral-90);
+   
+   /* Border Colors */
+   --color-border-primary: var(--neutral-20);
+   --color-border-secondary: var(--neutral-40);
+   --color-border-brand: var(--primary-100);
+   --color-border-focus: var(--primary-60);
+   
+   /* Status Colors */
+   --color-status-success: var(--success);
+   --color-status-warning: var(--warning);
+   --color-status-error: var(--error);
+   
+   /* ++++++++++++++++ Semantic Spacing Tokens +++++++++++++++*/
+   
+   /* Component Spacing */
+   --space-component-xs: var(--base-4);
+   --space-component-sm: var(--base-8);
+   --space-component-m: var(--base-12);
+   --space-component-md: var(--base-16);
+   --space-component-lg: var(--base-24);
+   --space-component-xl: var(--base-32);
+   --space-component-2xl: var(--base-48);
+   
+   /* Layout Spacing */
+   --space-layout-xs: var(--base-24);
+   --space-layout-sm: var(--base-48);
+   --space-layout-md: var(--base-64);
+   --space-layout-lg: var(--base-96);
+   --space-layout-xl: var(--base-128);
+   --space-layout-2xl: var(--base-180);
+   
+   /* Content Spacing */
+   --space-content-xs: var(--base-8);
+   --space-content-sm: var(--base-16);
+   --space-content-md: var(--base-24);
+   --space-content-lg: var(--base-32);
+   --space-content-xl: var(--base-48);
+   
+   /* ++++++++++++++++ Semantic Typography Tokens +++++++++++++++*/
+   
+   /* Font Families */
+   --font-family-primary: var(--type-header);
+   --font-family-secondary: var(--type-body);
+   --font-family-brand: var(--type-logo);
+   
+   /* Font Sizes */
+   --font-size-xs: var(--base-14);
+   --font-size-sm: var(--base-16);
+   --font-size-md: var(--base-18);
+   --font-size-lg: var(--base-20);
+   --font-size-xl: var(--base-24);
+   --font-size-2xl: var(--base-32);
+   --font-size-3xl: var(--base-40);
+   --font-size-4xl: var(--base-48);
+   --font-size-5xl: var(--base-64);
+   --font-size-6xl: var(--base-88);
+   
+   /* Font Weights */
+   --font-weight-light: var(--weight-light);
+   --font-weight-regular: var(--weight-regular);
+   --font-weight-medium: var(--weight-medium);
+   --font-weight-semibold: var(--weight-semibold);
+   --font-weight-bold: var(--weight-bold);
+   
+   /* Line Heights */
+   --line-height-tight: var(--line-tight);
+   --line-height-normal: var(--line-regular);
+   --line-height-relaxed: var(--line-loose);
+   
+   /* ++++++++++++++++ Component Semantic Tokens +++++++++++++++*/
+   
+   /* Button Tokens */
+   --button-primary-bg: var(--color-brand-primary);
+   --button-primary-bg-hover: var(--color-brand-primary-hover);
+   --button-primary-bg-active: var(--color-brand-primary-hover);
+   --button-primary-text: var(--color-text-inverse);
+   --button-primary-text-disabled: var(--color-text-primary-disabled);
+   --button-primary-border: transparent;
+   --button-primary-padding: var(--space-component-sm) var(--space-component-lg);
+   --button-primary-radius: var(--radius-button);
+   
+   --button-secondary-bg: transparent;
+   --button-secondary-bg-hover: var(--color-background-tertiary);
+   --button-secondary-text: var(--color-text-brand);
+   --button-secondary-text-disabled: var(--color-text-secondary-disabled);
+   --button-secondary-border: var(--color-border-brand);
+   --button-secondary-padding: var(--space-component-sm) var(--space-component-md);
+   
+   /* Card Tokens */
+   --card-bg: var(--color-background-primary);
+   --card-border: var(--color-border-primary);
+   --card-radius: var(--radius-card);
+   --card-padding: var(--space-component-lg);
+   --card-shadow: var(--shadow-card);
+   
+   /* Navigation Tokens */
+   --nav-bg: var(--color-background-primary);
+   --nav-text: var(--color-text-brand);
+   --nav-text-hover: var(--color-text-brand);
+   --nav-bg-hover: var(--color-background-tertiary);
+   --nav-padding: var(--space-component-sm) var(--space-component-md);
+   --nav-radius: 200px;
+   
+   /* ++++++++++++++++ Semantic Border Radius Tokens +++++++++++++++*/
+   
+   /* Component Radius */
+   --radius-button: var(--radius-full);
+   --radius-card: var(--radius-2xl);
+   --radius-input: var(--radius-md);
+   --radius-dropdown: var(--radius-3xl);
+   --radius-modal: var(--radius-xl);
+   --radius-badge: var(--radius-full);
+   
+   /* ++++++++++++++++ Semantic Shadow Tokens +++++++++++++++*/
+   
+   /* Component Shadows */
+   --shadow-card: var(--shadow-lg);
+   --shadow-card-hover: var(--shadow-xl);
+   --shadow-modal: var(--shadow-2xl);
+   --shadow-dropdown: var(--shadow-lg);
+   --shadow-tooltip: var(--shadow-md);
+   
+   /* Layout Shadows */
+   --shadow-header: var(--shadow-sm);
+   --shadow-sidebar: var(--shadow-md);
+   --shadow-footer: var(--shadow-sm);
+   
+   /* Interactive Shadows */
+   --shadow-focus: var(--shadow-brand-sm);
+   --shadow-focus-ring: 0px 0px 0px 3px rgba(0, 7, 174, 0.1);
+   --shadow-pressed: var(--shadow-inner);
+  
+   /* ++++++++++++++++ Layout Semantic Tokens +++++++++++++++*/
+   
+   /* Container Sizes */
+   --container-sm: 640px;
+   --container-md: 768px;
+   --container-lg: 1024px;
+   --container-xl: 1280px;
+   --container-2xl: 1440px;
+   --container-full: 100%;
+   
+}
+

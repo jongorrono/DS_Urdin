@@ -1,0 +1,234 @@
+@import url('../css/tokens.css');
+/*------------------------- PRIMARY BUTTONS ------------------------------*/
+.button_primary, .button_primary_S, .button_primary_XL {
+    border-radius: var(--button-primary-radius);
+    cursor: pointer;
+    border: 0;
+    font-family:var(--font-family-primary);
+    box-shadow: var(--shadow-card);
+    font-size: var(--font-size-sm);
+    color: var(--color-text-inverse);
+      text-align:center;
+  text-decoration: none;
+      font-weight: var(--weight-medium);
+      background-color: var(--button-primary-bg);
+      text-decoration-line:none;
+  }
+  .button_primary:hover, .button_primary_S:hover, .button_primary_XL:hover {
+    background-color: var(--button-primary-bg-hover);
+    color: var(--color-text-inverse)!important;
+  text-decoration: none;
+      border: var(--button-primary-border);
+      text-align:center;
+      text-decoration-line:none;
+  }
+  .button_primary:active, .button_primary_S:active, .button_primary_XL:active {
+      font-family: var(--font-family-primary);
+    background-color: var(--button-primary-bg-active);
+    color: var(--color-text-inverse);
+  text-decoration: none;
+    box-shadow: var(--shadow-focus);
+      text-align:center;
+      text-decoration-line:none;
+  }
+  .button_primary_S
+  {
+    padding: var(--space-component-sm) var(--space-component-md);
+  }
+  .button_primary
+  {
+    padding: var(--space-component-m) var(--space-component-lg);
+  }
+  .button_primary_XL
+  {
+    padding: var(--space-component-lg) var(--space-component-2xl);
+    font-size: var(--font-size-lg); 
+  }
+  .button_primary:disabled, .button_primary_S:disabled, .button_primary_XL:disabled {
+    background-color: var(--button-primary-bg-disabled);
+    border: var(--button-primary-border-disabled);
+    color: var(--button-primary-text-disabled);
+    cursor: not-allowed;
+    opacity: 0.5;
+    pointer-events: none;
+  }
+  /*+++++++++++++ BUTTON SECONDARY ----------------------------------+*/
+  .button_secondary, .button_secondary_S, .button_secondary_XL {
+    border-radius: var(--button-primary-radius);
+    cursor: pointer;
+    border: 0;
+    background-color: var(--button-secondary-bg);
+  font-family:var(--font-family-primary);
+    box-shadow: var(--shadow-card);
+    font-size: var(--font-size-sm);
+  color:var(--button-secondary-text) !important;
+      border: 1px solid var(--button-secondary-border);
+      font-weight: var(--font-weight-regular);
+      text-align:center;
+      text-decoration: none;
+      text-decoration-line:none;
+      line-height: 1;
+       display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: var(--base-64);
+  }
+  .button_secondary
+  {
+  
+    padding: var(--space-component-m) var(--space-component-md) !important;
+  }
+  .button_secondary_S
+  {
+    padding: var(--space-component-sm) var(--space-component-md);
+  }
+  .button_secondary_XL
+  {
+  
+    padding: var(--space-component-lg) var(--space-component-2xl) !important;
+  }
+  
+  .button_secondary:hover, .button_secondary_S:hover, .button_secondary_XL:hover {
+    background-color: var(--button-secondary-bg-hover);
+    color: var(--button-secondary-text);
+    border: 1px solid var(--button-secondary-border);
+}
+  .button_secondary:active, .button_secondary_S:active, .button_secondary_XL:active {
+      font-family: var(--font-family-primary);
+    background-color: var(--button-secondary-bg-hover);
+    color: var(--button-secondary-text);
+  text-decoration: none;
+    box-shadow: var(--shadow-focus);
+    transform: translateY(10px);
+    transition: 100ms;
+      text-decoration-line:none;
+  }
+  .button_secondary_S {
+    padding: var(--space-component-sm) var(--space-component-md);
+      font-size: var(--font-size-sm);
+      text-align:center;
+    text-decoration: none;
+      text-decoration-line:none;
+  
+  }
+  .button_secondary:disabled, .button_secondary_S:disabled, .button_secondary_XL:disabled {
+    background-color: var(--button-secondary-bg-disabled);
+    border: var(--button-secondary-border-disabled);
+    color: var(--button-secondary-text-disabled);
+    cursor: not-allowed;
+    opacity: 0.5;
+    pointer-events: none;
+  }
+  /*+++++++++++ BUTTON TERTIARY ++++++++++++++++++++++++++++++++++++++*/
+  
+  .button_tertiary,  .button_tertiary_XL, .button_tertiary_S
+  {
+    border-radius: var(--button-primary-radius);
+    cursor: pointer;
+    border: 0;
+    background-color: var(--button-tertiary-bg);
+  font-family:var(--font-family-primary);
+    box-shadow: var(--shadow-card);
+    font-size: var(--font-size-sm);
+  color:var(--button-tertiary-text) !important;
+      border: var(--button-tertiary-border);
+      font-weight: var(--weight-medium);
+      text-align:center;
+  text-decoration: none;
+      text-decoration-line:none;
+  
+  }
+  .button_tertiary:hover, .button_tertiary_S:hover, .button_tertiary_XL:hover
+  {
+      font-family: var(--font-family-primary);
+    background-color: var(--button-tertiary-bg-hover);
+    color: var(--button-tertiary-text)!important;
+    box-shadow: var(--shadow-focus);
+  text-decoration: none;
+      border: 0px;
+      text-align:center;
+      text-decoration-line:none;
+  }
+  .button_tertiary:active, .button_tertiary_S:active, .button_tertiary_XL:active
+  {
+      font-family: var(--font-family-primary);
+    background-color: var(--button-tertiary-bg-hover);
+    color: var(--button-tertiary-text);
+  text-decoration: none;
+    box-shadow: var(--shadow-M);
+      text-align:center;
+      text-decoration-line:none;
+  }
+  .button_tertiary
+  {
+
+    padding: var(--space-component-m) var(--space-component-lg);
+  }
+  .button_tertiary_S
+  {
+    padding: var(--space-component-sm) var(--space-component-md);
+  }
+  .button_tertiary_XL
+  {
+    padding: var(--space-component-lg) var(--space-component-2xl);
+    font-size: var(--font-size-lg);
+  }
+  .button_tertiary:disabled, .button_tertiary_S:disabled, .button_tertiary_XL:disabled {
+    background-color: var(--button-tertiary-bg-disabled);
+    border: var(--button-tertiary-border-disabled);
+    color: var(--button-tertiary-text-disabled);
+    cursor: not-allowed;
+    opacity: 0.5;
+    pointer-events: none;
+  }
+  /*+++++++++++ LINK  STYLE BUTTON ++++++++++++++++++++++++++++++++++++++++++++++*/
+  .link, .link_S, .link_XL
+  {
+    
+    border-radius: var(--button-primary-radius);
+    cursor: pointer;
+    border: 0;
+  font-family:var(--font-family-primary);
+    letter-spacing: var(--letter-spacing-primary);
+    font-size: var(--font-size-sm);
+  color:var(--button-secondary-text);
+      border: var(--button-primary-border);
+      font-weight: var(--weight-regular);
+      text-decoration: none;
+      background-color: transparent;
+  }
+  .link:hover, .link_S:hover, .link_XL:hover
+  {
+      font-family: var(--font-family-primary);
+    background-color: var(--color-background-tertiary) !important;
+    color: var(--color-text-tertiary);
+  text-decoration: none;
+      border: var(--button-primary-border);
+  }
+  .link:active, .link_S:active, .link_XL:active
+  {
+      font-family: var(--font-family-primary);
+    background-color: var(--button-primary-bg-hover);
+    color: var(--button-primary-text);
+    box-shadow: var(--shadow-M);
+  }
+  .link
+  {
+    padding: var(--space-component-m) var(--space-component-md);
+  }
+  .link_S
+  {
+    padding: var(--space-component-sm) var(--space-component-md);
+  }
+  .link_XL
+  {
+    padding: var(--space-component-lg) var(--space-component-2xl);
+  }
+  .link:disabled, .link_S:disabled, .link_XL:disabled {
+    background-color: var(--button-primary-bg-disabled);
+    border: var(--button-primary-border-disabled);
+    color: var(--button-primary-text-disabled);
+    cursor: not-allowed;
+    opacity: 0.5;
+    pointer-events: none;
+  }
