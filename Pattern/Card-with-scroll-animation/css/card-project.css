@@ -1,0 +1,300 @@
+/* Add minimum height to ensure scrolling */
+body {
+    min-height: 200vh;
+}
+
+:root{
+    /* ++++++++++++++++ Color property tokens +++++++++++++++*/
+   --neutral-100:#02050E;
+   --neutral-95:#0E131B;
+   --neutral-90: #1C1F27;
+   --neutral-80: #20242D;
+   --neutral-75: #2B303A;
+   --neutral-70: #3B404E;
+   --neutral-60: #6E7584;
+   --neutral-50: #838B9A;
+   --neutral-40: #9AA1B1;
+   --neutral-30: #B1B8C8;
+   --neutral-25: #C9D0DE;
+   --neutral-20: #E2E8F5;
+   --neutral-15: #EAEFFA;
+   --neutral-10: #F4F6FD;
+   --neutral-5: #F8FAFF;
+   --neutral-00: #FFFFFF;
+   --primary-110:#03064E;
+   --primary-100:#0007AE;
+  
+/* ++++++++++++++++ Spacing and Font size property tokens +++++++++++++++*/
+   --base-4: 4px; 
+   --base-8:8px;
+   --base-14:14px;
+   --base-16:16px;
+   --base-18:18px; 
+   --base-20:20px;
+   --base-22:22px;
+   --base-24:24px;
+   --base-32:28px; 
+   --base-40:36px; 
+   --base-48:48px; 
+   --base-64:64px;
+   --base-80:68px;
+   --base-88:88px;
+   --base-96:96px;
+   --base-128:128px;
+   --base-136:136px;
+   --base-148:148px;
+   --base-156:156px;
+   --base-164:164px;
+   --base-164:164px;
+   --base-172:172px;
+   --base-180:180px;
+   --base-188:188px;
+   --base-196:196px;
+   --base-204:204px;
+   --base-212:212px;
+   /* ++++++++++++++++ Font-family property tokens +++++++++++++++*/
+   --type-body: "IBM Plex Mono", monospace;
+   --type-header:"rubik", sans-serif;
+   --type-logo:'IBM Plex Sans Condensed', sans-serif;
+   --kreos:"Montserrat", sans-serif;
+  
+   /* ++++++++++++++++ Font-weight property tokens +++++++++++++++*/
+   --weight-extralight:200;
+   --weight-light:300;
+   --weight-regular:400;
+   --weight-medium:500;
+   --weight-semibold:600;
+   --weight-bold:700;
+   --weight-extrabold:800;
+   --weight-black:900;
+   /* ++++++++++++++++ Line-height property tokens +++++++++++++++*/
+   --line-none:100%;
+   --line-thight:120%;
+   --line-regular:140%;
+   --line-loose:160%;
+   --line-loose:160%;
+   --line-extended:180%;
+   --line-height-L:1.4em;
+   --line-heigth-title-L:1.3em;
+
+}
+#project-section
+{
+   padding:var(--base-148) 0px;
+}
+#project-section h1
+{
+    font-size: var(--base-64);
+   font-weight: var(--weight-medium);
+   color:var(--neutral-80);
+   font-family: var(--type-header);
+   line-height: 1;
+   text-align: center;
+   margin:0;
+
+}
+#project
+{
+   display: flex;
+   flex-direction: column;
+}
+
+#project .content h3
+{
+   font-family: var(--type-header);
+   font-size:var(--base-24);
+   font-weight: var(--weight-medium);
+   padding-top: 8px;
+   margin:0px;
+ line-height:1.4;
+}
+#project .container_project
+{
+   max-width: 1440px;
+   width: 100%;
+}
+#project .container_project a
+{
+display:flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+background-color: white;
+border-radius: 24px;
+text-decoration: none;
+gap:48px;
+}
+#project .container_project a:hover
+{
+   box-shadow: 16px 16px 16px var(--neutral-20);
+   background-color: white;
+   border-radius: 24px;
+   
+} 
+#project .container_project a:hover .image-1
+{
+   border-radius: 24px 0px 0px 24px;
+}
+#project .container_project a h3, #project .container_project a p
+{
+   color:var(--primary-100);
+   padding-top:16px; 
+     line-height: 1.4;
+} 
+#project .container_project a
+{
+    width: 100%;
+   max-width: 100%;
+   height:584px;
+   flex-grow: 4;
+}
+#project .container_project a .image-1, #project .container_project a .image-2, #project .container_project a .image-3
+   {
+   border-radius: 24px;
+   background-size: cover;
+   width: 100%;
+   max-width: 100%;
+   height:584px;
+   flex-grow: 4;
+}
+ #project .container_project a .image-1
+ {
+    background-image:url("https://cdn.pixabay.com/photo/2022/08/08/19/36/landscape-7373484_1280.jpg");
+ }
+ #project .container_project a .image-2
+ {
+    background-image:url("https://cdn.fstoppers.com/styles/full/s3/media/2019/12/04/nando-jpeg-quality-050.jpg");
+ }
+  #project .container_project a .image-3
+ {
+    background-image:url("https://png.pngtree.com/thumb_back/fh260/background/20240522/pngtree-abstract-cloudy-background-beautiful-natural-streaks-of-sky-and-clouds-red-image_15684333.jpg");
+ }
+#project .container_project a .content
+{
+   color:var(--neutral-00);
+   padding: var(--base-24) var(--base-96);
+   text-align: left;
+   max-width: 100%;
+   width: 47%;
+   flex-shrink: 1;
+} 
+.container_project a .content h3 {
+   text-align: left;
+   font-size: var(--base-32);
+   color:var(--neutral-80);
+   padding-bottom: var(--base-16);
+}
+.container_project a .content p
+{
+font-size:var(--base-20);
+font-family: var(--type-body);
+   color:var(--neutral-80);
+   font-weight: var(--weight-light);
+   padding-bottom: 16px;
+text-align: left;
+}  
+#project h1
+{
+   font-size: var(--base-64);
+   font-weight: var(--weight-medium);
+   color:var(--neutral-80);
+   font-family: var(--type-header);
+}
+   /* Animación más específica y robusta */
+#project .move  {
+    animation: move linear;
+    animation-timeline: view();
+    /*animation-timeline: scroll(root);*/
+  }
+
+@keyframes move {
+    0% {
+        transform: scale(0.5) translate(0px, 0px);
+    }
+    30% {
+      transform: scale(0.8) translate(0px, 0px);
+  }
+    60% {
+        transform: scale(1) translate(0px, 100px);
+    }
+    75% {
+        transform: scale(0.9) translate(0px, 170px);
+    }
+    90% {
+        transform: scale(0.7) translate(0px, 250px);
+    }
+    100% {
+      transform: scale(0.57) translate(0px, 250px);
+  }
+}
+
+
+
+@media screen and (max-width: 1440px) {
+    #project .container_project {
+        max-width: 90%;
+        width: 100%;
+        margin: 48px;
+    }
+    #project .container_project a img {
+        max-width: 484px;
+    }
+    #project .container_project a .content {
+        padding: var(--base-16) var(--base-48);
+        text-align: left;
+        max-width: 100%;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 1024px) {
+    #project .container_project {
+        max-width: 95%;
+        width: 100%;
+        margin: 0px;
+    }
+    #project .container_project a {
+        width: 100%;
+        max-width: 100%;
+    }
+    #project .container_project a .image {
+        width: 100%;
+    }
+    #project .container_project {
+        max-width: 95%;
+    }
+    #project .container_project a .content {
+        padding: 0px 24px 0px 24px;
+        width: 100%;
+        max-width: 100%;
+    }
+    #project .container_project a .content p {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+@media screen and (max-width: 992px) {
+    #project .container_project a .content {
+        padding: 24px 0px;
+        width: 90%;
+    }
+    #project {
+        padding: 0px;
+        align-items: center;
+    }
+    #project .container_project a {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #project {
+        padding: var(--base-96) 0;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #project h1 {
+        font-size: var(--base-48);
+    }
+}
