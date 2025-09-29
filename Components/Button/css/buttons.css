@@ -235,6 +235,7 @@ border: 1px solid var(--button-secondary-border);
     display: inline-flex;
     align-items: center;
     gap: 8px;
+    justify-content: center;
     }
     .button-icon-text::before {
       font-family: 'Material Icons';
