@@ -129,6 +129,7 @@
    --color-text-secondary: var(--neutral-70);
    --color-text-secondary-disabled: var(--neutral-50);
    --color-text-tertiary: var(--primary-90);
+   --color-text-tertiary-disabled: var(--neutral-50);
    --color-text-inverse: var(--neutral-00);
    --color-text-brand: var(--primary-100);
    
@@ -142,6 +143,7 @@
    /* Border Colors */
    --color-border-primary: var(--neutral-20);
    --color-border-secondary: var(--neutral-40);
+   --color-border-tertiary: var(--neutral-40);
    --color-border-brand: var(--primary-100);
    --color-border-focus: var(--primary-60);
    
@@ -156,6 +158,7 @@
    --space-component-xs: var(--base-4);
    --space-component-sm: var(--base-8);
    --space-component-m: var(--base-12);
+   --space-component-M: var(--base-14);
    --space-component-md: var(--base-16);
    --space-component-lg: var(--base-24);
    --space-component-xl: var(--base-32);
@@ -225,6 +228,9 @@
    --button-secondary-text-disabled: var(--color-text-secondary-disabled);
    --button-secondary-border: var(--color-border-brand);
    --button-secondary-padding: var(--space-component-sm) var(--space-component-md);
+
+   /*--button-tertiary-border:var(--color-border-tertiary);*/
+--button-tertiary-border:var(--color-border-tertiary);
    
    /* Card Tokens */
    --card-bg: var(--color-background-primary);

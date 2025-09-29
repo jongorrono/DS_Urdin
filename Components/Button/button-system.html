@@ -9,60 +9,97 @@
     <!-- Import CSS files -->
     <link rel="stylesheet" href="/Applications/Utilities/JonGoweb/css/tokens.css">
     <link rel="stylesheet" href="/Applications/Utilities/JonGoweb/css/buttons.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     
     
     </style>
 </head>
 <body>
-    <div style="display: flex;padding-top:48px; flex-direction: column; gap: 24px;max-width: 992px; width:100%;margin:0 auto;">
-    <div style="display: flex; flex-direction: column; gap: 10px;width: 50%;margin:0 auto;margin-bottom: 48px;background-color:var(--neutral-10);padding:48px;">
-        <h1>DEFAULT</h1>
-    <div style="display: flex; flex-direction: row; gap: 24px;width: 100%;">
-    <button class="button_primary">Primary </button>
-    <button class="button_secondary">Secondary </button>
-    <button class="button_tertiary">Tertiary </button>
-    <button class="link">Link</button>
+ <div style="display: flex;padding-top:48px; flex-direction: column; gap: 24px;max-width: 100%; width:100%;margin:0 auto;align-items: center;">
+    <div style="display: flex; flex-direction: column; gap: 10px;margin:0 auto;margin-bottom: 48px;background-color:var(--neutral-10);padding:48px;">
+                <h1>DEFAULT</h1>
+            <div style="display: flex; flex-direction: row; gap: 24px;width: 100%;">
+            <button class="button_primary button-icon-text">Primary </button>
+            <button class="button_secondary">Secondary </button>
+            <button class="button_tertiary">Tertiary </button>
+            <button class="link">Link</button>
+            </div>
+            <div style="display: flex; flex-direction: row; gap: 24px;width: 100%;">
+                <button class="button_primary" disabled aria-busy="true">Disabled </button>
+                <button class="button_secondary" disabled aria-busy="true">Disabled </button>
+                <button class="button_tertiary"  disabled aria-busy="true">Disabled </button>
+                <button class="link"  disabled aria-busy="true">Disabled</button>
+            </div>
+            <div style="display: flex; flex-direction: row; gap: 24px;width: 100%;">
+                <button class="button_primary button-icon-text button-icon-download">with Icon </button>
+                <button class="button_secondary button-icon-text button-icon-download">with Icon </button>
+                <button class="button_tertiary button-icon-text button-icon-download">with Icon </button>
+                <button class="link button-icon-text button-icon-download">with Icon</button>
+            </div>
+            <div style="display: flex; flex-direction: row; gap: 24px;width: 100%;">
+                <button class="button_primary button-icon-only button-icon-download"></button>
+                <button class="button_secondary button-icon-only button-icon-download"></button>
+                <button class="button_tertiary button-icon-only button-icon-download"></button>
+                <button class="link button-icon-only button-icon-download"></button>
+            </div>
     </div>
-    <div style="display: flex; flex-direction: row; gap: 24px;width: 100%;">
-        <button class="button_primary" disabled aria-busy="true">Primary </button>
-        <button class="button_secondary" disabled aria-busy="true">Secondary </button>
-        <button class="button_tertiary"  disabled aria-busy="true">Tertiary </button>
-        <button class="link"  disabled aria-busy="true">Link</button>
+    <div style="display: flex; flex-direction: column; gap: 10px;margin:0 auto;margin-bottom: 48px;background-color:var(--neutral-10);padding:48px;">
+        <h1>SMALL</h1>
+        <div style="display: flex; flex-direction: row; gap: 24px;width: 100%;">
+            <button class="button_primary_S">Primary  S</button>
+            <button class="button_secondary_S">Secondary  S</button>
+            <button class="button_tertiary_S">Tertiary  S</button>
+            <button class="link_S">Link S</button>
+        </div>
+        <div style="display: flex; flex-direction: row; gap: 24px;width: 100%;">
+            <button class="button_primary_S" disabled aria-busy="true">Disabled</button>
+            <button class="button_secondary_S" disabled aria-busy="true">Disabled</button>
+            <button class="button_tertiary_S" disabled aria-busy="true">Disabled</button>
+            <button class="link_S" disabled aria-busy="true">Disabled</button>
+        </div>
+        <div style="display: flex; flex-direction: row; gap: 24px;width: 100%;">
+            <button class="button_primary_S button-icon-text button-icon-download">with Icon  S</button>
+            <button class="button_secondary_S  button-icon-text button-icon-download">with Icon  S</button>
+            <button class="button_tertiary_S  button-icon-text button-icon-download">with Icon  S</button>
+            <button class="link_S button-icon-text button-icon-download">with Icon  S</button>
+        </div>
+        <div style="display: flex; flex-direction: row; gap: 24px;width: 100%;">
+            <button class="button_primary_S button-icon-only_S button-icon-download"></button>
+            <button class="button_secondary_S button-icon-only_S button-icon-download"></button>
+            <button class="button_tertiary_S button-icon-only_S button-icon-download"></button>
+            <button class="link_S button-icon-only_S button-icon-download"></button>
+        </div>
     </div>
-</div>
-<div style="display: flex; flex-direction: column; gap: 10px;width: 50%;margin:0 auto;margin-bottom: 48px;background-color:var(--neutral-10);padding:48px;">
-    <h1>SMALL</h1>
-    <div style="display: flex; flex-direction: row; gap: 24px;width: 100%;">
-        <button class="button_primary_S">Primary  S</button>
-        <button class="button_secondary_S">Secondary  S</button>
-        <button class="button_tertiary_S">Tertiary  S</button>
-        <button class="link_S">Link S</button>
-    </div>
-    <div style="display: flex; flex-direction: row; gap: 24px;width: 100%;">
-        <button class="button_primary_S" disabled aria-busy="true">Primary S</button>
-        <button class="button_secondary_S" disabled aria-busy="true">Secondary  S</button>
-        <button class="button_tertiary_S" disabled aria-busy="true">Tertiary  S</button>
-        <button class="link_S" disabled aria-busy="true">Link S</button>
-    </div>
-</div>
 
-</div>
-<div style="display: flex; flex-direction: column; gap: 10px;width: 50%;margin:0 auto;margin-bottom: 48px;background-color:var(--neutral-10);padding:48px;">
+
+<div style="display: flex; flex-direction: column; gap: 10px;margin:0 auto;margin-bottom: 48px;background-color:var(--neutral-10);padding:48px;">
     <h1>LARGE</h1>
     <div style="display: flex; flex-direction: row; gap: 24px;width: 100%;">
     <button class="button_primary_XL">Primary  L</button>
     <button class="button_secondary_XL">Secondary L</button>
     <button class="button_tertiary_XL">Tertiary  L</button>
-    <button class="link_S">Link L</button>
+    <button class="link_XL">Link L</button>
 </div>  
 <div style="display: flex; flex-direction: row; gap: 24px;width: 100%;">
-    <button class="button_primary_XL" disabled aria-busy="true">Primary  L</button>
-    <button class="button_secondary_XL" disabled aria-busy="true">Secondary L</button>
-    <button class="button_tertiary_XL" disabled aria-busy="true">Tertiary  L</button>
-    <button class="link_S" disabled aria-busy="true">Link L</button>
+    <button class="button_primary_XL" disabled aria-busy="true">Disabled</button>
+    <button class="button_secondary_XL" disabled aria-busy="true">Disabled</button>
+    <button class="button_tertiary_XL" disabled aria-busy="true">Disabled</button>
+    <button class="link_S" disabled aria-busy="true">Disabled</button>
 </div>  
-
-
+<div style="display: flex; flex-direction: row; gap: 24px;width: 100%;">
+    <button class="button_primary_XL button-icon-text button-icon-download" >With Icon L</button>
+    <button class="button_secondary_XL button-icon-text button-icon-download">With Icon L</button>
+    <button class="button_tertiary_XL button-icon-text button-icon-download">With Icon L</button>
+    <button class="link_S button-icon-text button-icon-download">With Icon L</button>
+</div>  
+<div style="display: flex; flex-direction: row; gap: 24px;width: 100%;">
+    <button class="button_primary_XL button-icon-only_XL button-icon-download"></button>
+    <button class="button_secondary_XL button-icon-only_XL button-icon-download"></button>
+    <button class="button_tertiary_XL button-icon-only_XL button-icon-download"></button>
+    <button class="link_XL button-icon-only_XL button-icon-download"></button>
+</div>  
+</div>
 
    
    

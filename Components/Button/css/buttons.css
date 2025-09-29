@@ -57,22 +57,17 @@
     border-radius: var(--button-primary-radius);
     cursor: pointer;
     border: 0;
-    background-color: var(--button-secondary-bg);
-  font-family:var(--font-family-primary);
+    font-family:var(--font-family-primary);
     box-shadow: var(--shadow-card);
     font-size: var(--font-size-sm);
-  color:var(--button-secondary-text) !important;
-      border: 1px solid var(--button-secondary-border);
-      font-weight: var(--font-weight-regular);
-      text-align:center;
-      text-decoration: none;
-      text-decoration-line:none;
-      line-height: 1;
-       display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    min-width: var(--base-64);
+    color:var(--button-secondary-text) !important;
+    text-align:center;
+    text-decoration: none;
+    font-weight: var(--font-weight-regular);
+    background-color: var(--button-secondary-bg);
+border: 1px solid var(--button-secondary-border);   
   }
+
   .button_secondary
   {
   
@@ -85,7 +80,7 @@
   .button_secondary_XL
   {
   
-    padding: var(--space-component-lg) var(--space-component-2xl) !important;
+    padding: var(--space-component-lg) var(--space-component-2xl);
   }
   
   .button_secondary:hover, .button_secondary_S:hover, .button_secondary_XL:hover {
@@ -128,7 +123,7 @@
     border: 0;
     background-color: var(--button-tertiary-bg);
   font-family:var(--font-family-primary);
-    box-shadow: var(--shadow-card);
+    box-shadow: var(--shadow-lg);
     font-size: var(--font-size-sm);
   color:var(--button-tertiary-text) !important;
       border: var(--button-tertiary-border);
@@ -143,11 +138,12 @@
       font-family: var(--font-family-primary);
     background-color: var(--button-tertiary-bg-hover);
     color: var(--button-tertiary-text)!important;
-    box-shadow: var(--shadow-focus);
   text-decoration: none;
-      border: 0px;
+      border:1px solid var(--button-tertiary-border);
       text-align:center;
       text-decoration-line:none;
+      box-shadow: var(--shadow-lg);
+   
   }
   .button_tertiary:active, .button_tertiary_S:active, .button_tertiary_XL:active
   {
@@ -196,6 +192,7 @@
       font-weight: var(--weight-regular);
       text-decoration: none;
       background-color: transparent;
+   
   }
   .link:hover, .link_S:hover, .link_XL:hover
   {
@@ -232,3 +229,62 @@
     opacity: 0.5;
     pointer-events: none;
   }
+  /*+++++++++++++++++++++++++++ BUTTON ICON TEXT ++++++++++++++++**/
+  .button-icon-text
+  {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    }
+    .button-icon-text::before {
+      font-family: 'Material Icons';
+      font-size: var(--base-16);
+      content: var(--icon-content);
+  }
+  /* Individual icon classes */
+.button-icon-download {
+  --icon-content: 'download';
+}  
+/*+++++++++++++++++++++++++++ BUTTON ONLY ICON ++++++++++++++++**/
+* Base icon-only button */
+.button-icon-only {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: var(--base-64); /* Square buttons */
+    aspect-ratio: 1; /* Perfect squares */
+}
+.button-icon-only::before,.button-icon-only_S::before,.button-icon-only_XL::before {
+  content: var(--icon-content);
+  font-family: 'Material Icons';
+}
+/* Size variants */
+.button-icon-only
+{
+  font-size:18px;
+}
+.button-icon-only_S::before {
+  font-size: 15px;
+}
+.button-icon-only_XL::before {
+  font-size: 24px;
+}
+
+/* Padding adjustments for icon-only */
+.button-icon-only {
+  padding:  var(--space-component-sm) var(--space-component-M);
+}
+.button-icon-only_S {
+  padding: var(--base-8) var(--base-12);
+}
+.button-icon-only_XL {
+  padding: var(--space-component-M) var(--space-component-md);
+}
+
+/* Icon definitions */
+.button-icon-download::before {
+  --icon-content: 'download';
+}
+.button-icon-close::before {
+  --icon-content: 'close';
+}
