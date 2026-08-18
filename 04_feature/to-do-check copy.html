@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="css/tokens-primitives.css">
+    <link rel="stylesheet" href="css/tokens.css">
+
+</head>
+<body>
+   <header>
+    </header> 
+    <h1>TO-do list with completed task feature</h1>
+    <input id="input">
+    <button onclick="AddItem()">add</button>
+    <ul id='list'>
+    </ul>
+</body>
+</html>
+
+<script>
+function AddItem()
+{
+    let input1=document.getElementById('input');//collects de value from input. 
+    let valueInput=input1.value;
+    input1.value="";
+    
+    //create a new dom element
+    let listElement=document.createElement ('li');
+    listElement.textContent = valueInput;
+ document.getElementById("list").appendChild(listElement);
+  //  document.getElementById('list').innerHTML;
+    
+//Create a check elemenent
+    let check=document.createElement('input');
+    check.checked=false;
+    check.type="checkbox";
+    listElement.appendChild(check);
+   check.addEventListener("change",LineThrough);
+    
+//Create a button. 
+   let button=document.createElement ('button'); 
+  button.textContent='delete';
+    button.addEventListener("click",DeleteTask);
+   listElement.appendChild(button);
+    
+}
+function DeleteTask(event)
+{
+    event.target.parentElement.remove();
+}
+
+function LineThrough(event)
+{
+    const checkbox=event.target;
+  if (checkbox.checked==true)
+    {
+            event.target.style.textDecoration="line-through";
+            const line=event.target.parentNode;
+            line.style.textDecoration="line-through";
+    }
+ 
+}
+
+</script>

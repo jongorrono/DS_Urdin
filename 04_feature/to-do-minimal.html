@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<body>
+   <header>
+    </header> 
+    <h1>TO-do list</h1>
+    <input id="input">
+    <button onclick="AddItem()">add</button>
+    <ul id='list'>
+    </ul>
+</body>
+</html>
+
+<script>
+function AddItem()
+{
+    let input1=document.getElementById('input');//collects de value from input. 
+    let valueInput=input1.value;
+    input1.value="";
+    document.getElementById('input').innerHTML="";
+    
+    let listElement=document.createElement ('li');//create a new dom element
+    listElement.textContent = valueInput;
+ document.getElementById("list").appendChild(listElement);
+    document.getElementById('list').innerHTML;
+
+}
+
+</script>

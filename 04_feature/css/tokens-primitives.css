@@ -1,0 +1,114 @@
+:root{
+    /* ++++++++++++++++ Color property tokens +++++++++++++++*/
+   --neutral-100:#02050E;
+   --neutral-95:#0E131B;
+   --neutral-90: #1C1F27;
+   --neutral-80: #20242D;
+   --neutral-75: #2B303A;
+   --neutral-70: #3B404E;
+   --neutral-60: #6E7584;
+   --neutral-50: #838B9A;
+   --neutral-40: #9AA1B1;
+   --neutral-30: #B1B8C8;
+   --neutral-25: #C9D0DE;
+   --neutral-20: #E2E8F5;
+   --neutral-15: #EAEFFA;
+   --neutral-10: #F4F6FD;
+   --neutral-5: #F8FAFF;
+   --neutral-00: #FFFFFF;
+   --primary-110:#03064E;
+   --primary-100:#0007AE;
+   --primary-95:#1118C0;
+   --primary-90:#1F2BD5;
+   --primary-80:#0C4CDC;
+   --primary-70:#1C64F2;
+   --primary-60:#3F83F8;
+   --primary-50:#3F83F8;
+   --primary-40:#76A9FA;
+   --primary-30:#A4CAFE;
+   --primary-20:#C3DDFD;
+   --primary-15:#E1EFFE;
+   --primary-10:#EBF5FF;
+   --warning:#F59E0B;
+   --warning-100:#F59E0B;
+   --warning-110:#A86000;
+   --warning-10:#FFEFE8;
+   --success:#10B981;
+   --success-100:#10B981;
+   --success-110:#276355;
+   --success-10:#E2F4EF;
+   --error:#EF4444;
+   --error-100:#EF4444;
+   --color-background-gradient: linear-gradient(90deg, hsla(211, 66%, 87%, 1) 0%, hsla(348, 67%, 88%, 1) 50%, hsla(272, 26%, 72%, 1) 100%);
+
+
+/* ++++++++++++++++ Spacing and Font size property tokens +++++++++++++++*/
+   --base-0: 0px;
+   --base-4: 4px; 
+   --base-8:8px;
+   --base-12:12px;
+   --base-14:14px;
+   --base-16:16px;
+   --base-18:18px; 
+   --base-20:20px;
+   --base-22:22px;
+   --base-24:24px;
+   --base-28:28px;
+   --base-32:32px; 
+   --base-40:36px; 
+   --base-48:48px; 
+   --base-56:56px;
+   --base-64:64px;
+   --base-72:72px;
+   --base-80:80px;
+   --base-88:88px;
+   --base-96:96px;
+   --base-124:124px;
+   --base-128:128px;
+   --base-136:136px;
+   --base-148:148px;
+   --base-156:156px;
+   --base-164:164px;
+   --base-172:172px;
+   --base-180:180px;
+   --base-188:188px;
+   --base-196:196px;
+   --base-204:204px;
+   --base-212:212px;
+   --base-9999:9999px;
+   /* ++++++++++++++++ Font-family property tokens +++++++++++++++*/
+   --type-body: "IBM Plex Mono", monospace;
+   --type-header:"rubik", sans-serif;
+   --type-logo:'IBM Plex Sans Condensed', sans-serif;
+   --kreos:"Montserrat", sans-serif;
+  
+   /* ++++++++++++++++ Font-weight property tokens +++++++++++++++*/
+   --weight-extralight:200;
+   --weight-light:300;
+   --weight-regular:400;
+   --weight-medium:500;
+   --weight-semibold:600;
+   --weight-bold:700;
+   --weight-extrabold:800;
+   --weight-black:900;
+   /* ++++++++++++++++ Line-height property tokens +++++++++++++++*/
+   --line-none:100%;
+   --line-tight:120%;
+   --line-regular:140%;
+   --line-medium:150%;
+   --line-loose:160%;
+   --line-extended:180%;
+   --line-height-L:1.4em;
+   --line-heigth-title-L:1.3em;
+   /* ++++++++++++++++ box shadow property tokens +++++++++++++++*/
+   --shadow-xs: 0px 1px 2px rgba(0, 0, 0, 0.05);
+   --shadow-sm: 0px 2px 4px rgba(0, 0, 0, 0.06);
+   --shadow-md: 0px 4px 8px rgba(0, 0, 0, 0.08);
+   --shadow-lg: 0px 8px 16px rgba(0, 0, 0, 0.1);
+   --shadow-xl: 0px 16px 32px rgba(0, 0, 0, 0.12);
+   --shadow-2xl: 0px 24px 48px rgba(0, 0, 0, 0.15);
+   --shadow-inner: inset 0px 2px 4px rgba(0, 0, 0, 0.06);
+   --shadow-none: none;
+    /* Legacy shadow (keeping for compatibility) */
+    --shadow-M: 0px 16px 40px rgba(137, 162, 206, 0.2);
+}
