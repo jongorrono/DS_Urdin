@@ -1,0 +1,140 @@
+/* Argi Garbi – design tokens (generated from tokens-argi-garbi.json, Primitives/Light) */
+:root {
+  /* Neutral */
+  --color-neutral-0: #ffffff;
+  --color-neutral-10: #E6E6E8;
+  --color-neutral-20: #D1D2D6;
+  --color-neutral-30: #B0B1B7;
+  --color-neutral-40: #92939A;
+  --color-neutral-50: #777981;
+  --color-neutral-60: #5E6068;
+  --color-neutral-70: #474951;
+  --color-neutral-80: #30323A;
+  --color-neutral-90: #191B23;
+  --color-neutral-100: #02050E;
+  --color-transparent: #00000000;
+
+  /* Brand */
+  --color-brand-10: #ebf5ff;
+  --color-brand-20: #e1effe;
+  --color-brand-30: #c3ddfd;
+  --color-brand-40: #a4cafe;
+  --color-brand-50: #76a9fa;
+  --color-brand-60: #3f83f8;
+  --color-brand-70: #105df4;
+  --color-brand-80: #0046e4;
+  --color-brand-90: #1f2bd5;
+  --color-brand-100: #0007ae;
+
+  /* Secondary */
+  --color-secondary-10: #ebffed;
+  --color-secondary-20: #c6ffcd;
+  --color-secondary-30: #a2ffac;
+  --color-secondary-40: #7eff8c;
+  --color-secondary-50: #5aff6c;
+  --color-secondary-60: #36ff4c;
+  --color-secondary-70: #1adb2f;
+  --color-secondary-80: #05b218;
+  --color-secondary-90: #00890f;
+  --color-secondary-100: #00600b;
+
+  /* Feedback – Success */
+  --color-success-10: #f4fff6;
+  --color-success-20: #d5ffdb;
+  --color-success-30: #b6ffc0;
+  --color-success-40: #97ffa5;
+  --color-success-50: #83e991;
+  --color-success-60: #6dcc7a;
+  --color-success-70: #58af64;
+  --color-success-80: #459250;
+  --color-success-90: #34753d;
+  --color-success-100: #24572b;
+
+  /* Feedback – Warning */
+  --color-warning-10: #fff7ef;
+  --color-warning-20: #ffe5cc;
+  --color-warning-30: #ffd3a8;
+  --color-warning-40: #ffc285;
+  --color-warning-50: #ffb061;
+  --color-warning-60: #ea9c4f;
+  --color-warning-70: #c8813a;
+  --color-warning-80: #a66728;
+  --color-warning-90: #844f1a;
+  --color-warning-100: #62390f;
+
+  /* Feedback – Information */
+  --color-information-10: #e8fffc;
+  --color-information-20: #bffff8;
+  --color-information-30: #96fff3;
+  --color-information-40: #6dffef;
+  --color-information-50: #44ffea;
+  --color-information-60: #19ead3;
+  --color-information-70: #03c1ac;
+  --color-information-80: #009887;
+  --color-information-90: #006f63;
+  --color-information-100: #00473f;
+
+  /* Feedback – Error */
+  --color-error-10: #fff0ee;
+  --color-error-20: #ffd0ca;
+  --color-error-30: #ffafa5;
+  --color-error-40: #fc8d7f;
+  --color-error-50: #ee6756;
+  --color-error-60: #cc4f3f;
+  --color-error-70: #aa3a2c;
+  --color-error-80: #88281c;
+  --color-error-90: #661a10;
+  --color-error-100: #440e07;
+
+  /* Font families */
+  --font-family-rubik: "Rubik", system-ui, sans-serif;
+  --font-family-ibm: "IBM Plex Mono", ui-monospace, monospace;
+
+  /* Font sizes (px) */
+  --font-size-8: 8px;   --font-size-9: 9px;   --font-size-10: 10px;
+  --font-size-11: 11px; --font-size-12: 12px; --font-size-13: 13px;
+  --font-size-14: 14px; --font-size-15: 15px; --font-size-16: 16px;
+  --font-size-18: 18px; --font-size-20: 20px; --font-size-22: 22px;
+  --font-size-24: 24px; --font-size-28: 28px; --font-size-32: 32px;
+  --font-size-36: 36px; --font-size-40: 40px; --font-size-44: 44px;
+  --font-size-48: 48px; --font-size-56: 56px; --font-size-60: 60px;
+  --font-size-64: 64px; --font-size-68: 68px; --font-size-72: 72px;
+  --font-size-80: 80px; --font-size-88: 88px;
+
+  /* Font weights */
+  --font-weight-200: 200; --font-weight-300: 300; --font-weight-400: 400;
+  --font-weight-500: 500; --font-weight-600: 600; --font-weight-700: 700;
+  --font-weight-800: 800; --font-weight-900: 900;
+
+  /* Line heights (unitless) */
+  --line-none-100: 1;
+  --line-tight-120: 1.2;
+  --line-regular-140: 1.4;
+  --line-medium-150: 1.5;
+  --line-loose-160: 1.6;
+  --line-extended-180: 1.8;
+
+  /* Spacing */
+  --space-0: 0;
+  --space-2: 2px;   --space-4: 4px;   --space-6: 6px;   --space-8: 8px;
+  --space-12: 12px; --space-16: 16px; --space-20: 20px; --space-24: 24px;
+  --space-28: 28px; --space-32: 32px; --space-36: 36px; --space-40: 40px;
+  --space-44: 44px; --space-48: 48px; --space-52: 52px; --space-56: 56px;
+  --space-60: 60px; --space-64: 64px; --space-68: 68px; --space-72: 72px;
+  --space-80: 80px; --space-88: 88px; --space-96: 96px; --space-104: 104px;
+  --space-112: 112px; --space-116: 116px; --space-124: 124px;
+  --space-148: 148px; --space-156: 156px; --space-164: 164px;
+
+  /* Radius */
+  --radius-0: 0;
+  --radius-2: 2px;  --radius-4: 4px;   --radius-6: 6px;   --radius-8: 8px;
+  --radius-12: 12px; --radius-16: 16px; --radius-24: 24px;
+  --radius-full: 9999px;
+
+  /* Border width */
+  --border-width-0: 0;
+  --border-width-1: 1px;
+  --border-width-2: 2px;
+  --border-width-3: 3px;
+  --border-width-4: 4px;
+}

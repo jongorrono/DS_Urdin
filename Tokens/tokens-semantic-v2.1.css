@@ -1,0 +1,30 @@
+/* Argi Garbi – semantic tokens used by the Button (read from the Figma file).
+   Layered on top of tokens.css (primitives). */
+:root {
+  /* Surfaces */
+  --surface-default: var(--color-neutral-0);
+  --surface-brand: var(--color-brand-80);            /* #0046e4 */
+  --surface-brand-hover: var(--color-brand-90);      /* #1f2bd5 */
+  --surface-brand-pressed: var(--color-brand-100);   /* #0007ae */
+  --surface-brand-focus: var(--color-brand-80);      /* #0046e4 */
+  --surface-secondary: var(--color-neutral-70);          /* #454953 */
+  --surface-secondary-hover: var(--color-neutral-80);    /* #2c303a */
+  --surface-secondary-pressed: var(--color-neutral-90);  /* #1c1f27 */
+  --surface-disabled: var(--color-neutral-10);       /* #f3f6fd */
+
+  /* Text */
+  --text-on-brand: var(--color-neutral-0);
+  --text-brand: var(--color-brand-90);               /* #1f2bd5 */
+  --text-disabled: var(--color-neutral-40);          /* #b1b8c8 */
+
+  /* Spacing aliases */
+  --space-2xs: var(--space-2);
+  --space-xs: var(--space-4);
+  --space-sm: var(--space-6);
+  --space-md: var(--space-8);
+  --space-lg: var(--space-12);
+  --space-2xl: var(--space-20);
+
+  /* Border */
+  --border-width-thick: var(--border-width-2);
+}
