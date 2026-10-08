@@ -1,0 +1,228 @@
+:root{
+ 
+   /* ++++++++++++++++ Border Radius Tokens +++++++++++++++*/
+   --radius-none: 0px;
+   --radius-sm: var(--base-4);
+   --radius-md: var(--base-8);
+   --radius-lg: var(--base-12);
+   --radius-xl: var(--base-16);
+   --radius-2xl: var(--base-24);
+   --radius-3xl: var(--base-32);
+   --radius-4xl: var(--base-48);
+   --radius-5xl: var(--base-64);
+   --radius-20xl: var(--base-212);
+   --radius-full: var(--base-9999);
+   
+   
+   /* ++++++++++++++++ Semantic Color Tokens +++++++++++++++*/
+   
+   /* Brand Colors */
+   --color-brand-primary: var(--primary-100);
+   --color-brand-primary-hover: var(--primary-110);
+   --color-brand-primary-light: var(--primary-20);
+   --color-brand-primary-background: var(--primary-10);
+   
+   /* Text Colors */
+   --color-text-primary: var(--neutral-90);
+   --color-text-primary-disabled: var(--neutral-50);
+   --color-text-secondary: var(--neutral-70);
+   --color-text-secondary-disabled: var(--neutral-50);
+   --color-text-tertiary: var(--primary-90);
+   --color-text-tertiary-disabled: var(--neutral-50);
+   --color-text-inverse: var(--neutral-00);
+   --color-text-brand: var(--primary-100);
+   
+   /* Background Colors */
+   --color-background-primary: var(--neutral-00);
+   --color-background-secondary: var(--neutral-10);
+   --color-background-tertiary: var(--neutral-20);
+   --color-background-brand: var(--primary-100);
+   --color-background-overlay: var(--neutral-90);
+   --color-background-gradient: var(--linear-gradient-neutral);
+   
+   /* Border Colors */
+   --color-border-primary: var(--neutral-20);
+   --color-border-secondary: var(--neutral-40);
+   --color-border-tertiary: var(--neutral-40);
+   --color-border-brand: var(--primary-100);
+   --color-border-focus: var(--primary-60);
+   
+   /* Status Colors */
+   --color-status-success: var(--success);
+   --color-status-warning: var(--warning);
+   --color-status-error: var(--error);
+   
+   /* ++++++++++++++++ Semantic Spacing Tokens +++++++++++++++*/
+   
+   /* Component Spacing */
+   --space-component-xs: var(--base-4);
+   --space-component-sm: var(--base-8);
+   --space-component-m: var(--base-12);
+   --space-component-M: var(--base-14);
+   --space-component-md: var(--base-16);
+   --space-component-l: var(--base-20);
+   --space-component-lg: var(--base-24);
+   --space-component-xl: var(--base-32);
+   --space-component-2xl: var(--base-48);
+   
+   /* Layout Spacing */
+   --space-layout-xs: var(--base-24);
+   --space-layout-sm: var(--base-48);
+   --space-layout-md: var(--base-64);
+   --space-layout-lg: var(--base-96);
+   --space-layout-xl: var(--base-128);
+   --space-layout-2xl: var(--base-180);
+   
+   /* Content Spacing */
+   --space-content-xs: var(--base-8);
+   --space-content-sm: var(--base-16);
+   --space-content-m: var(--base-20);
+   --space-content-md: var(--base-24);
+   --space-content-lg: var(--base-32);
+   --space-content-xl: var(--base-48);
+   --space-content-2xl: var(--base-64);
+   --space-content-3xl: var(--base-80);
+   --space-content-4xl: var(--base-96);
+   --space-content-5xl: var(--base-112);
+   --space-content-6xl: var(--base-124);
+   /* ++++++++++++++++ Semantic Typography Tokens +++++++++++++++*/
+   
+   /* Font Families */
+   --font-family-primary: var(--type-header);
+   --font-family-secondary: var(--type-body);
+   --font-family-brand: var(--type-logo);
+   
+   /* Font Sizes */
+   --font-size-xs: var(--base-14);
+   --font-size-s: var(--base-15);
+   --font-size-sm: var(--base-16);
+   --font-size-md: var(--base-18);
+   --font-size-lg: var(--base-20);
+   --font-size-xl: var(--base-24);
+   --font-size-2xl: var(--base-32);
+   --font-size-3xl: var(--base-40);
+   --font-size-4xl: var(--base-48);
+   --font-size-5xl: var(--base-64);
+   --font-size-6xl: var(--base-88);
+   
+   /* Font Weights */
+   --font-weight-light: var(--weight-light);
+   --font-weight-regular: var(--weight-regular);
+   --font-weight-medium: var(--weight-medium);
+   --font-weight-semibold: var(--weight-semibold);
+   --font-weight-bold: var(--weight-bold);
+   
+   /* Line Heights */
+   --line-height-tight: var(--line-tight);
+   --line-height-normal: var(--line-regular);
+   --line-height-relaxed: var(--line-loose);
+   
+   /* ++++++++++++++++ Component Semantic Tokens +++++++++++++++*/
+   
+   /* Button Tokens */
+   --button-primary-bg: var(--color-brand-primary);
+   --button-primary-bg-hover: var(--color-brand-primary-hover);
+   --button-primary-bg-active: var(--color-brand-primary-hover);
+   --button-primary-text: var(--color-text-inverse);
+   --button-primary-text-disabled: var(--color-text-primary-disabled);
+   --button-primary-border: transparent;
+   --button-primary-padding: var(--space-component-sm) var(--space-component-lg);
+   --button-primary-radius: var(--radius-button);
+   
+   --button-secondary-bg: transparent;
+   --button-secondary-bg-hover: var(--color-background-tertiary);
+   --button-secondary-text: var(--color-text-brand);
+   --button-secondary-text-disabled: var(--color-text-secondary-disabled);
+   --button-secondary-border: var(--color-border-brand);
+   --button-secondary-padding: var(--space-component-sm) var(--space-component-md);
+
+   /*--button-tertiary-border:var(--color-border-tertiary);*/
+--button-tertiary-border:var(--color-border-tertiary);
+    
+/* card-sideproject Tokens */
+    --card-sideproject-bg:var(--linear-gradient-neutral);
+    --card-sideproject-bg-inverse:var(--linear-gradient-neutral-inverse);
+    --card-sideproject-border: var(--neutral-30);
+    --card-sideproject-radius: var(--radius-card);
+    --card-sideproject-padding: var(--space-component-xl);
+    --card-sideproject-shadow: var(--shadow-card);
+    --card-sideproject-shadow-hover: var(--shadow-xl);
+    --card-sideproject-width: var(--space-component-lg);
+    --card-sideproject-border-focus: var(--color-brand-primary);
+   /* Card Tokens */
+   --card-bg: var(--color-background-primary);
+   --card-border: var(--color-border-primary);
+   --card-radius: var(--radius-card);
+   --card-padding: var(--space-component-lg);
+   --card-shadow: var(--shadow-card);
+   
+   /* Navigation Tokens */
+   --nav-bg: var(--color-background-primary);
+   --nav-text: var(--color-text-brand);
+   --nav-text-hover: var(--color-text-brand);
+   --nav-bg-hover: var(--color-background-tertiary);
+   --nav-padding: var(--space-component-sm) var(--space-component-md);
+   --nav-radius: 200px;
+   
+   /*++++++++++++++++++ Badge Tokens:Color --------------------------------*/
+   /* Colors */
+   /* Brand */
+  --badge-bg-brand: var(--primary-100);
+  --badge-text-brand:var(--neutral-00);
+
+  /* Neutral */
+  --badge-bg-neutral: var(--neutral-10);
+  --badge-text-neutral: var(--neutral-80);
+
+  /* Success */
+  --badge-bg-success: var(--success-10);
+  --badge-text-success: var(--success-110);
+
+  /* Warning */
+  --badge-bg-warning: var(--warning-10);
+  --badge-text-warning: var(--warning-110);
+   /* Dark */
+   --badge-bg-dark: var(--neutral-80);
+   --badge-text-dark: var(--neutral-00);
+
+   /* ++++++++++++++++ Semantic Border Radius Tokens +++++++++++++++*/
+   
+   /* Component Radius */
+   --radius-button: var(--radius-full);
+   --radius-card: var(--radius-2xl);
+   --radius-input: var(--radius-md);
+   --radius-dropdown: var(--radius-3xl);
+   --radius-modal: var(--radius-xl);
+   --radius-badge: var(--radius-full);
+   
+   /* ++++++++++++++++ Semantic Shadow Tokens +++++++++++++++*/
+   
+   /* Component Shadows */
+   --shadow-card: var(--shadow-lg);
+   --shadow-card-hover: var(--shadow-xl);
+   --shadow-modal: var(--shadow-2xl);
+   --shadow-dropdown: var(--shadow-lg);
+   --shadow-tooltip: var(--shadow-md);
+   
+   /* Layout Shadows */
+   --shadow-header: var(--shadow-sm);
+   --shadow-sidebar: var(--shadow-md);
+   --shadow-footer: var(--shadow-sm);
+   
+   /* Interactive Shadows */
+   --shadow-focus: var(--shadow-brand-sm);
+   --shadow-focus-ring: 0px 0px 0px 3px rgba(0, 7, 174, 0.1);
+   --shadow-pressed: var(--shadow-inner);
+  
+   /* ++++++++++++++++ Layout Semantic Tokens +++++++++++++++*/
+   
+   /* Container Sizes */
+   --container-sm: 640px;
+   --container-md: 768px;
+   --container-lg: 1024px;
+   --container-xl: 1280px;
+   --container-2xl: 1440px;
+   --container-full: 100%;
+   
+}
+
