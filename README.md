@@ -2,7 +2,7 @@
 
 # Hi there, I'm Jon Gorroño 👋
 
-### **Senior Product Designer & Design Systems Engineer**  
+### **Senior Product Designer & Design Engineer**  
 *Bridging the gap between technical complexity and human experience.*
 
 [![Website](https://img.shields.io/badge/Website-jongodesign.com-000000?style=flat&logo=Google-Chrome&logoColor=white)](https://www.jongodesign.com)  
