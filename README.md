@@ -22,16 +22,16 @@ My unique dual background—an **IT degree from Deusto** and a **Master's in Des
 I believe design has the power to make technology effortless and enjoyable—turning challenges into solutions that truly work for people.
 
 ---
-
-### 🛠️ Core Stack & Tooling
+### 🛠️ Core Stack & Expertise
 
 <div align="center">
 
-| Design & UX | Frontend & Architecture | Engineering & Version Control |
+| Design | Frontend | Engineering |
 | :---: | :---: | :---: |
-| ![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white) | ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white) | ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white) |
-| ![Design Systems](https://img.shields.io/badge/Design_Systems-0055FF?style=for-the-badge&logo=adobe-design&logoColor=white) | ![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black) | ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white) |
-| ![UI/UX](https://img.shields.io/badge/UI%2FUX-FF4081?style=for-the-badge&logo=hotjar&logoColor=white) | ![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38BDF8?style=for-the-badge&logo=tailwind-css&logoColor=white) | ![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white) |
+| ![UX](https://img.shields.io/badge/User_Experience-FF4081?style=for-the-badge&logo=adobe-experience-manager&logoColor=white) | ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) | ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white) |
+| ![Design Systems](https://img.shields.io/badge/Design_Systems-0055FF?style=for-the-badge&logo=figma&logoColor=white) | ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) | ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white) |
+| ![Visual Design](https://img.shields.io/badge/Visual_Design-7B1FA2?style=for-the-badge&logo=adobe&logoColor=white) | ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) | |
+| | ![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black) | |
 
 </div>
 
