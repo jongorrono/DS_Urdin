@@ -39,7 +39,7 @@ I believe design has the power to make technology effortless and enjoyable—tur
 
 ### 📦 Featured Repositories
 
-* **[DS_Urdin](https://github.com/jongorrono/DS_Urdin)**: A clean, scalable design system architecture and monorepo housing components, patterns, and design tokens.
+* **[Argi Garbi DS](https://github.com/jongorrono/DS_Urdin)**: A clean, scalable design system architecture and monorepo housing components, patterns, and design tokens.
 
 ---
 
