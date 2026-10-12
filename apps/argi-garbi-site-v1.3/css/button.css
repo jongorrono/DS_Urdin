@@ -1,0 +1,145 @@
+/* Button – Argi Garbi DS (from Figma "Button" node 5069:991)
+   Requires: tokens.css, tokens-semantic.css
+   Types : .btn--primary | .btn--secondary | .btn--tertiary
+   Sizes : .btn--sm | .btn--md (default) | .btn--lg
+   States: hover, active (pressed), focus-visible, disabled
+           (.is-hover / .is-pressed / .is-focus force a state for documentation) */
+
+.btn {
+  /* per-type values, overridden below */
+  --btn-bg: var(--surface-brand);
+  --btn-bg-hover: var(--surface-brand-hover);
+  --btn-bg-pressed: var(--surface-brand-pressed);
+  --btn-fg: var(--text-on-brand);
+  --btn-fg-hover: var(--text-on-brand);
+  --btn-border: transparent;
+  --btn-border-hover: transparent;
+  --btn-focus-fill: var(--surface-brand-focus);
+  --btn-focus-bg: var(--btn-bg);
+
+  /* per-size values (Medium default) */
+  --btn-pad-y: var(--space-md);
+  --btn-pad-x: var(--space-lg);
+  --btn-font-size: var(--font-size-16);
+  --btn-line: 24px;
+  --btn-icon: 20px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-md);
+  box-sizing: border-box;
+  padding: var(--btn-pad-y) var(--btn-pad-x);
+
+  font-family: var(--font-family-ibm);
+  font-size: var(--btn-font-size);
+  font-weight: var(--font-weight-400);
+  line-height: var(--btn-line);
+  white-space: nowrap;
+  text-decoration: none;
+
+  color: var(--btn-fg);
+  background-color: var(--btn-bg);
+  border: 0;
+  border-radius: var(--radius-full);
+  /* Figma strokes are inside: draw the border as an inset shadow so size never changes */
+  box-shadow: inset 0 0 0 var(--border-width-thick) var(--btn-border);
+  cursor: pointer;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  transition: background-color .12s ease, color .12s ease, box-shadow .12s ease;
+}
+
+.btn__icon {
+  display: block;
+  flex: none;
+  width: var(--btn-icon);
+  height: var(--btn-icon);
+}
+.btn__label { display: block; }
+
+/* ---------- Types ---------- */
+
+.btn--primary { /* defaults above */ }
+
+.btn--secondary {
+  --btn-bg: var(--surface-secondary);
+  --btn-bg-hover: var(--surface-secondary-hover);
+  --btn-bg-pressed: var(--surface-secondary-pressed);
+  --btn-focus-fill: var(--surface-secondary-hover);
+  --btn-focus-bg: var(--surface-secondary-hover);
+}
+
+.btn--tertiary {
+  --btn-bg: var(--surface-default);
+  --btn-bg-hover: var(--surface-brand);
+  --btn-bg-pressed: var(--surface-brand-hover);
+  --btn-fg: var(--text-brand);
+  --btn-fg-hover: var(--text-on-brand);
+  --btn-border: var(--text-brand);
+  --btn-border-hover: var(--surface-brand);
+}
+
+/* ---------- Sizes ---------- */
+
+.btn--sm {
+  --btn-pad-y: var(--space-xs);
+  --btn-pad-x: var(--space-lg);
+  --btn-font-size: var(--font-size-16);
+  --btn-line: 24px;
+  --btn-icon: 20px;
+}
+.btn--md { /* defaults above */ }
+.btn--lg {
+  --btn-pad-y: var(--space-lg);
+  --btn-pad-x: var(--space-2xl);
+  --btn-font-size: var(--font-size-18);
+  --btn-line: 28px;
+  --btn-icon: 24px;
+}
+
+/* ---------- States ---------- */
+
+.btn:hover,
+.btn.is-hover {
+  background-color: var(--btn-bg-hover);
+  color: var(--btn-fg-hover);
+  box-shadow: inset 0 0 0 var(--border-width-thick) var(--btn-border-hover);
+}
+
+.btn:active,
+.btn.is-pressed {
+  background-color: var(--btn-bg-pressed);
+  color: var(--btn-fg-hover);
+  box-shadow: inset 0 0 0 var(--border-width-thick) var(--btn-border-hover);
+}
+
+/* Focus: 2px white ring inside the button edge + 2px filled ring outside */
+.btn:focus-visible,
+.btn.is-focus {
+  outline: none;
+  background-color: var(--btn-focus-bg);
+  color: var(--text-on-brand);
+  box-shadow:
+    inset 0 0 0 var(--border-width-thick) var(--color-neutral-0),
+    0 0 0 var(--border-width-thick) var(--btn-focus-fill);
+}
+/* Tertiary has no focus frame in Figma: reuse the brand focus look */
+.btn--tertiary:focus-visible,
+.btn--tertiary.is-focus {
+  --btn-focus-bg: var(--surface-brand-focus);
+  --btn-focus-fill: var(--surface-brand-focus);
+}
+
+.btn:disabled,
+.btn[aria-disabled="true"] {
+  background-color: var(--surface-disabled);
+  color: var(--text-disabled);
+  box-shadow: none;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn { transition: none; }
+}

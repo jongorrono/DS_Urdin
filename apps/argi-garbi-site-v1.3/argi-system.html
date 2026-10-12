@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Argi Garbi System — minimal design system built from Figma to HTML, CSS and JavaScript.">
+  <title>Argi Garbi System</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400&family=Roboto:wght@400;500&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/tokens-v2.1.css">
+  <link rel="stylesheet" href="css/tokens-semantic-v2.1.css">
+  <link rel="stylesheet" href="css/button.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="top-nav" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Argi Garbi home">
+        <img id="brand-logo" alt="Jongo">
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">MENU</button>
+      <div id="nav-links" class="nav-links">
+        <a href="#about">ABOUT</a>
+        <a href="#react">WORK</a>
+        <a href="#react">CODE LAB</a>
+        <a href="#eus">EUS</a>
+        <a class="connect" href="mailto:hello@jongodesign.com">LET’S CHAT</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="app">
+    <!-- Rendered by app.js -->
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="js/assets.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
