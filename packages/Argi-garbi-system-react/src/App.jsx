@@ -1,10 +1,17 @@
 import React from 'react';
-import { ButtonExamples } from "./components/Button/Button.example";
+import { Button } from "./components/Button/Button";
+
 
 export default function App() {
   return (
     <div style={{ padding: 32 }}>
-      <ButtonExamples />
+      <h1>Hey Jon!</h1>
+      <Button variant="primary" size="lg" iconLeft="person">Save </Button>
+      
+      
+      
     </div>
   );
 }
+
+

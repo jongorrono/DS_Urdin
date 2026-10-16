@@ -1,8 +1,5 @@
 import React from 'react'
-import '../../styles/tokens-primitives-v1.1.css'
-import '../../styles/tokens-v1.1.css'
-import '../../styles/badge.css'
-import '../../styles/system-style.css'
+import '../../foundations/tokens-v1.1.css'
 import Badge from './Badge.jsx'
 
 // Badge Demo component showcasing all variants

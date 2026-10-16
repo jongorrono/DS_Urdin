@@ -1,0 +1,10 @@
+/* Styles only for the Button showcase page (Button.example.jsx). Not part of the component. */
+h1 { margin: 0 0 var(--space-8); font-size: var(--font-size-28); font-weight: 500; }
+p.lead { margin: 0 0 var(--space-40); color: var(--color-neutral-60); }
+h2 { margin: var(--space-40) 0 var(--space-16); font-size: var(--font-size-14); font-weight: 500;
+     text-transform: uppercase; letter-spacing: .06em; color: var(--color-neutral-60); }
+.grid { display: grid; grid-template-columns: 90px repeat(3, max-content); gap: var(--space-24) var(--space-32);
+        align-items: center; justify-items: start; }
+.grid .h { font-size: var(--font-size-12); color: var(--color-neutral-50); }
+.grid .rowlabel { font-size: var(--font-size-13); color: var(--color-neutral-60); }
+.row { display: flex; flex-wrap: wrap; gap: var(--space-16); align-items: center; }

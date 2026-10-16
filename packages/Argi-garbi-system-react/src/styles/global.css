@@ -1,0 +1,8 @@
+/* Global base styles. Imported once in main.jsx, after the tokens. */
+body {
+  margin: 0;
+  padding: var(--space-48);
+  background: var(--color-neutral-0);
+  color: var(--color-neutral-90);
+  font-family: var(--font-family-rubik);
+}
