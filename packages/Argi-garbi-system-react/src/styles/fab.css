@@ -1,0 +1,111 @@
+/* FAB (floating action button) – Argi Garbi DS
+   Source: Figma "Minimal-DS-ArgiGarbi", node 7474:2996 (Fab)
+   Requires: foundations/tokens-v2.1.css and foundations/tokens-semantic-v2.1.css (imported once in main.jsx)
+
+   Anatomy : 1 container (circle) + 2 icon (24px, inherits text color)
+   Types   : .fab--primary | .fab--secondary | .fab--tertiary
+   Sizes   : .fab--sm (32px) | .fab--md (40px, default) | .fab--lg (48px)
+   States  : default, hover, focus-visible, disabled
+             (.is-hover / .is-focus force a state for documentation)
+
+   Size = icon (24px) + padding on each side: sm 4px, md 8px, lg 12px.
+   The FAB has no text, so every instance needs an accessible name:
+   <button class="fab" aria-label="Add">…</button> */
+
+.fab {
+  /* per-type values, overridden below (defaults = primary) */
+  --fab-bg: var(--surface-brand);
+  --fab-fg: var(--text-on-brand);
+  --fab-border: transparent;
+  --fab-bg-hover: var(--surface-brand-hover);
+  --fab-fg-hover: var(--text-on-brand);
+  --fab-border-hover: transparent;
+  --fab-focus-bg: var(--surface-brand-focus);
+
+  /* per-size values (medium default) */
+  --fab-pad: var(--space-md);   /* 8px  */
+  --fab-icon: 24px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  box-sizing: border-box;
+  padding: var(--fab-pad);
+  margin: 0;
+
+  color: var(--fab-fg);
+  background-color: var(--fab-bg);
+  border: 0;
+  border-radius: var(--radius-full);
+  /* Figma strokes are inside: draw the border as an inset shadow so the size never changes */
+  box-shadow: inset 0 0 0 var(--border-width-thick) var(--fab-border);
+  cursor: pointer;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  transition: background-color .12s ease, color .12s ease, box-shadow .12s ease;
+}
+
+.fab__icon {
+  display: block;
+  flex: none;
+  width: var(--fab-icon);
+  height: var(--fab-icon);
+}
+
+/* ---------- Types ---------- */
+
+.fab--primary { /* defaults above */ }
+
+.fab--secondary {
+  --fab-bg: var(--surface-secondary);
+  --fab-bg-hover: var(--surface-secondary-hover);
+  --fab-focus-bg: var(--surface-secondary);
+}
+
+.fab--tertiary {
+  --fab-bg: var(--surface-default);
+  --fab-fg: var(--text-brand);
+  --fab-border: var(--text-brand);
+  --fab-bg-hover: var(--surface-brand);
+  --fab-focus-bg: var(--surface-brand);
+}
+
+/* ---------- Sizes ---------- */
+
+.fab--sm { --fab-pad: var(--space-xs); }   /* 32px */
+.fab--md { /* defaults above */ }          /* 40px */
+.fab--lg { --fab-pad: var(--space-lg); }   /* 48px */
+
+/* ---------- States ---------- */
+
+.fab:hover,
+.fab.is-hover {
+  background-color: var(--fab-bg-hover);
+  color: var(--fab-fg-hover);
+  box-shadow: inset 0 0 0 var(--border-width-thick) var(--fab-border-hover);
+}
+
+/* Focus: 2px ring of the fill color at the edge, then a 2px white ring inside it */
+.fab:focus-visible,
+.fab.is-focus {
+  outline: none;
+  background-color: var(--fab-focus-bg);
+  color: var(--text-on-brand);
+  box-shadow:
+    inset 0 0 0 var(--border-width-thick) var(--fab-focus-bg),
+    inset 0 0 0 calc(var(--border-width-thick) * 2) var(--color-neutral-0);
+}
+
+.fab:disabled,
+.fab[aria-disabled="true"] {
+  background-color: var(--surface-disabled);
+  color: var(--text-disabled);
+  box-shadow: none;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fab { transition: none; }
+}
