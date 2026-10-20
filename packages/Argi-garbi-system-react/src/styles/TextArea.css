@@ -1,0 +1,228 @@
+/* Argi Garbi – Text area
+   Figma: Minimal-DS-ArgiGarbi, node 7423:4963
+   Requires (in this order): tokens-v2.1.css, tokens-semantic-v2.1.css, textarea.css
+
+   Every var() carries the Figma value as a fallback, so the component still
+   renders correctly if a token file is missing or renamed.
+
+   States: default, :hover, :focus-within, [disabled], [readonly],
+           .textarea--error, .textarea--success
+           (.is-hover / .is-focus force a state for docs & demos)
+
+   Markup:
+     <div class="textarea">
+       <div class="textarea__header">
+         <label class="textarea__label" for="id">Label</label>
+         <span class="textarea__count" id="id-count">0/100</span>
+       </div>
+       <div class="textarea__control">
+         <textarea class="textarea__input" id="id" maxlength="100"
+                   aria-describedby="id-help"></textarea>
+         <svg class="textarea__status">…</svg>          (error / success only)
+       </div>
+       <p class="textarea__helper" id="id-help">Helper text</p>
+     </div>
+*/
+
+.textarea {
+  --textarea-height: 164px;                                 /* Figma: textfield/height-large */
+  --textarea-padding-x: var(--space-16, 16px);              /* Figma: space-xl */
+  --textarea-padding-y: var(--space-12, 12px);              /* Figma: space-lg */
+  --textarea-gap: var(--space-8, 8px);                      /* Figma: space-md */
+  --textarea-border-width: var(--border-width-2, 2px);      /* Figma: border-width-thick */
+  --textarea-width: 364px;
+
+  /* Colours, mapped to Figma variables */
+  --textarea-text: var(--color-neutral-80, #30323a);                /* text-default */
+  --textarea-placeholder: var(--color-neutral-40, #92939a);         /* text-disabled (focus placeholder) */
+  --textarea-surface: var(--color-neutral-10, #e6e6e8);             /* surface-subtle */
+  --textarea-surface-hover: var(--color-neutral-20, #d1d2d6);       /* surface-hover */
+  --textarea-border: var(--color-neutral-60, #5e6068);              /* border-default */
+  --textarea-border-focus: var(--color-brand-80, #0046e4);          /* border-interactive */
+  --textarea-surface-disabled: var(--color-neutral-10, #e6e6e8);    /* surface-disabled */
+  --textarea-border-disabled: var(--color-neutral-20, #d1d2d6);     /* border-subtle */
+  --textarea-text-disabled: var(--color-neutral-40, #92939a);       /* text-disabled */
+  --textarea-label-disabled: var(--color-neutral-50, #777981);      /* textfield/label-disabled, helper-disabled */
+  --textarea-border-error: var(--color-error-70, #aa3a2c);          /* border-error */
+  --textarea-text-error: var(--color-error-80, #88281c);            /* text-error */
+  --textarea-border-success: var(--color-success-80, #459250);      /* border-success */
+  --textarea-text-success: var(--color-information-90, #006f63);    /* text-success */
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--textarea-gap);
+  box-sizing: border-box;
+  width: var(--textarea-width);
+  max-width: 100%;
+  padding: 0;
+  font-family: var(--font-family-ibm, "IBM Plex Mono", ui-monospace, monospace);
+  font-weight: var(--font-weight-400, 400);
+  font-style: normal;
+}
+
+/* ---------- Label, counter & helper (Common/Caption: 14/18, +2% tracking) ---------- */
+.textarea__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.textarea__label,
+.textarea__count,
+.textarea__helper {
+  margin: 0;
+  color: var(--textarea-text);
+  font-size: var(--font-size-14, 14px);
+  line-height: 18px;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+
+.textarea__helper {
+  width: 100%;
+  white-space: normal;
+}
+
+/* ---------- Control ----------
+   Borders are real 2px borders on a fixed-height box, so changing state never
+   shifts the layout (matches Figma, where strokes sit inside the frame). */
+.textarea__control {
+  --_surface: var(--textarea-surface);
+  --_border: transparent;                        /* top, left, right */
+  --_border-bottom: var(--textarea-border);      /* bottom */
+  --_text: var(--textarea-text);
+
+  display: flex;
+  align-items: flex-start;
+  gap: var(--textarea-gap);
+  box-sizing: border-box;
+  width: 100%;
+  height: var(--textarea-height);
+  padding: calc(var(--textarea-padding-y) - var(--textarea-border-width))
+           calc(var(--textarea-padding-x) - var(--textarea-border-width));
+  border: var(--textarea-border-width) solid var(--_border);
+  border-bottom-color: var(--_border-bottom);
+  border-radius: var(--radius-0, 0);
+  background: var(--_surface);
+  color: var(--_text);
+}
+
+.textarea__input {
+  flex: 1 1 0;
+  align-self: stretch;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: var(--_text);
+  caret-color: var(--_text);
+  font: inherit;
+  font-size: var(--font-size-16, 16px);            /* Common/Body3: 16/24 */
+  line-height: 24px;
+  resize: none;
+}
+
+.textarea__input::placeholder {
+  color: var(--textarea-placeholder);
+  opacity: 1;
+}
+
+/* Error / success icon, top-aligned with the first line of text */
+.textarea__status {
+  flex: none;
+  width: 20px;
+  height: 20px;
+  margin-top: 2px;                                 /* centres the 20px icon on the 24px first line */
+  fill: currentColor;
+}
+
+/* ---------- States (source order = priority) ---------- */
+
+/* Hover */
+.textarea__control:hover,
+.textarea.is-hover .textarea__control {
+  --_surface: var(--textarea-surface-hover);
+}
+
+/* Read only: no border, no hover change */
+.textarea:where(:has(.textarea__input[readonly])) .textarea__control {
+  --_surface: var(--textarea-surface);
+  --_border-bottom: transparent;
+}
+
+/* Focus: full 2px border */
+.textarea__control:focus-within,
+.textarea.is-focus .textarea__control {
+  --_surface: var(--textarea-surface);
+  --_border: var(--textarea-border-focus);
+  --_border-bottom: var(--textarea-border-focus);
+}
+
+/* Error */
+.textarea--error .textarea__control {
+  --_surface: var(--textarea-surface);
+  --_border: var(--textarea-border-error);
+  --_border-bottom: var(--textarea-border-error);
+}
+
+.textarea--error .textarea__helper {
+  color: var(--textarea-text-error);
+}
+
+.textarea--error .textarea__status {
+  color: var(--textarea-border-error);
+}
+
+/* Success */
+.textarea--success .textarea__control {
+  --_surface: var(--textarea-surface);
+  --_border: var(--textarea-border-success);
+  --_border-bottom: var(--textarea-border-success);
+}
+
+.textarea--success .textarea__helper {
+  color: var(--textarea-text-success);
+}
+
+.textarea--success .textarea__status {
+  color: var(--textarea-border-success);
+}
+
+/* Disabled (last, so it wins over every other state) */
+.textarea:where(:has(.textarea__input:disabled)) .textarea__control {
+  --_surface: var(--textarea-surface-disabled);
+  --_border: var(--textarea-border-disabled);
+  --_border-bottom: var(--textarea-border-disabled);
+  --_text: var(--textarea-text-disabled);
+  cursor: not-allowed;
+}
+
+.textarea:where(:has(.textarea__input:disabled)) .textarea__label,
+.textarea:where(:has(.textarea__input:disabled)) .textarea__count,
+.textarea:where(:has(.textarea__input:disabled)) .textarea__helper {
+  color: var(--textarea-label-disabled);
+}
+
+.textarea__input:disabled {
+  cursor: not-allowed;
+  opacity: 1;                                      /* Safari dims disabled fields */
+  -webkit-text-fill-color: var(--_text);
+}
+
+@media (forced-colors: active) {
+  .textarea__control {
+    border-color: CanvasText;
+  }
+
+  .textarea__control:focus-within {
+    border-color: Highlight;
+  }
+
+  .textarea:where(:has(.textarea__input:disabled)) .textarea__control {
+    border-color: GrayText;
+  }
+}

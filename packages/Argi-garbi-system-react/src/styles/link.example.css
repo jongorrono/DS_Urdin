@@ -1,0 +1,18 @@
+/* Styles only for the Link showcase page (Link.example.jsx). Not part of the component.
+   Everything is scoped under .link-examples so it never affects other pages. */
+.link-examples { color: var(--text-default); font-family: var(--font-family-ibm); }
+.link-examples h1 { margin: 0 0 var(--space-8); font-family: var(--font-family-rubik); font-size: var(--font-size-28); font-weight: 500; }
+.link-examples p.lead { margin: 0 0 var(--space-40); color: var(--color-neutral-60); font-family: var(--font-family-rubik); }
+.link-examples h2 { margin: var(--space-40) 0 var(--space-16); font-family: var(--font-family-rubik); font-size: var(--font-size-14);
+     font-weight: 500; text-transform: uppercase; letter-spacing: .06em; color: var(--color-neutral-60); }
+.link-examples .grid { display: grid; grid-template-columns: 90px repeat(3, max-content); gap: var(--space-24) var(--space-48);
+        align-items: center; justify-items: start; }
+.link-examples .grid .h { font-size: var(--font-size-12); color: var(--color-neutral-50); }
+.link-examples .grid .rowlabel { font-size: var(--font-size-13); color: var(--color-neutral-60); }
+.link-examples .row { display: flex; flex-wrap: wrap; gap: var(--space-24); align-items: center; }
+.link-examples .stage { background: var(--color-neutral-40); padding: var(--space-48); }
+.link-examples .card { max-width: 640px; box-sizing: border-box; padding: var(--space-24); background: var(--color-neutral-0);
+        box-shadow: 0 1px 1.5px rgba(0,0,0,.1), 0 5px 2.5px rgba(0,0,0,.09), 0 10px 3px rgba(0,0,0,.05); }
+.link-examples .card h3 { margin: 0 0 var(--space-24); font-family: var(--font-family-rubik); font-size: var(--font-size-28);
+        line-height: 36px; font-weight: 400; }
+.link-examples .card p { margin: 0 0 var(--space-8); font-size: var(--font-size-16); line-height: 24px; }
