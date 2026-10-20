@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Rubik:wght@400;500;600&display=swap');
+
+.field {
+  --surface-subtle: var(--color-neutral-10);
+  --surface-hover: var(--color-neutral-20);
+  --text-default: var(--color-neutral-80);
+  --text-muted: var(--color-neutral-60);
+  --text-disabled: var(--color-neutral-40);
+  --border-default: var(--color-neutral-60);
+  --border-subtle: var(--color-neutral-20);
+  --border-hover: var(--color-neutral-60);
+  --border-interactive: var(--color-brand-80);
+  --border-error: var(--color-error-80);
+  --border-success: var(--color-success-80);
+  --text-error: var(--color-error-80);
+  --text-success: var(--color-success-80);
+  --textfield-padding-horizontal: var(--space-16);
+  --textfield-padding-vertical-small: var(--space-8);
+  --textfield-padding-vertical-medium: var(--space-12);
+  --textfield-padding-vertical-large: var(--space-16);
+  --textfield-border-width-emphasis: var(--border-width-2);
+  --textfield-border-with-bottom: var(--border-width-2);
+  --textfield-padding-gap-horizontal: var(--space-8);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+  min-width: 0;
+  color: var(--text-default);
+}
+.field-label { font-family: var(--font-family-ibm); font-size: var(--font-size-14); line-height: 18px; letter-spacing: .02em; }
+.control {
+  width: 100%; min-width: 0; display: flex; align-items: center; gap: var(--space-8);
+  padding: var(--textfield-padding-vertical-medium) var(--textfield-padding-horizontal);
+  border: var(--border-width-1) solid var(--border-default);
+  border-bottom-width: var(--textfield-border-with-bottom);
+  border-radius: var(--radius-0);
+  background: var(--surface-subtle);
+  color: var(--text-default);
+  font-family: var(--font-family-ibm); font-size: var(--font-size-16); line-height: 24px;
+  outline: none; transition: border-color .15s ease, background-color .15s ease, box-shadow .15s ease;
+}
+.control input { flex: 1; width: 100%; min-width: 0; padding: 0; border: 0; outline: 0; background: transparent; color: inherit; font: inherit; }
+.control input::placeholder { color: var(--text-default); opacity: 1; }
+.leading-icon { width: 16px; height: 16px; flex: 0 0 16px; color: var(--color-neutral-70); }
+.trailing-icon { display: inline-grid; place-items: center; flex: 0 0 20px; width: 20px; height: 20px; padding: 0; border: 0; background: transparent; color: var(--color-neutral-70); }
+button.trailing-icon { cursor: pointer; }
+.trailing-icon svg { width: 20px; height: 20px; }
+.helper { font-family: var(--font-family-ibm); font-size: var(--font-size-14); line-height: 18px; letter-spacing: .02em; }
+.control:hover:not(.control--disabled):not(.control--readonly) { background: var(--surface-hover); border-color: var(--border-hover); }
+.control:focus-within { border: var(--textfield-border-width-emphasis) solid var(--border-interactive); }
+.control:focus-within input::placeholder { color: var(--color-neutral-40); }
+.control--error { border: var(--textfield-border-width-emphasis) solid var(--border-error); }
+.control--error .trailing-icon, .field--error .helper { color: var(--text-error); }
+.control--success { border: var(--textfield-border-width-emphasis) solid var(--border-success); }
+.control--success .trailing-icon, .field--success .helper { color: var(--text-success); }
+.control--disabled { background: var(--surface-disabled); border-color: var(--border-subtle); color: var(--text-disabled); cursor: not-allowed; }
+.control--disabled input { cursor: not-allowed; }
+.control--disabled input::placeholder { color: var(--text-disabled); }
+.field--disabled .field-label, .field--disabled .helper { color: var(--text-disabled); }
+.control--readonly { border-color: transparent; }
+.control--small { padding-top: var(--textfield-padding-vertical-small); padding-bottom: var(--textfield-padding-vertical-small); }
+.control--large { padding-top: var(--textfield-padding-vertical-large); padding-bottom: var(--textfield-padding-vertical-large); }
+.field--small .field-label, .field--small .helper { display: none; }
+@media (prefers-reduced-motion: reduce) { .control { transition: none; } }

@@ -1,0 +1,127 @@
+/* Argi Garbi – Tag
+   Figma: Minimal-DS-ArgiGarbi, node 7465:8686
+   Requires (in this order): tokens-v2.1.css, tokens-semantic-v2.1.css, tag.css
+
+   Every var() carries the Figma value as a fallback, so the component still
+   renders correctly if a token file is missing or renamed.
+
+   Sizes:  .tag--sm (default) | .tag--md | .tag--lg
+   Colors: .tag--neutral (default) | --inverse | --success | --error | --brand
+   Icons:  optional – add a leading and/or trailing <svg class="tag__icon"> around the label.
+
+   Markup:
+     <span class="tag tag--md tag--success">
+       <svg class="tag__icon" aria-hidden="true">…</svg>     (optional, leading)
+       <span class="tag__label">TAG</span>
+       <svg class="tag__icon" aria-hidden="true">…</svg>     (optional, trailing)
+     </span>
+*/
+
+.tag {
+  /* Size-dependent values (Small is the default size) */
+  --tag-padding-x: var(--space-12, 12px);               /* Figma: space-lg */
+  --tag-padding-y: var(--space-2, 2px);                 /* Figma: space-2xs */
+  --tag-font-size: var(--font-size-12, 12px);
+  --tag-line-height: 20px;
+  --tag-letter-spacing: 0.02em;
+  --tag-icon-size: 14px;
+
+  /* Colours, neutral (default) – mapped to Figma variables */
+  --tag-surface: var(--color-neutral-10, #e6e6e8);      /* surface-subtle */
+  --tag-text: var(--color-neutral-80, #30323a);         /* text-default */
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-8, 8px);                             /* Figma: space-md */
+  box-sizing: border-box;
+  min-width: 64px;
+  padding: var(--tag-padding-y) var(--tag-padding-x);
+  border-radius: var(--radius-4, 4px);                  /* Figma: radius-md */
+  background: var(--tag-surface);
+  color: var(--tag-text);
+  font-family: var(--font-family-ibm, "IBM Plex Mono", ui-monospace, monospace);
+  font-size: var(--tag-font-size);
+  font-weight: var(--font-weight-400, 400);
+  font-style: normal;
+  line-height: var(--tag-line-height);
+  letter-spacing: var(--tag-letter-spacing);
+  text-align: center;
+  white-space: nowrap;
+}
+
+.tag__label {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.tag__icon {
+  flex: none;
+  width: var(--tag-icon-size);
+  height: var(--tag-icon-size);
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* ---------- Sizes ---------- */
+.tag--sm {
+  --tag-padding-x: var(--space-12, 12px);               /* space-lg */
+  --tag-padding-y: var(--space-2, 2px);                 /* space-2xs */
+  --tag-font-size: var(--font-size-12, 12px);           /* Common/Body5: 12/20 */
+  --tag-line-height: 20px;
+  --tag-letter-spacing: 0.02em;
+  --tag-icon-size: 14px;
+}
+
+.tag--md {
+  --tag-padding-x: var(--space-16, 16px);               /* space-xl */
+  --tag-padding-y: var(--space-6, 6px);                 /* space-sm */
+  --tag-font-size: var(--font-size-14, 14px);           /* Common/Caption: 14/18 */
+  --tag-line-height: 18px;
+  --tag-letter-spacing: 0.02em;
+  --tag-icon-size: 18px;
+}
+
+.tag--lg {
+  --tag-padding-x: var(--space-16, 16px);               /* space-xl */
+  --tag-padding-y: var(--space-8, 8px);                 /* space-md */
+  --tag-font-size: var(--font-size-16, 16px);           /* Common/Body3: 16/24 */
+  --tag-line-height: 24px;
+  --tag-letter-spacing: 0;
+  --tag-icon-size: 20px;
+}
+
+/* ---------- Colours ---------- */
+.tag--neutral {
+  --tag-surface: var(--color-neutral-10, #e6e6e8);      /* surface-subtle */
+  --tag-text: var(--color-neutral-80, #30323a);         /* text-default */
+}
+
+.tag--inverse {
+  --tag-surface: var(--color-neutral-100, #02050e);     /* surface-inverse */
+  --tag-text: var(--color-neutral-0, #ffffff);          /* text-on-brand */
+}
+
+.tag--success {
+  --tag-surface: var(--color-success-10, #f4fff6);      /* surface-success */
+  --tag-text: var(--color-information-90, #006f63);     /* text-success */
+}
+
+.tag--error {
+  --tag-surface: var(--color-error-10, #fff0ee);        /* surface-error-subtle */
+  --tag-text: var(--color-error-80, #88281c);           /* text-error */
+}
+
+.tag--brand {
+  --tag-surface: var(--color-brand-70, #105df4);        /* surface-brand */
+  --tag-text: var(--color-neutral-0, #ffffff);          /* text-on-brand */
+}
+
+@media (forced-colors: active) {
+  .tag {
+    border: 1px solid CanvasText;
+  }
+}

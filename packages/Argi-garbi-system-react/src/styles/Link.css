@@ -1,0 +1,126 @@
+/* Argi Garbi – Link component
+   Figma: Minimal-DS-ArgiGarbi, node 7407:23340
+   Requires (in this order): tokens-v2.1.css, tokens-semantic-v2.1.css, link.css
+
+   Every var() carries the Figma value as a fallback, so the component still
+   renders correctly if a token file is missing or renamed.
+
+   Sizes:  .link--sm (default) | .link--md | .link--lg
+   States: default, :hover, :focus-visible, :visited, [aria-disabled="true"]
+           (.is-hover / .is-focus / .is-visited force a state for docs & demos)
+   Trailing icon: optional – omit the <svg class="link__icon"> from the markup.
+*/
+
+:root {
+  /* Link colours, mapped to Figma variables.
+     tokens-semantic's --text-brand resolves to brand-90 (#1f2bd5), which is the
+     Figma *hover* colour, so link colours point at the primitives instead. */
+  --link-text-default: var(--color-brand-70, #105df4);   /* Figma: text-brand */
+  --link-text-hover: var(--color-brand-90, #1f2bd5);     /* Figma: text-brand-hover */
+  --link-text-visited: var(--color-brand-100, #0007ae);  /* Figma: text-brand-visited */
+  --link-text-focus: var(--color-brand-80, #0046e4);     /* Figma: text-brand-focus */
+  --link-text-disabled: var(--color-neutral-40, #92939a);/* Figma: text-disabled */
+}
+
+.link {
+  /* Size-dependent values (Small is the default size) */
+  --link-font-size: var(--font-size-15, 15px);
+  --link-line-height: 19px;
+  --link-icon-size: 20px;
+
+  --link-color: var(--link-text-default);
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-8, 8px);
+  padding: 0 var(--space-2, 2px);
+  overflow: clip;
+
+  /* Underline = 1px bottom border, as in Figma */
+  border: 0 solid transparent;
+  border-bottom: var(--border-width-1, 1px) solid var(--link-color);
+  border-radius: 0;
+
+  color: var(--link-color);
+  font-family: var(--font-family-ibm, "IBM Plex Mono", ui-monospace, monospace);
+  font-size: var(--link-font-size);
+  font-weight: var(--font-weight-500, 500);
+  font-style: normal;
+  line-height: var(--link-line-height);
+  white-space: nowrap;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.link__icon {
+  flex: none;
+  width: var(--link-icon-size);
+  height: var(--link-icon-size);
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* ---------- Sizes ---------- */
+.link--sm {
+  --link-font-size: var(--font-size-15, 15px);
+  --link-line-height: 19px;
+}
+
+.link--md {
+  --link-font-size: var(--font-size-16, 16px);
+  --link-line-height: 24px;
+}
+
+.link--lg {
+  --link-font-size: var(--font-size-18, 18px);
+  --link-line-height: 28px;
+}
+
+/* ---------- States ---------- */
+.link:visited,
+.link.is-visited {
+  --link-color: var(--link-text-visited);
+}
+
+.link:hover,
+.link.is-hover {
+  --link-color: var(--link-text-hover);
+}
+
+/* Focus: full 1px pill border, 4px inline padding.
+   Negative margins cancel the extra size so nothing shifts when focus lands. */
+.link:focus,
+.link.is-focus {
+  --link-color: var(--link-text-focus);
+
+  padding-inline: var(--space-4, 4px);
+  border: var(--border-width-1, 1px) solid var(--link-color);
+  border-radius: var(--radius-full, 9999px);
+  margin-inline: calc(var(--space-2, 2px) - var(--space-4, 4px) - var(--border-width-1, 1px));
+  margin-block-start: calc(-1 * var(--border-width-1, 1px));
+  outline: none;
+}
+
+.link[aria-disabled="true"],
+.link.is-disabled {
+  --link-color: var(--link-text-disabled);
+
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+@media (forced-colors: active) {
+  .link {
+    color: LinkText;
+    border-bottom-color: LinkText;
+  }
+
+  .link[aria-disabled="true"] {
+    color: GrayText;
+    border-bottom-color: GrayText;
+  }
+}

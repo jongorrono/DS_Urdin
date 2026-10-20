@@ -1,0 +1,190 @@
+/* Argi Garbi – Radio button
+   Figma: Minimal-DS-ArgiGarbi, node 7465:7847
+   Requires (in this order): tokens-v2.1.css, tokens-semantic-v2.1.css, radiobutton.css
+
+   Every var() carries the Figma value as a fallback, so the component still
+   renders correctly if a token file is missing or renamed.
+
+   Modes:  unselected | :checked
+   States: default, :hover, :active (pressed), :focus-visible, :disabled
+           (.is-hover / .is-pressed / .is-focus force a state for docs & demos)
+   Types:  valid (default) | .radio--error
+
+   Markup (the label text is optional; radios that share a name form a group):
+     <label class="radio">
+       <input class="radio__input" type="radio" name="group">
+       <span class="radio__control" aria-hidden="true"></span>
+       <span class="radio__label">Label</span>
+     </label>
+*/
+
+.radio {
+  /* Colours, valid type (mapped to Figma variables) */
+  --radio-fill: var(--color-brand-70, #105df4);                 /* surface-brand */
+  --radio-fill-hover: var(--color-brand-100, #0007ae);          /* surface-brand-pressed */
+  --radio-fill-pressed: var(--color-brand-100, #0007ae);
+  --radio-outline: var(--color-neutral-80, #30323a);            /* unselected ring, default */
+  --radio-outline-active: var(--color-neutral-80, #30323a);     /* unselected ring, hover / pressed / focus */
+  --radio-halo: var(--color-brand-10, #ebf5ff);                 /* surface-brand-subtle */
+  --radio-ring: var(--color-brand-70, #105df4);                 /* focus ring, selected */
+  --radio-ring-unselected: var(--color-brand-80, #0046e4);      /* surface-brand-focus */
+  --radio-disabled: var(--color-neutral-40, #92939a);           /* text-disabled */
+  --radio-text: var(--color-neutral-80, #30323a);               /* text-default */
+  --radio-text-disabled: var(--color-neutral-40, #92939a);      /* text-disabled */
+
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--font-family-ibm, "IBM Plex Mono", ui-monospace, monospace);
+  font-size: var(--font-size-16, 16px);
+  font-weight: var(--font-weight-400, 400);
+  line-height: 24px;
+  color: var(--radio-text);
+  cursor: pointer;
+}
+
+/* Error type */
+.radio--error {
+  --radio-fill: var(--color-error-70, #aa3a2c);                 /* surface-error */
+  --radio-fill-hover: var(--color-error-80, #88281c);           /* surface-error-hover */
+  --radio-fill-pressed: var(--color-error-70, #aa3a2c);
+  --radio-outline: var(--color-error-70, #aa3a2c);
+  --radio-halo: var(--color-error-10, #fff0ee);                 /* surface-error-subtle */
+  --radio-ring: var(--color-error-70, #aa3a2c);
+  --radio-ring-unselected: var(--color-error-70, #aa3a2c);
+  --radio-disabled: var(--color-error-40, #fc8d7f);             /* surface-error-disabled */
+}
+
+/* Native input: invisible, but it keeps keyboard focus, grouping, form behaviour and
+   clicks. It covers the 48px touch target. */
+.radio__input {
+  position: absolute;
+  inset: 0 auto auto 0;
+  z-index: 1;
+  width: 48px;
+  height: 48px;
+  margin: 0;
+  opacity: 0;
+  cursor: inherit;
+}
+
+/* ---------- Control (48px target) ----------
+   ::before = hover/pressed halo (40px) and focus ring (44px)
+   ::after  = the 20px circle and, when selected, its 10px dot */
+.radio__control {
+  --_fill: var(--radio-fill);
+  --_outline: var(--radio-outline);
+  --_halo: transparent;
+  --_ring: transparent;
+  --_halo-inset: 4px;
+
+  position: relative;
+  flex: none;
+  width: 48px;
+  height: 48px;
+}
+
+.radio__control::before {
+  content: "";
+  position: absolute;
+  inset: var(--_halo-inset);
+  border-radius: 9999px;
+  background: var(--_halo);
+  box-shadow: inset 0 0 0 2px var(--_ring);
+}
+
+/* Unselected: 20px circle, 1.5px stroke like the Figma icon */
+.radio__control::after {
+  content: "";
+  position: absolute;
+  inset: 14px;
+  box-sizing: border-box;
+  border-radius: 9999px;
+  box-shadow: inset 0 0 0 1.5px var(--_outline);
+}
+
+/* Selected: ring and 10px dot take the fill colour */
+.radio__input:checked + .radio__control::after {
+  background: radial-gradient(circle at center, var(--_fill) 4.8px, transparent 5.3px);
+  box-shadow: inset 0 0 0 1.5px var(--_fill);
+}
+
+/* ---------- States (source order = priority) ---------- */
+
+/* Hover */
+.radio:hover .radio__control,
+.radio.is-hover .radio__control {
+  --_halo: var(--radio-halo);
+  --_fill: var(--radio-fill-hover);
+  --_outline: var(--radio-outline-active);
+}
+
+/* Pressed */
+.radio:active .radio__control,
+.radio.is-pressed .radio__control {
+  --_halo: var(--radio-halo);
+  --_fill: var(--radio-fill-pressed);
+  --_outline: var(--radio-outline-active);
+}
+
+/* Focus: 2px ring on a 44px circle, with the halo inside */
+.radio__input:focus-visible + .radio__control,
+.radio.is-focus .radio__control {
+  --_halo: var(--radio-halo);
+  --_halo-inset: 2px;
+  --_ring: var(--radio-ring-unselected);
+  --_fill: var(--radio-fill);
+  --_outline: var(--radio-outline-active);
+}
+
+/* The ring is a different blue when the radio is selected */
+.radio__input:checked:focus-visible + .radio__control,
+.radio.is-focus .radio__input:checked + .radio__control {
+  --_ring: var(--radio-ring);
+}
+
+/* Disabled (last, so it wins over every other state) */
+.radio__input:disabled + .radio__control {
+  --_fill: var(--radio-disabled);
+  --_outline: var(--radio-disabled);
+  --_halo: transparent;
+  --_ring: transparent;
+  --_halo-inset: 4px;
+}
+
+.radio__input:disabled {
+  cursor: not-allowed;
+}
+
+.radio__input:disabled ~ .radio__label {
+  color: var(--radio-text-disabled);
+}
+
+.radio:has(.radio__input:disabled) {
+  cursor: not-allowed;
+}
+
+/* ---------- Optional label ---------- */
+.radio__label {
+  user-select: none;
+}
+
+@media (forced-colors: active) {
+  .radio__control::after {
+    box-shadow: inset 0 0 0 1.5px CanvasText;
+  }
+
+  .radio__input:checked + .radio__control::after {
+    background: radial-gradient(circle at center, Highlight 4.8px, transparent 5.3px);
+    box-shadow: inset 0 0 0 1.5px Highlight;
+    forced-color-adjust: none;
+  }
+
+  .radio__input:focus-visible + .radio__control::before {
+    box-shadow: inset 0 0 0 2px Highlight;
+  }
+
+  .radio__input:disabled + .radio__control::after {
+    box-shadow: inset 0 0 0 1.5px GrayText;
+  }
+}

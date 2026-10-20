@@ -1,0 +1,173 @@
+/* Argi Garbi – Chip
+   Figma: Minimal-DS-ArgiGarbi, node 7466:1542
+   Requires (in this order): tokens-v2.1.css, tokens-semantic-v2.1.css, chip.css
+
+   Every var() carries the Figma value as a fallback, so the component still
+   renders correctly if a token file is missing or renamed.
+
+   Sizes:  .chip--sm (default) | .chip--md | .chip--lg
+   States: default, :hover, :active (pressed), :focus-visible,
+           [aria-pressed="true"] (selected), :disabled
+           (.is-hover / .is-focus / .is-pressed force a state for docs & demos)
+   Icons:  optional – add a leading and/or trailing <svg class="chip__icon"> around the label.
+
+   Markup (a toggle button; flip aria-pressed in your script):
+     <button class="chip chip--md" type="button" aria-pressed="false">
+       <svg class="chip__icon" aria-hidden="true">…</svg>     (optional, leading)
+       <span class="chip__label">Chips</span>
+       <svg class="chip__icon" aria-hidden="true">…</svg>     (optional, trailing)
+     </button>
+*/
+
+.chip {
+  /* Size-dependent values (Small is the default size) */
+  --chip-padding-x: var(--space-12, 12px);              /* Figma: space-lg */
+  --chip-padding-y: var(--space-4, 4px);                /* Figma: space-xs */
+  --chip-font-size: var(--font-size-12, 12px);
+  --chip-line-height: 20px;
+  --chip-letter-spacing: 0.02em;
+  --chip-icon-size: 14px;
+  --chip-border-width: var(--border-width-2, 2px);      /* Figma: border-width-thick */
+
+  /* Colours, default – mapped to Figma variables */
+  --chip-surface: var(--color-neutral-10, #e6e6e8);     /* surface-subtle */
+  --chip-text: var(--color-neutral-80, #30323a);        /* text-default */
+  --chip-border: transparent;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-8, 8px);                             /* Figma: space-md */
+  box-sizing: border-box;
+  min-width: 64px;
+  margin: 0;
+  /* The 2px focus border sits inside the box (as in Figma), so the padding gives it room
+     and the chip never changes size between states. */
+  padding: calc(var(--chip-padding-y) - var(--chip-border-width))
+           calc(var(--chip-padding-x) - var(--chip-border-width));
+  border: var(--chip-border-width) solid var(--chip-border);
+  border-radius: var(--radius-4, 4px);                  /* Figma: radius-md */
+  background: var(--chip-surface);
+  color: var(--chip-text);
+  font-family: var(--font-family-ibm, "IBM Plex Mono", ui-monospace, monospace);
+  font-size: var(--chip-font-size);
+  font-weight: var(--font-weight-400, 400);
+  font-style: normal;
+  line-height: var(--chip-line-height);
+  letter-spacing: var(--chip-letter-spacing);
+  text-align: center;
+  white-space: nowrap;
+  cursor: pointer;
+  appearance: none;
+  outline: none;
+}
+
+.chip__label {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.chip__icon {
+  flex: none;
+  width: var(--chip-icon-size);
+  height: var(--chip-icon-size);
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* ---------- Sizes ---------- */
+.chip--sm {
+  --chip-padding-x: var(--space-12, 12px);              /* space-lg */
+  --chip-padding-y: var(--space-4, 4px);                /* space-xs */
+  --chip-font-size: var(--font-size-12, 12px);          /* Common/Body5: 12/20 */
+  --chip-line-height: 20px;
+  --chip-letter-spacing: 0.02em;
+  --chip-icon-size: 14px;
+}
+
+.chip--md {
+  --chip-padding-x: var(--space-16, 16px);              /* space-xl */
+  --chip-padding-y: var(--space-8, 8px);                /* space-md */
+  --chip-font-size: var(--font-size-14, 14px);          /* Common/Caption: 14/18 */
+  --chip-line-height: 18px;
+  --chip-letter-spacing: 0.02em;
+  --chip-icon-size: 18px;
+}
+
+.chip--lg {
+  --chip-padding-x: var(--space-16, 16px);              /* space-xl */
+  --chip-padding-y: var(--space-8, 8px);                /* space-md */
+  --chip-font-size: var(--font-size-16, 16px);          /* Common/Body3: 16/24 */
+  --chip-line-height: 24px;
+  --chip-letter-spacing: 0;
+  --chip-icon-size: 20px;
+}
+
+/* ---------- States (source order = priority) ---------- */
+
+/* Hover */
+.chip:hover,
+.chip.is-hover {
+  --chip-surface: var(--color-neutral-20, #d1d2d6);     /* surface-hover */
+}
+
+/* Focus: hover colour plus a 2px border */
+.chip:focus-visible,
+.chip.is-focus {
+  --chip-surface: var(--color-neutral-20, #d1d2d6);     /* surface-hover */
+  --chip-border: var(--color-neutral-80, #30323a);      /* chips/background-border */
+}
+
+/* Pressed */
+.chip:active,
+.chip.is-pressed {
+  --chip-surface: var(--color-neutral-30, #b0b1b7);     /* surface-pressed */
+}
+
+/* Selected: stays dark through hover and pressed */
+.chip[aria-pressed="true"] {
+  --chip-surface: var(--color-neutral-100, #02050e);    /* surface-inverse */
+  --chip-text: var(--color-neutral-0, #ffffff);         /* text-on-brand */
+}
+
+/* A dark chip can't show a dark border, so selected + focus uses an outside ring */
+.chip[aria-pressed="true"]:focus-visible,
+.chip[aria-pressed="true"].is-focus {
+  --chip-border: transparent;
+  outline: var(--chip-border-width) solid var(--color-neutral-80, #30323a);
+  outline-offset: 2px;
+}
+
+/* Disabled (last, so it wins over every other state) */
+.chip:disabled {
+  --chip-surface: var(--color-neutral-10, #e6e6e8);     /* surface-disabled */
+  --chip-text: var(--color-neutral-40, #92939a);        /* text-disabled */
+  --chip-border: transparent;
+  outline: none;
+  cursor: not-allowed;
+}
+
+@media (forced-colors: active) {
+  .chip {
+    border: 1px solid ButtonText;
+  }
+
+  .chip[aria-pressed="true"] {
+    background: Highlight;
+    color: HighlightText;
+    forced-color-adjust: none;
+  }
+
+  .chip:focus-visible {
+    outline: 2px solid Highlight;
+    outline-offset: 2px;
+  }
+
+  .chip:disabled {
+    border-color: GrayText;
+    color: GrayText;
+  }
+}
