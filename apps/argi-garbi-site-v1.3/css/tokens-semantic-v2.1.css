@@ -3,7 +3,7 @@
 :root {
   /* Surfaces */
   --surface-default: var(--color-neutral-0);
-  --surface-brand: var(--color-brand-80);            /* #0046e4 */
+  --surface-brand: var(--color-brand-70);            /* #0046e4 */
   --surface-brand-hover: var(--color-brand-90);      /* #1f2bd5 */
   --surface-brand-pressed: var(--color-brand-100);   /* #0007ae */
   --surface-brand-focus: var(--color-brand-80);      /* #0046e4 */
@@ -14,7 +14,11 @@
 
   /* Text */
   --text-on-brand: var(--color-neutral-0);
-  --text-brand: var(--color-brand-90);               /* #1f2bd5 */
+  --text-brand: var(--color-brand-70);  
+  --text-brand-hover: var(--color-brand-90);  
+  --text-brand-focus: var(--color-brand-80);  
+  --text-brand-visited: var(--color-brand-100);  
+            
   --text-disabled: var(--color-neutral-40);          /* #b1b8c8 */
 
   /* Spacing aliases */

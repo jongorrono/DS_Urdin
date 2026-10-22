@@ -1,0 +1,94 @@
+/* =========================================================================
+   Argi Garbi – extended semantic tokens
+   Layer 3 of the token stack:
+     1. tokens-v2.1.css           → primitives (raw values)
+     2. tokens-semantic-v2.1.css  → semantic tokens used by Button
+     3. tokens-extended.css       → semantic + component tokens for the rest
+                                    of the system and the documentation site
+   Every value here points to a primitive, so changing a primitive cascades
+   through the whole system.
+   ========================================================================= */
+:root {
+  /* ---------- Surfaces ---------- */
+  --surface-page: var(--color-neutral-0);
+  --surface-muted: var(--color-neutral-10);                 /* panels, list items */
+  --surface-subtle: color-mix(in srgb, var(--color-neutral-20) 50%, var(--color-neutral-0)); /* fields, tags */
+  --surface-inverse: var(--color-neutral-100);
+  --surface-strong: var(--color-neutral-80);
+  --surface-stage: var(--color-neutral-40);                 /* usage example backdrop */
+  --surface-overlay: rgb(0 0 0 / 0.2);
+  --surface-info-subtle: var(--color-information-10);
+  --surface-success-subtle: var(--color-success-20);
+  --surface-brand-subtle: var(--color-brand-10);
+  --surface-error-subtle: var(--color-error-10);
+
+  /* ---------- Text ---------- */
+  --text-strong: var(--color-neutral-100);
+  --text-default: var(--color-neutral-80);
+  --text-muted: var(--color-neutral-70);
+  --text-subtle: var(--color-neutral-60);
+  --text-placeholder: var(--color-neutral-50);
+  --text-accent-muted: var(--color-neutral-40);
+  --text-on-inverse: var(--color-neutral-10);
+  --text-error: var(--color-error-80);
+  --text-info: var(--color-information-90);
+  --text-brand-strong: var(--color-brand-90);
+
+  /* ---------- Borders ---------- */
+  --border-default: var(--color-neutral-60);
+  --border-subtle: var(--color-neutral-20);
+  --border-strong: var(--color-neutral-80);
+  --border-interactive: var(--color-brand-80);
+  --border-error: var(--color-error-70);
+  --border-width-thin: var(--border-width-1);
+
+  /* ---------- Extra spacing aliases ---------- */
+  --space-none: var(--space-0);
+  --space-xl: var(--space-16);
+  --space-3xl: var(--space-24);
+  --space-4xl: var(--space-32);
+  --space-5xl: var(--space-48);
+  --space-6xl: var(--space-88);
+  --space-7xl: var(--space-124);
+
+  /* ---------- Radius aliases ---------- */
+  --radius-xs: var(--radius-2);
+  --radius-sm: var(--radius-4);
+  --radius-md: var(--radius-6);
+  --radius-lg: var(--radius-8);
+  --radius-xl: var(--radius-16);
+  --radius-2xl: var(--radius-24);
+
+  /* ---------- Typography roles ---------- */
+  --font-display: var(--font-family-rubik);
+  --font-body: var(--font-family-ibm);
+
+  /* ---------- Selection controls ---------- */
+  --selection-color-selected: var(--color-brand-80);
+  --selection-color-unselected: var(--color-neutral-80);
+  --selection-color-disabled: var(--color-neutral-50);
+  --selection-color-error: var(--color-error-60);
+  --selection-color-error-strong: var(--color-error-80);
+  --selection-color-error-disabled: var(--color-error-30);
+  --selection-bg-hover: var(--color-brand-10);
+  --selection-bg-error-hover: var(--color-error-10);
+  --selection-label: var(--color-neutral-80);
+  --selection-label-disabled: var(--color-neutral-50);
+
+  /* ---------- Focus ---------- */
+  --focus-ring: 0 0 0 2px var(--color-neutral-0), 0 0 0 4px var(--color-brand-80);
+
+  /* ---------- Elevation ---------- */
+  --shadow-nav: 0 16px 40px rgb(137 162 206 / 0.2);
+  --shadow-card: 0 1px 3px rgb(0 0 0 / 0.1), 0 5px 5px rgb(0 0 0 / 0.09), 0 10px 6px rgb(0 0 0 / 0.05), 0 19px 7px rgb(0 0 0 / 0.01);
+  --shadow-popover: 0 4px 4px rgb(113 113 113 / 0.3), 0 8px 12px 6px rgb(237 237 237 / 0.15);
+
+  /* ---------- Motion ---------- */
+  --duration-fast: 120ms;
+  --duration-base: 200ms;
+  --ease-standard: cubic-bezier(0.2, 0, 0, 1);
+
+  /* ---------- Layout ---------- */
+  --container-max: 1116px;
+  --gutter: clamp(16px, 4vw, 48px);
+}
