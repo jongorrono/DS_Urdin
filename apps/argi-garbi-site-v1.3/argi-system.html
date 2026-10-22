@@ -3,39 +3,68 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Argi Garbi System — minimal design system built from Figma to HTML, CSS and JavaScript.">
   <title>Argi Garbi System</title>
+  <meta name="description" content="Argi Garbi System — minimal design system built from Figma to HTML, CSS and JavaScript.">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400&family=Roboto:wght@400;500&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Rubik:wght@400;500;600&display=swap">
+
+  <!-- Design tokens (order matters: primitives → semantic → extended) -->
   <link rel="stylesheet" href="css/tokens-v2.1.css">
   <link rel="stylesheet" href="css/tokens-semantic-v2.1.css">
-  <link rel="stylesheet" href="css/button.css">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/tokens-extended.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
 </head>
 <body>
+  <a class="skip-link" href="#view">Skip to content</a>
+
   <header class="site-header">
-    <nav class="top-nav" aria-label="Main navigation">
-      <a class="brand" href="#home" aria-label="Argi Garbi home">
-        <img id="brand-logo" alt="Jongo">
-      </a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">MENU</button>
-      <div id="nav-links" class="nav-links">
-        <a href="#about">ABOUT</a>
-        <a href="#react">WORK</a>
-        <a href="#react">CODE LAB</a>
-        <a href="#eus">EUS</a>
-        <a class="connect" href="mailto:hello@jongodesign.com">LET’S CHAT</a>
-      </div>
+    <nav class="nav" data-nav data-open="false" aria-label="Main">
+      <!-- Swap the text for your logo file: <img src="img/logo.svg" alt="Jongo"> -->
+      <a class="nav__logo" href="https://www.jongodesign.com/" aria-label="Jongo — home">JONGO</a>
+
+      <button type="button" class="nav__toggle" data-nav-toggle aria-expanded="false" aria-controls="nav-menu" aria-label="Menu">
+        <svg class="icon" aria-hidden="true"><use href="#i-menu"></use></svg>
+      </button>
+
+      <ul class="nav__menu" id="nav-menu">
+        <li><a class="nav__link" href="https://www.jongodesign.com/#grid-3x2">ABOUT</a></li>
+        <li><a class="nav__link" href="https://www.jongodesign.com/#project">PROJECTS</a></li>
+        <li><a class="nav__link" href="https://www.jongodesign.com/#web-section-sideproject">CODE LAB</a></li>
+        <li><a class="nav__link" href="https://www.jongodesign.com/index-eus.php" lang="eu">EUS</a></li>
+        <li><a class="nav__cta" href="https://www.jongodesign.com/#footer-v2">LET’S CHAT</a></li>
+      </ul>
     </nav>
+
+    <a class="nav-back" href="#react" data-nav-back data-visible="false">
+      <svg class="icon" aria-hidden="true"><use href="#i-arrow-left"></use></svg>
+      <span class="nav-back__label"></span>
+    </a>
   </header>
 
-  <main id="app">
-    <!-- Rendered by app.js -->
-  </main>
+  <div class="page">
+    <main id="view" tabindex="-1">
+      <noscript><p style="padding:48px 0">This documentation site needs JavaScript to render the components.</p></noscript>
+    </main>
 
-  <div class="toast" id="toast" role="status" aria-live="polite"></div>
-  <script src="js/assets.js"></script>
+    <footer class="site-footer">
+      <p><strong>V1.2</strong> Designed &amp; built by Jon Gorroño 2026</p>
+    </footer>
+  </div>
+
+  <!-- Scripts (no build step; load order matters) -->
+  <script src="js/icons.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/pages.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>
